@@ -11,9 +11,27 @@ config_version=5
 [application]
 
 config/name="Escaped from Time"
+config/version="0.1.0"
+run/main_scene="res://Scenes/SplashScreen/splash_screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Assets/Icons/icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
 
 [dotnet]
 
 project/assembly_name="Escaped from Time"
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Components/": "blue",
+"res://Objects/": "blue",
+"res://Ressources/": "red",
+"res://Scenes/": "teal"
+}
