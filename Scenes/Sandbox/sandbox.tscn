@@ -1,0 +1,72 @@
+[gd_scene load_steps=8 format=3 uid="uid://b4j3xxwiitm50"]
+
+[ext_resource type="Shader" path="res://Ressources/Shaders/dashed_grid.gdshader" id="1_qarrd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u5orp"]
+render_priority = 0
+shader = ExtResource("1_qarrd")
+shader_parameter/subdivisions = 1000.0
+shader_parameter/grid_width = 0.01
+shader_parameter/background_color = Color(0.2, 0.2, 0.2, 1)
+shader_parameter/background_color_two = Color(0.1, 0.1, 0.1, 1)
+shader_parameter/grid_color = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/dashed_scale_x = 0.02
+shader_parameter/dashed_scale_y = 0.02
+shader_parameter/dashed_count_x = 1.0
+shader_parameter/dashed_count_y = 1.0
+shader_parameter/point_width = 0.021
+shader_parameter/point_color = Color(0, 0, 0, 1)
+shader_parameter/point_scale_x = 0.05
+shader_parameter/point_scale_y = 0.05
+shader_parameter/inside_width = 0.01
+shader_parameter/inside_subdivisions = 6.0
+shader_parameter/inside_color = Color(0.4, 0.4, 0.4, 1)
+shader_parameter/in_dashed_scale_x = 0.3
+shader_parameter/in_dashed_scale_y = 0.3
+shader_parameter/in_dashed_count_x = 6.0
+shader_parameter/in_dashed_count_y = 6.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_pk8lf"]
+size = Vector3(1000, 1, 1000)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s6mvb"]
+points = PackedVector3Array(-500, -0.5, -500, -500, 0.5, -500, 500, -0.5, -500, -500, -0.5, 500, -500, 0.5, 500, 500, 0.5, -500, 500, -0.5, 500, 500, 0.5, 500)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dpw25"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ak5im"]
+sky_material = SubResource("ProceduralSkyMaterial_dpw25")
+
+[sub_resource type="Environment" id="Environment_gcoab"]
+background_mode = 2
+sky = SubResource("Sky_ak5im")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Sandbox" type="Node3D"]
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="StaticBodyGround" type="StaticBody3D" parent="World"]
+
+[node name="MeshGround" type="MeshInstance3D" parent="World/StaticBodyGround"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+material_override = SubResource("ShaderMaterial_u5orp")
+mesh = SubResource("BoxMesh_pk8lf")
+skeleton = NodePath("../../..")
+
+[node name="CollisionShapeGround" type="CollisionShape3D" parent="World/StaticBodyGround"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("ConvexPolygonShape3D_s6mvb")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World"]
+environment = SubResource("Environment_gcoab")
+
+[node name="DirectionalLight" type="DirectionalLight3D" parent="World"]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 3, 10)
