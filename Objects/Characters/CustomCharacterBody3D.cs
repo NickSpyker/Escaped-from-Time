@@ -211,6 +211,14 @@ public partial class CustomCharacterBody3D : CharacterBody3D
         if (CurrentAnimation == animation) return;
 
         CurrentAnimation = animation;
+        _animationPlayer.Play(CurrentAnimation.GetStringName(), blendTime, 1.0f, false);
+    }
+
+    public void PlayAnimationThenPlayDefault(CustomAnimation animation, float blendTime = 0.2f)
+    {
+        if (CurrentAnimation == animation) return;
+
+        CurrentAnimation = animation;
         string animationStringName = CurrentAnimation.GetStringName();
         _animationPlayer.Play(animationStringName, blendTime, 1.0f, false);
         _animationPlayer.Queue(_defaultAnimationStringName);
