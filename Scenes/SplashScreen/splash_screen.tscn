@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d4c2xwqq7ag17"]
 
-[ext_resource type="Script" path="res://Scenes/SplashScreen/splash_screen.gd" id="1_5gqxx"]
+[ext_resource type="Script" path="res://Scenes/SplashScreen/SplashScreen.cs" id="1_0sq0d"]
 
 [node name="SplashScreen" type="Control"]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_5gqxx")
+script = ExtResource("1_0sq0d")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -37,4 +37,4 @@ vertical_alignment = 1
 [node name="Timer" type="Timer" parent="."]
 autostart = true
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]

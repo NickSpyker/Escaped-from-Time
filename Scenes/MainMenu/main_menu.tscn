@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://v0s4yoclgw3p"]
+[gd_scene load_steps=2 format=3 uid="uid://v0s4yoclgw3p"]
+
+[ext_resource type="Script" path="res://Scenes/MainMenu/MainMenu.cs" id="1_l0ytr"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -7,3 +9,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_l0ytr")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]
