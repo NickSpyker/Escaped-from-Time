@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmujc5dgr6do6"]
+
+[ext_resource type="PackedScene" uid="uid://c4l2hdetvv46q" path="res://Assets/Skeletons/Characters/Skeleton_Rogue.glb" id="1_lb5xa"]
+[ext_resource type="Script" path="res://Objects/CharacterMeshes/Skeletons/SkeletonRogue.cs" id="2_5ppai"]
+
+[node name="Skeleton_Rogue" instance=ExtResource("1_lb5xa")]
+script = ExtResource("2_5ppai")
+
+[node name="Skeleton_Rogue_Hood" parent="Rig/Skeleton3D" index="0"]
+transform = Transform3D(1, -1.42109e-14, 1.42109e-14, 1.42109e-14, 1, 6.17863e-15, -1.42109e-14, -6.17863e-15, 1, 1.90735e-06, 1.21587, -1.37836e-07)
+
+[node name="Skeleton_Rogue_Cape" parent="Rig/Skeleton3D" index="1"]
+transform = Transform3D(1, 1.25214e-21, 0, -1.25214e-21, 1, 0, 0, 0, 1, -1.90735e-06, 1.21587, -1.3411e-07)

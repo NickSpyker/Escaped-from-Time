@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3btcbdmbomhk"]
+
+[ext_resource type="PackedScene" uid="uid://cqmwtxfr0sdk5" path="res://Assets/Skeletons/Characters/Skeleton_Minion.glb" id="1_d2rps"]
+[ext_resource type="Script" path="res://Objects/CharacterMeshes/Skeletons/SkeletonMinion.cs" id="2_ivfx1"]
+
+[node name="Skeleton_Minion" instance=ExtResource("1_d2rps")]
+script = ExtResource("2_ivfx1")

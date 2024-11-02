@@ -33,6 +33,6 @@ folder_colors={
 "res://Components/": "blue",
 "res://Docs/": "purple",
 "res://Objects/": "blue",
-"res://Ressources/": "red",
+"res://Resources/": "red",
 "res://Scenes/": "teal"
 }

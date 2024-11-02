@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=11 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Scenes/Sandbox/Sandbox.cs" id="1_dnck8"]
-[ext_resource type="Shader" path="res://Ressources/Shaders/dashed_grid.gdshader" id="1_qarrd"]
-[ext_resource type="PackedScene" uid="uid://dngliq6s7oh01" path="res://Objects/Characters/Adventurers/Barbarian/barbarian.tscn" id="2_yos0j"]
+[ext_resource type="Shader" path="res://Resources/Shaders/dashed_grid.gdshader" id="1_qarrd"]
+[ext_resource type="PackedScene" uid="uid://deo2rnmyojr1j" path="res://Objects/CharacterMeshes/Adventurers/barbarian.tscn" id="3_7gfsd"]
+[ext_resource type="Script" path="res://Components/CharacterAnimations/AdventurerAnimationPlayer.cs" id="4_vyvl4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x7k8r"]
 render_priority = 0
@@ -47,8 +48,9 @@ sky = SubResource("Sky_ak5im")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Sandbox" type="Node3D"]
+[node name="Sandbox" type="Node3D" node_paths=PackedStringArray("Character")]
 script = ExtResource("1_dnck8")
+Character = NodePath("Barbarian")
 
 [node name="World" type="Node3D" parent="."]
 metadata/_edit_lock_ = true
@@ -76,4 +78,8 @@ metadata/_edit_lock_ = true
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 2, 4)
 
-[node name="Barbarian" parent="." instance=ExtResource("2_yos0j")]
+[node name="Barbarian" parent="." instance=ExtResource("3_7gfsd")]
+
+[node name="AdventurerAnimationPlayer" type="Node" parent="Barbarian" node_paths=PackedStringArray("GlTransmissionFormatBinary")]
+script = ExtResource("4_vyvl4")
+GlTransmissionFormatBinary = NodePath("..")

@@ -6,4 +6,7 @@
         <EnableDynamicLoading>true</EnableDynamicLoading>
         <RootNamespace>EscapedfromTime</RootNamespace>
     </PropertyGroup>
+    <ItemGroup>
+      <Folder Include="Objects\Characters\" />
+    </ItemGroup>
 </Project>

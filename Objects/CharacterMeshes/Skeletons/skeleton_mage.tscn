@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbcsr6m2v0vte"]
+
+[ext_resource type="PackedScene" uid="uid://cpl70t3ghhft5" path="res://Assets/Skeletons/Characters/Skeleton_Mage.glb" id="1_e75nm"]
+[ext_resource type="Script" path="res://Objects/CharacterMeshes/Skeletons/SkeletonMage.cs" id="2_p7nd6"]
+
+[node name="Skeleton_Mage" instance=ExtResource("1_e75nm")]
+script = ExtResource("2_p7nd6")
+
+[node name="Skeleton_Mage_Hat" parent="Rig/Skeleton3D" index="0"]
+transform = Transform3D(1, -2.20965e-22, 1.69407e-21, 2.20965e-22, 1, 0, -1.69407e-21, 0, 1, 0.000286102, 1.7841, -1.35973e-07)
