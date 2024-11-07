@@ -39,4 +39,4 @@ folder_colors={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Data/translations.en.translation", "res://Data/translations.fr.translation")
+locale/translations=PackedStringArray("res://Data/translation.en.translation", "res://Data/translation.fr.translation")
