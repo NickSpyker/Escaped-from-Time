@@ -30,8 +30,13 @@ project/assembly_name="Escaped from Time"
 
 folder_colors={
 "res://Assets/": "purple",
+"res://Data/": "purple",
 "res://Docs/": "orange",
 "res://Resources/": "purple",
 "res://Scenes/": "green",
 "res://Scenes/DevSandbox/": "yellow"
 }
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://Data/translations.en.translation", "res://Data/translations.fr.translation")
