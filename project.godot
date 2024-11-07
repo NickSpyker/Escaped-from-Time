@@ -29,10 +29,9 @@ project/assembly_name="Escaped from Time"
 [file_customization]
 
 folder_colors={
-"res://Assets/": "red",
-"res://Components/": "blue",
-"res://Docs/": "purple",
-"res://Objects/": "blue",
-"res://Resources/": "red",
-"res://Scenes/": "teal"
+"res://Assets/": "purple",
+"res://Docs/": "orange",
+"res://Resources/": "purple",
+"res://Scenes/": "green",
+"res://Scenes/DevSandbox/": "yellow"
 }

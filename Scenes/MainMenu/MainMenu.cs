@@ -6,6 +6,6 @@ public partial class MainMenu : Control
 {
 	public void OnTimerTimeout()
 	{
-		GetTree().ChangeSceneToFile("res://Scenes/Sandbox/sandbox.tscn");
+		GetTree().ChangeSceneToFile("res://Scenes/DevSandbox/dev_sandbox.tscn");
 	}
 }
