@@ -1,9 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=10 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Scenes/DevSandbox/DevSandbox.cs" id="1_b30g4"]
 [ext_resource type="Shader" path="res://Resources/Shaders/dashed_grid.gdshader" id="2_yvr04"]
 [ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
-[ext_resource type="PackedScene" uid="uid://bu5q2ahicpqr3" path="res://Objects/TopDownCamera/TopDownCamera.tscn" id="4_1ujhh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_x7k8r"]
 render_priority = 0
@@ -76,5 +75,3 @@ metadata/_edit_lock_ = true
 
 [node name="PlayerKnight" parent="." instance=ExtResource("3_ctx3q")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
-
-[node name="TopDownCamera" parent="PlayerKnight" instance=ExtResource("4_1ujhh")]

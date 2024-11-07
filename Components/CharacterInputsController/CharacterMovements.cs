@@ -1,4 +1,5 @@
 using EscapedfromTime.Components.CharacterAnimationsHandler;
+using EscapedfromTime.Objects.TopDownCamera;
 using Godot;
 
 namespace EscapedfromTime.Components.CharacterInputsController;
@@ -9,6 +10,7 @@ public partial class CharacterMovements : Node
     [ExportCategory("Component Properties")]
     [Export] public CharacterBody3D Character;
     [Export] public CharacterAnimations CharacterAnimations;
+    [Export] public TopDownCamera TopDownCamera;
 
     [ExportCategory("Component Settings")]
     [Export] public float Speed = 5.0f;
