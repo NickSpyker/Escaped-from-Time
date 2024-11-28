@@ -1,25 +1,24 @@
 using Godot;
-using EscapedfromTime.Objects.TopDownCamera;
 
 public partial class SmoothCamera : Node
 {
-	[ExportCategory("Component Properties")]
-	[Export] public CharacterBody3D Character;
-	[Export] public TopDownCamera TopDownCamera;
+	[Export] public Node3D Player;
+	[Export] public SpringArm3D SpringArm;
 
-	[ExportCategory("Component Settings")]
 	[Export] public float FollowSpeed = 5.0f;
-	// [Export] public Vector3 Offset = new Vector3(0, 1, 1);
+	[Export] public Vector3 CameraOffset = new Vector3(0, 5, -10);
+
+	private Vector3 _currentPosition;
 
 	public override void _Process(double delta)
 	{
-		if (Character == null || TopDownCamera == null)
+		if (Player == null || SpringArm == null)
 			return;
 
-		Vector3 targetPosition = Character.GlobalTransform.Origin;
-		Vector3 currentPosition = TopDownCamera.GlobalTransform.Origin;
-		Vector3 newPosition = currentPosition.Lerp(targetPosition, FollowSpeed * (float)delta);
+		Vector3 targetPosition = Player.GlobalTransform.Origin + CameraOffset;
+		_currentPosition = _currentPosition.Lerp(targetPosition, FollowSpeed * (float)delta);
 
-		TopDownCamera.GlobalTransform = new Transform3D(TopDownCamera.GlobalTransform.Basis, newPosition);
+		SpringArm.GlobalTransform = new Transform3D(SpringArm.GlobalTransform.Basis, _currentPosition);
+		SpringArm.LookAt(Player.GlobalTransform.Origin, Vector3.Up);
 	}
 }
