@@ -6,16 +6,16 @@ namespace EscapedfromTime.Components.CharacterAnimationsHandler;
 
 public enum CharacterAnimation
 {
-    Idle,
-    Interact,
-    Jump,
-    Walk,
-    Run,
-    Attack,
-    Block,
-    BlockHit,
-    Death,
-    Resurrect
+	Idle,
+	Interact,
+	Jump,
+	Walk,
+	Run,
+	Attack,
+	Block,
+	BlockHit,
+	Death,
+	Resurrect
 }
 
 public static class CharacterAnimationStringNames
@@ -47,26 +47,26 @@ public static class CharacterAnimationStringNames
 [GlobalClass]
 public partial class CharacterAnimations : Node
 {
-    [ExportCategory("Component Properties")]
-    [Export] public AnimationTree AnimationTree;
+	[ExportCategory("Component Properties")]
+	[Export] public AnimationTree AnimationTree;
 
-    private AnimationNodeStateMachinePlayback _stateMachine;
+	private AnimationNodeStateMachinePlayback _stateMachine;
 
-    public override void _Ready()
-    {
-	    if (AnimationTree is not null)
-	    {
-		    _stateMachine = (AnimationNodeStateMachinePlayback)AnimationTree.Get("parameters/playback");
-	    }
-	    else
-	    {
-		    GD.PushError("No AnimationTree set.");
-		    throw new Exception($"No AnimationTree set.");
-	    }
-    }
+	public override void _Ready()
+	{
+		if (AnimationTree is not null)
+		{
+			_stateMachine = (AnimationNodeStateMachinePlayback)AnimationTree.Get("parameters/playback");
+		}
+		else
+		{
+			GD.PushError("No AnimationTree set.");
+			throw new Exception($"No AnimationTree set.");
+		}
+	}
 
-    public void Play(CharacterAnimation animation)
-    {
-        _stateMachine.Travel(animation.ToStringName());
-    }
+	public void Play(CharacterAnimation animation)
+	{
+		_stateMachine.Travel(animation.ToStringName());
+	}
 }
