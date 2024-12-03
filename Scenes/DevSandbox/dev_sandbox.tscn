@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=12 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Scenes/DevSandbox/DevSandbox.cs" id="1_b30g4"]
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
 [ext_resource type="Texture2D" uid="uid://e5ubkkbi6qbr" path="res://Assets/Prototypes/Orange/texture_09.png" id="3_bjm0t"]
 [ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
 [ext_resource type="PackedScene" uid="uid://btsek05v74ekr" path="res://Characters/Skeletons/enemy_warrior.tscn" id="4_te5j6"]
+[ext_resource type="MeshLibrary" uid="uid://bjx2ebxi2nvjx" path="res://Resources/GridMaps/MeshLibraries/dungeon_parts.tres" id="4_wlol8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ol1s"]
 albedo_texture = ExtResource("2_sc3cd")
@@ -31,7 +32,6 @@ uv1_triplanar = true
 script = ExtResource("1_b30g4")
 
 [node name="World" type="Node3D" parent="."]
-metadata/_edit_lock_ = true
 
 [node name="CSGBoxGround" type="CSGBox3D" parent="World"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -45,13 +45,25 @@ environment = SubResource("Environment_gcoab")
 [node name="DirectionalLight" type="DirectionalLight3D" parent="World"]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
-metadata/_edit_lock_ = true
 
 [node name="CSGBoxFightingClub" type="CSGBox3D" parent="World"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 30)
 material_override = SubResource("StandardMaterial3D_omqm5")
 use_collision = true
 size = Vector3(30, 1, 30)
+
+[node name="Dungeon" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="GridMap" type="GridMap" parent="Dungeon"]
+mesh_library = ExtResource("4_wlol8")
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(1, 2, 655563, 3, 0, 655605, 5, 0, 655605, 7, 0, 655605, 9, 0, 655605, 11, 0, 655605, 13, 0, 655605, 15, 0, 655605, 17, 0, 251, 17, 2, 1442037, 17, 4, 1442037, 17, 6, 1442037, 17, 10, 1442037, 17, 8, 1442037, 17, 12, 1442037, 17, 14, 1442037, 17, 16, 1442037, 17, 18, 1442037, 17, 20, 1442043, 15, 20, 655605, 13, 20, 655605, 11, 20, 655605, 9, 20, 655605, 7, 20, 655605, 5, 20, 655605, 3, 20, 655605, 65535, 2, 655605, 65533, 2, 1048827, 65533, 4, 1048821, 65533, 6, 1048821, 65533, 8, 1048821, 65533, 10, 1048821, 65533, 12, 1048821, 65533, 14, 1048833, 65533, 16, 1048821, 1, 20, 245, 65533, 20, 655611, 65533, 18, 1048821, 65535, 20, 245, 65530, 4, 1441965, 65529, 4, 655513, 65531, 2, 655475, 65534, 2, 655397, 131076, 2, 655497, 131073, 3, 655500, 131073, 5, 655500, 131075, 5, 655500, 131077, 5, 655500, 131079, 5, 655500, 131079, 3, 655500, 131079, 1, 655500, 8, 6, 161, 0, 6, 161, 65528, 10, 178, 65526, 3, 238)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="PlayerKnight" parent="." instance=ExtResource("3_ctx3q")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
