@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://lrb4ej555s8t"]
+
+[ext_resource type="PackedScene" uid="uid://bqpaf4lhwvj7b" path="res://Assets/DungeonParts/Parts/floor_tile_extralarge_grates.gltf" id="1_dq3nb"]
+[ext_resource type="PackedScene" uid="uid://c7wb7ryyfbp5t" path="res://Assets/DungeonParts/Parts/floor_tile_extralarge_grates_open.gltf" id="2_8caxd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_atxhc"]
+size = Vector3(8, 0.1, 8)
+
+[node name="DungeonFloorsExtralarge" type="Node3D"]
+
+[node name="floor_tile_extralarge_grates2" parent="." instance=ExtResource("1_dq3nb")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_extralarge_grates2/floor_tile_extralarge_grates" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_extralarge_grates2/floor_tile_extralarge_grates/StaticBody3D"]
+shape = SubResource("BoxShape3D_atxhc")
+
+[node name="floor_tile_extralarge_grates_open2" parent="." instance=ExtResource("2_8caxd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_extralarge_grates_open2/floor_tile_extralarge_grates_open" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_extralarge_grates_open2/floor_tile_extralarge_grates_open/StaticBody3D"]
+shape = SubResource("BoxShape3D_atxhc")
+
+[editable path="floor_tile_extralarge_grates2"]
+[editable path="floor_tile_extralarge_grates_open2"]

@@ -1,0 +1,160 @@
+[gd_scene load_steps=18 format=3 uid="uid://cnhiofcjgyt5c"]
+
+[ext_resource type="PackedScene" uid="uid://db5g77scghy2b" path="res://Assets/DungeonParts/Parts/floor_dirt_small_A.gltf" id="1_x6mod"]
+[ext_resource type="PackedScene" uid="uid://b0plr15wk16pm" path="res://Assets/DungeonParts/Parts/floor_dirt_small_B.gltf" id="2_accu2"]
+[ext_resource type="PackedScene" uid="uid://sl6lyl8j42jd" path="res://Assets/DungeonParts/Parts/floor_dirt_small_C.gltf" id="3_6l4bw"]
+[ext_resource type="PackedScene" uid="uid://blobgse0hl3aj" path="res://Assets/DungeonParts/Parts/floor_dirt_small_corner.gltf" id="4_jkpvn"]
+[ext_resource type="PackedScene" uid="uid://dp6efknhq5lt0" path="res://Assets/DungeonParts/Parts/floor_dirt_small_D.gltf" id="5_bt5ah"]
+[ext_resource type="PackedScene" uid="uid://bfjiyxopspw1e" path="res://Assets/DungeonParts/Parts/floor_dirt_small_weeds.gltf" id="6_01b3r"]
+[ext_resource type="PackedScene" uid="uid://2rkywdwve3sp" path="res://Assets/DungeonParts/Parts/floor_tile_small.gltf" id="7_dagdp"]
+[ext_resource type="PackedScene" uid="uid://c2etuyuesm8o3" path="res://Assets/DungeonParts/Parts/floor_tile_small_broken_A.gltf" id="8_jgw4k"]
+[ext_resource type="PackedScene" uid="uid://ddr2qhxiiek3c" path="res://Assets/DungeonParts/Parts/floor_tile_small_broken_B.gltf" id="9_oru4k"]
+[ext_resource type="PackedScene" uid="uid://b0cuf8vef5r1" path="res://Assets/DungeonParts/Parts/floor_tile_small_corner.gltf" id="10_qsot8"]
+[ext_resource type="PackedScene" uid="uid://c0vc2nugv388x" path="res://Assets/DungeonParts/Parts/floor_tile_small_decorated.gltf" id="11_1jngh"]
+[ext_resource type="PackedScene" uid="uid://bnvqj30svmnes" path="res://Assets/DungeonParts/Parts/floor_tile_small_weeds_A.gltf" id="12_fkqs3"]
+[ext_resource type="PackedScene" uid="uid://b5gp8wqdmimak" path="res://Assets/DungeonParts/Parts/floor_tile_small_weeds_B.gltf" id="13_i1jhj"]
+[ext_resource type="PackedScene" uid="uid://b1y7pisjgtx1q" path="res://Assets/DungeonParts/Parts/floor_wood_small.gltf" id="14_fdy3o"]
+[ext_resource type="PackedScene" uid="uid://byrhmckxo1ye2" path="res://Assets/DungeonParts/Parts/floor_wood_small_dark.gltf" id="15_11nxw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0qvoy"]
+size = Vector3(2, 0.1, 2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nlvst"]
+points = PackedVector3Array(-1, -0.1, -1, -1, 0.05, -1, 1, -0.1, -1, 1, -0.1, 1, 1, 0.05, 1, 1, 0.05, -1)
+
+[node name="DungeonFloorsSmall" type="Node3D"]
+
+[node name="floor_dirt_small_A2" parent="." instance=ExtResource("1_x6mod")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_small_A2/floor_dirt_small_A" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_small_A2/floor_dirt_small_A/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_dirt_small_B2" parent="." instance=ExtResource("2_accu2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_small_B2/floor_dirt_small_B" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_small_B2/floor_dirt_small_B/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_dirt_small_C2" parent="." instance=ExtResource("3_6l4bw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_small_C2/floor_dirt_small_C" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_small_C2/floor_dirt_small_C/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_dirt_small_corner2" parent="." instance=ExtResource("4_jkpvn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_small_corner2/floor_dirt_small_corner" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_small_corner2/floor_dirt_small_corner/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_dirt_small_D2" parent="." instance=ExtResource("5_bt5ah")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_small_D2/floor_dirt_small_D" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_small_D2/floor_dirt_small_D/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_dirt_small_weeds2" parent="." instance=ExtResource("6_01b3r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_small_weeds2/floor_dirt_small_weeds" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_small_weeds2/floor_dirt_small_weeds/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_tile_small2" parent="." instance=ExtResource("7_dagdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small2/floor_tile_small" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small2/floor_tile_small/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_tile_small_broken_A2" parent="." instance=ExtResource("8_jgw4k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small_broken_A2/floor_tile_small_broken_A" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small_broken_A2/floor_tile_small_broken_A/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_tile_small_broken_B2" parent="." instance=ExtResource("9_oru4k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small_broken_B2/floor_tile_small_broken_B" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small_broken_B2/floor_tile_small_broken_B/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_tile_small_corner2" parent="." instance=ExtResource("10_qsot8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small_corner2/floor_tile_small_corner" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small_corner2/floor_tile_small_corner/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_nlvst")
+
+[node name="floor_tile_small_decorated2" parent="." instance=ExtResource("11_1jngh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small_decorated2/floor_tile_small_decorated" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small_decorated2/floor_tile_small_decorated/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_tile_small_weeds_A2" parent="." instance=ExtResource("12_fkqs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small_weeds_A2/floor_tile_small_weeds_A" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small_weeds_A2/floor_tile_small_weeds_A/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_tile_small_weeds_B2" parent="." instance=ExtResource("13_i1jhj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 8)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_small_weeds_B2/floor_tile_small_weeds_B" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_small_weeds_B2/floor_tile_small_weeds_B/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_wood_small2" parent="." instance=ExtResource("14_fdy3o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_wood_small2/floor_wood_small" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_wood_small2/floor_wood_small/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[node name="floor_wood_small_dark2" parent="." instance=ExtResource("15_11nxw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_wood_small_dark2/floor_wood_small_dark" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_wood_small_dark2/floor_wood_small_dark/StaticBody3D"]
+shape = SubResource("BoxShape3D_0qvoy")
+
+[editable path="floor_dirt_small_A2"]
+[editable path="floor_dirt_small_B2"]
+[editable path="floor_dirt_small_C2"]
+[editable path="floor_dirt_small_corner2"]
+[editable path="floor_dirt_small_D2"]
+[editable path="floor_dirt_small_weeds2"]
+[editable path="floor_tile_small2"]
+[editable path="floor_tile_small_broken_A2"]
+[editable path="floor_tile_small_broken_B2"]
+[editable path="floor_tile_small_corner2"]
+[editable path="floor_tile_small_decorated2"]
+[editable path="floor_tile_small_weeds_A2"]
+[editable path="floor_tile_small_weeds_B2"]
+[editable path="floor_wood_small2"]
+[editable path="floor_wood_small_dark2"]

@@ -1,0 +1,105 @@
+[gd_scene load_steps=12 format=3 uid="uid://bxrqcyxw7pc8v"]
+
+[ext_resource type="PackedScene" uid="uid://d3y0uwals1ndj" path="res://Assets/DungeonParts/Parts/floor_dirt_large.gltf" id="1_2w5jr"]
+[ext_resource type="PackedScene" uid="uid://wsfvp7kqpdy7" path="res://Assets/DungeonParts/Parts/floor_dirt_large_rocky.gltf" id="2_1dqjh"]
+[ext_resource type="PackedScene" uid="uid://c84w6upitr42b" path="res://Assets/DungeonParts/Parts/floor_tile_big_grate.gltf" id="3_thu6m"]
+[ext_resource type="PackedScene" uid="uid://biuqmdcg7sbob" path="res://Assets/DungeonParts/Parts/floor_tile_big_grate_open.gltf" id="4_wdf57"]
+[ext_resource type="PackedScene" uid="uid://bt7itf7wd5jnm" path="res://Assets/DungeonParts/Parts/floor_tile_big_spikes.gltf" id="5_vgn7i"]
+[ext_resource type="PackedScene" uid="uid://vhkf8t44d4b0" path="res://Assets/DungeonParts/Parts/floor_tile_large.gltf" id="6_d5yc3"]
+[ext_resource type="PackedScene" uid="uid://dc857bsj3twou" path="res://Assets/DungeonParts/Parts/floor_tile_large_rocks.gltf" id="7_02quo"]
+[ext_resource type="PackedScene" uid="uid://c5e02dgdtqdx" path="res://Assets/DungeonParts/Parts/floor_wood_large.gltf" id="8_2a3vm"]
+[ext_resource type="PackedScene" uid="uid://tbrpea0a0lw0" path="res://Assets/DungeonParts/Parts/floor_wood_large_dark.gltf" id="9_hx4cq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aoel3"]
+size = Vector3(4, 0.1, 4)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u3h5g"]
+points = PackedVector3Array(-1.00008, 0, -1.1, -1.1, 0, -1.00008, -1.00008, 1.64409, -1.1, 0.999863, 0, -1.1, -1.1, 1.64409, -1.00008, -1.1, 0, 0.999864, -1.00008, 2, -1.00008, 0.999863, 1.64409, -1.1, 1.1, 0, -1.00008, -1.1, 1.64409, 0.999864, -1.00008, 0, 1.1, -1.00008, 2, 0.999864, 0.999863, 2, -1.00008, 1.1, 1.64409, -1.00008, 1.1, 0, 0.999864, -1.00008, 1.64409, 1.1, 0.999863, 0, 1.1, 0.999863, 2, 0.999864, 1.1, 1.64409, 0.999864, 0.999863, 1.64409, 1.1)
+
+[node name="DungeonFloorsLarge" type="Node3D"]
+
+[node name="floor_dirt_large2" parent="." instance=ExtResource("1_2w5jr")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_large2/floor_dirt_large" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_large2/floor_dirt_large/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_dirt_large_rocky2" parent="." instance=ExtResource("2_1dqjh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_dirt_large_rocky2/floor_dirt_large_rocky" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_dirt_large_rocky2/floor_dirt_large_rocky/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_tile_big_grate2" parent="." instance=ExtResource("3_thu6m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_big_grate2/floor_tile_big_grate" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_big_grate2/floor_tile_big_grate/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_tile_big_grate_open2" parent="." instance=ExtResource("4_wdf57")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_big_grate_open2/floor_tile_big_grate_open" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_big_grate_open2/floor_tile_big_grate_open/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_tile_big_spikes2" parent="." instance=ExtResource("5_vgn7i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_big_spikes2/floor_tile_big_spikes/spikes" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_big_spikes2/floor_tile_big_spikes/spikes/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_u3h5g")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_big_spikes2/floor_tile_big_spikes" index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_big_spikes2/floor_tile_big_spikes/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_tile_large2" parent="." instance=ExtResource("6_d5yc3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_large2/floor_tile_large" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_large2/floor_tile_large/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_tile_large_rocks2" parent="." instance=ExtResource("7_02quo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_large_rocks2/floor_tile_large_rocks" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_tile_large_rocks2/floor_tile_large_rocks/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_wood_large2" parent="." instance=ExtResource("8_2a3vm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_wood_large2/floor_wood_large" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_wood_large2/floor_wood_large/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[node name="floor_wood_large_dark2" parent="." instance=ExtResource("9_hx4cq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_wood_large_dark2/floor_wood_large_dark" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_wood_large_dark2/floor_wood_large_dark/StaticBody3D"]
+shape = SubResource("BoxShape3D_aoel3")
+
+[editable path="floor_dirt_large2"]
+[editable path="floor_dirt_large_rocky2"]
+[editable path="floor_tile_big_grate2"]
+[editable path="floor_tile_big_grate_open2"]
+[editable path="floor_tile_big_spikes2"]
+[editable path="floor_tile_large2"]
+[editable path="floor_tile_large_rocks2"]
+[editable path="floor_wood_large2"]
+[editable path="floor_wood_large_dark2"]

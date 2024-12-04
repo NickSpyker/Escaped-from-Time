@@ -1,0 +1,669 @@
+[gd_scene load_steps=134 format=3 uid="uid://dbbefw4v4460m"]
+
+[ext_resource type="PackedScene" uid="uid://dl2f1hfwtkwaw" path="res://Assets/DungeonParts/Parts/barrel_large.gltf" id="1_oh5sm"]
+[ext_resource type="PackedScene" uid="uid://cqq4t5ay1oq6a" path="res://Assets/DungeonParts/Parts/barrel_large_decorated.gltf" id="2_xtmev"]
+[ext_resource type="PackedScene" uid="uid://ceccpl6o3ajs6" path="res://Assets/DungeonParts/Parts/barrel_small.gltf" id="3_rctvk"]
+[ext_resource type="PackedScene" uid="uid://7l3eba7n6kot" path="res://Assets/DungeonParts/Parts/barrel_small_stack.gltf" id="4_2obx0"]
+[ext_resource type="PackedScene" uid="uid://cagwjwsgysute" path="res://Assets/DungeonParts/Parts/barrier.gltf" id="5_q7e7k"]
+[ext_resource type="PackedScene" uid="uid://cigupm2j83dg" path="res://Assets/DungeonParts/Parts/barrier_column.gltf" id="6_55iv4"]
+[ext_resource type="PackedScene" uid="uid://dt5d0ftv36nts" path="res://Assets/DungeonParts/Parts/barrier_colum_half.gltf" id="7_echii"]
+[ext_resource type="PackedScene" uid="uid://bmtg51lpdcwfd" path="res://Assets/DungeonParts/Parts/barrier_corner.gltf" id="8_ee36t"]
+[ext_resource type="PackedScene" uid="uid://dmrbug4t8smwt" path="res://Assets/DungeonParts/Parts/barrier_half.gltf" id="9_m3s2a"]
+[ext_resource type="PackedScene" uid="uid://d2r6dpxsset8g" path="res://Assets/DungeonParts/Parts/bartop_A_large.gltf" id="10_2piqx"]
+[ext_resource type="PackedScene" uid="uid://ce0bs50lpkjru" path="res://Assets/DungeonParts/Parts/bartop_A_medium.gltf" id="11_ex81k"]
+[ext_resource type="PackedScene" uid="uid://x81fjpsa2fwe" path="res://Assets/DungeonParts/Parts/bartop_A_small.gltf" id="12_7ue3h"]
+[ext_resource type="PackedScene" uid="uid://yc8jrqx0kq7d" path="res://Assets/DungeonParts/Parts/bartop_B_large.gltf" id="13_lvva5"]
+[ext_resource type="PackedScene" uid="uid://dcdkk7aot54km" path="res://Assets/DungeonParts/Parts/bartop_B_medium.gltf" id="14_01s5p"]
+[ext_resource type="PackedScene" uid="uid://cfrgkw36vy2g7" path="res://Assets/DungeonParts/Parts/bartop_B_small.gltf" id="15_0tsfn"]
+[ext_resource type="PackedScene" uid="uid://v67300wauslf" path="res://Assets/DungeonParts/Parts/bar_innercorner.gltf" id="16_727dt"]
+[ext_resource type="PackedScene" uid="uid://vsabplfvlwra" path="res://Assets/DungeonParts/Parts/bar_outercorner.gltf" id="17_s4sh6"]
+[ext_resource type="PackedScene" uid="uid://cew37c4ohb1l" path="res://Assets/DungeonParts/Parts/bar_straight_A.gltf" id="18_ws0xu"]
+[ext_resource type="PackedScene" uid="uid://oy4xpjeg7r22" path="res://Assets/DungeonParts/Parts/bar_straight_A_short.gltf" id="19_534ba"]
+[ext_resource type="PackedScene" uid="uid://c021mwfu77v4s" path="res://Assets/DungeonParts/Parts/bar_straight_B.gltf" id="20_5wvmq"]
+[ext_resource type="PackedScene" uid="uid://bbokxux8lc5kf" path="res://Assets/DungeonParts/Parts/bar_straight_B_short.gltf" id="21_mnkwo"]
+[ext_resource type="PackedScene" uid="uid://chm2phykvlhtw" path="res://Assets/DungeonParts/Parts/bar_straight_C.gltf" id="22_kppxt"]
+[ext_resource type="PackedScene" uid="uid://nwhcgq3j840h" path="res://Assets/DungeonParts/Parts/bar_straight_C_short.gltf" id="23_hjof4"]
+[ext_resource type="PackedScene" uid="uid://xo2muo7vi2yw" path="res://Assets/DungeonParts/Parts/bed_A_double.gltf" id="24_bk8lp"]
+[ext_resource type="PackedScene" uid="uid://dilqwl051v7nl" path="res://Assets/DungeonParts/Parts/bed_A_single.gltf" id="25_2u5ci"]
+[ext_resource type="PackedScene" uid="uid://c5rg5wlaf03da" path="res://Assets/DungeonParts/Parts/bed_A_stacked.gltf" id="26_fbw54"]
+[ext_resource type="PackedScene" uid="uid://na87mn2bxfve" path="res://Assets/DungeonParts/Parts/bed_B_double.gltf" id="27_8usjo"]
+[ext_resource type="PackedScene" uid="uid://brgjvorrd2c2w" path="res://Assets/DungeonParts/Parts/bed_B_single.gltf" id="28_sodma"]
+[ext_resource type="PackedScene" uid="uid://7sskyqa0hnfq" path="res://Assets/DungeonParts/Parts/bed_decorated.gltf" id="29_u6vak"]
+[ext_resource type="PackedScene" uid="uid://o3rcs6j8pg5x" path="res://Assets/DungeonParts/Parts/bed_floor.gltf" id="30_7vx82"]
+[ext_resource type="PackedScene" uid="uid://c8fgfl6gfd188" path="res://Assets/DungeonParts/Parts/bed_frame.gltf" id="31_bf3f1"]
+[ext_resource type="PackedScene" uid="uid://8v7givk0fijl" path="res://Assets/DungeonParts/Parts/bench.gltf" id="32_j7awi"]
+[ext_resource type="PackedScene" uid="uid://cqf0prwaqellb" path="res://Assets/DungeonParts/Parts/bookcase_double.gltf" id="33_3wwam"]
+[ext_resource type="PackedScene" uid="uid://bde1rwfn1q7ru" path="res://Assets/DungeonParts/Parts/bookcase_double_decoratedA.gltf" id="34_tl6xm"]
+[ext_resource type="PackedScene" uid="uid://dihnmk8q1iqyw" path="res://Assets/DungeonParts/Parts/bookcase_double_decoratedB.gltf" id="35_qxcjc"]
+[ext_resource type="PackedScene" uid="uid://dg80s66qm0m22" path="res://Assets/DungeonParts/Parts/bookcase_single.gltf" id="36_7x8qg"]
+[ext_resource type="PackedScene" uid="uid://c112bbl1s6j48" path="res://Assets/DungeonParts/Parts/bookcase_single_decoratedA.gltf" id="37_hfxnc"]
+[ext_resource type="PackedScene" uid="uid://d3b8b8j5emk8m" path="res://Assets/DungeonParts/Parts/bookcase_single_decoratedB.gltf" id="38_7t7oa"]
+[ext_resource type="PackedScene" uid="uid://b7aqic7bbspen" path="res://Assets/DungeonParts/Parts/book_brown.gltf" id="39_e0a85"]
+[ext_resource type="PackedScene" uid="uid://da3bym5b0w0i4" path="res://Assets/DungeonParts/Parts/book_grey.gltf" id="40_3px5m"]
+[ext_resource type="PackedScene" uid="uid://7grjbucsa6p4" path="res://Assets/DungeonParts/Parts/book_tan.gltf" id="41_e7eed"]
+[ext_resource type="PackedScene" uid="uid://bc4ae6vapn262" path="res://Assets/DungeonParts/Parts/bottle_A_brown.gltf" id="42_rjqh2"]
+[ext_resource type="PackedScene" uid="uid://bgkiy2pmwo81" path="res://Assets/DungeonParts/Parts/bottle_A_green.gltf" id="43_bnvkr"]
+[ext_resource type="PackedScene" uid="uid://prbkditsinsn" path="res://Assets/DungeonParts/Parts/bottle_A_labeled_brown.gltf" id="44_01rrr"]
+[ext_resource type="PackedScene" uid="uid://dqhup2gc2md08" path="res://Assets/DungeonParts/Parts/bottle_A_labeled_green.gltf" id="45_oc6nr"]
+[ext_resource type="PackedScene" uid="uid://bin1t6gv1o783" path="res://Assets/DungeonParts/Parts/bottle_B_brown.gltf" id="46_jr7yv"]
+[ext_resource type="PackedScene" uid="uid://8tavtftp4kmt" path="res://Assets/DungeonParts/Parts/bottle_B_green.gltf" id="47_6qrou"]
+[ext_resource type="PackedScene" uid="uid://dgkg6p4npke2d" path="res://Assets/DungeonParts/Parts/bottle_C_brown.gltf" id="48_4snm8"]
+[ext_resource type="PackedScene" uid="uid://dd28dk3w2woi7" path="res://Assets/DungeonParts/Parts/bottle_C_green.gltf" id="49_jv2bh"]
+[ext_resource type="PackedScene" uid="uid://dbyk45ttpog4c" path="res://Assets/DungeonParts/Parts/box_large.gltf" id="50_cc6x4"]
+[ext_resource type="PackedScene" uid="uid://dyby708j6lxjx" path="res://Assets/DungeonParts/Parts/box_small.gltf" id="51_jtv4m"]
+[ext_resource type="PackedScene" uid="uid://chykljg1s46eh" path="res://Assets/DungeonParts/Parts/box_small_decorated.gltf" id="52_m0j21"]
+[ext_resource type="PackedScene" uid="uid://xskpfx8wxtl8" path="res://Assets/DungeonParts/Parts/box_stacked.gltf" id="53_3btvx"]
+[ext_resource type="PackedScene" uid="uid://bxd6exx2uj8rv" path="res://Assets/DungeonParts/Parts/bucket.gltf" id="54_bqg8u"]
+[ext_resource type="PackedScene" uid="uid://mua1knvehcxe" path="res://Assets/DungeonParts/Parts/bucket_pickaxes.gltf" id="55_p7kvu"]
+[ext_resource type="PackedScene" uid="uid://bxhppv4bqtt4a" path="res://Assets/DungeonParts/Parts/candle.gltf" id="56_arto4"]
+[ext_resource type="PackedScene" uid="uid://giyeuqd0765v" path="res://Assets/DungeonParts/Parts/candle_lit.gltf" id="57_lgjlh"]
+[ext_resource type="PackedScene" uid="uid://bqfxfm2u77o56" path="res://Assets/DungeonParts/Parts/candle_melted.gltf" id="58_ag62s"]
+[ext_resource type="PackedScene" uid="uid://bgcqpo1jx31wo" path="res://Assets/DungeonParts/Parts/candle_thin.gltf" id="59_kfjrv"]
+[ext_resource type="PackedScene" uid="uid://bl731tr5umei1" path="res://Assets/DungeonParts/Parts/candle_thin_lit.gltf" id="60_56l4o"]
+[ext_resource type="PackedScene" uid="uid://cxsfrjoubck8a" path="res://Assets/DungeonParts/Parts/candle_triple.gltf" id="61_vaia2"]
+[ext_resource type="PackedScene" uid="uid://xd56vbwj6o1d" path="res://Assets/DungeonParts/Parts/chair.gltf" id="62_i2bus"]
+[ext_resource type="PackedScene" uid="uid://dowiswmelp7iy" path="res://Assets/DungeonParts/Parts/chest.gltf" id="63_5oopk"]
+[ext_resource type="PackedScene" uid="uid://dvhhs0xtfjue4" path="res://Assets/DungeonParts/Parts/chest_gold.gltf" id="64_5q414"]
+[ext_resource type="PackedScene" uid="uid://fgvutmg4rhud" path="res://Assets/DungeonParts/Parts/chest_large.gltf" id="65_kab52"]
+[ext_resource type="PackedScene" uid="uid://d0lld1njovnkt" path="res://Assets/DungeonParts/Parts/chest_large_gold.gltf" id="66_bfmyu"]
+[ext_resource type="PackedScene" uid="uid://drwlj6166fhce" path="res://Assets/DungeonParts/Parts/chest_mimic.gltf" id="67_dp0ht"]
+[ext_resource type="PackedScene" uid="uid://dnuyhm8o2g80a" path="res://Assets/DungeonParts/Parts/coin.gltf" id="68_jwh80"]
+[ext_resource type="PackedScene" uid="uid://bsnushdontnmv" path="res://Assets/DungeonParts/Parts/coin_stack_large.gltf" id="69_jtp22"]
+[ext_resource type="PackedScene" uid="uid://bcatpuhfx4tly" path="res://Assets/DungeonParts/Parts/coin_stack_medium.gltf" id="70_e6up3"]
+[ext_resource type="PackedScene" uid="uid://5pj05coh3tpx" path="res://Assets/DungeonParts/Parts/coin_stack_small.gltf" id="71_cya84"]
+[ext_resource type="PackedScene" uid="uid://c3nonfjwunp6" path="res://Assets/DungeonParts/Parts/column.gltf" id="72_17ult"]
+[ext_resource type="PackedScene" uid="uid://c0vvbn72pjaea" path="res://Assets/DungeonParts/Parts/crates_stacked.gltf" id="73_lpydn"]
+[ext_resource type="PackedScene" uid="uid://ekro5x627q6u" path="res://Assets/DungeonParts/Parts/crate_large.gltf" id="74_xykvs"]
+[ext_resource type="PackedScene" uid="uid://csun8ellqcdhg" path="res://Assets/DungeonParts/Parts/crate_large_decorated.gltf" id="75_t1t0m"]
+[ext_resource type="PackedScene" uid="uid://crtqkbcyb5cwn" path="res://Assets/DungeonParts/Parts/crate_small.gltf" id="76_w6y44"]
+[ext_resource type="PackedScene" uid="uid://dillbjirlra77" path="res://Assets/DungeonParts/Parts/keg.gltf" id="77_igdbp"]
+[ext_resource type="PackedScene" uid="uid://ba0pvge3bf078" path="res://Assets/DungeonParts/Parts/keg_decorated.gltf" id="78_hqydr"]
+[ext_resource type="PackedScene" uid="uid://cqx6q8ft5ghu8" path="res://Assets/DungeonParts/Parts/key.gltf" id="79_l288m"]
+[ext_resource type="PackedScene" uid="uid://bmeqvi30a75yq" path="res://Assets/DungeonParts/Parts/keyring.gltf" id="80_5uo3x"]
+[ext_resource type="PackedScene" uid="uid://d24opt8erf8jp" path="res://Assets/DungeonParts/Parts/keyring_hanging.gltf" id="81_33cl5"]
+[ext_resource type="PackedScene" uid="uid://bmufgco3avqny" path="res://Assets/DungeonParts/Parts/key_gold.gltf" id="82_y0pmw"]
+[ext_resource type="PackedScene" uid="uid://pxxrbqrt68i6" path="res://Assets/DungeonParts/Parts/pickaxe.gltf" id="83_awo1y"]
+[ext_resource type="PackedScene" uid="uid://bs7le7euisejb" path="res://Assets/DungeonParts/Parts/pickaxe_gold.gltf" id="84_iu0x1"]
+[ext_resource type="PackedScene" uid="uid://ea6j2l6wqt5a" path="res://Assets/DungeonParts/Parts/plate.gltf" id="85_ajefv"]
+[ext_resource type="PackedScene" uid="uid://c0krd75iut36e" path="res://Assets/DungeonParts/Parts/plate_food_A.gltf" id="86_t6vye"]
+[ext_resource type="PackedScene" uid="uid://bnuix7s5kl1q0" path="res://Assets/DungeonParts/Parts/plate_food_B.gltf" id="87_gh161"]
+[ext_resource type="PackedScene" uid="uid://b2yr1f318pw6d" path="res://Assets/DungeonParts/Parts/plate_small.gltf" id="88_d54hx"]
+[ext_resource type="PackedScene" uid="uid://bo8y7jigncr5q" path="res://Assets/DungeonParts/Parts/plate_stack.gltf" id="89_ltvrf"]
+[ext_resource type="PackedScene" uid="uid://c5n1sjwxxjrhs" path="res://Assets/DungeonParts/Parts/post.gltf" id="90_qaul6"]
+[ext_resource type="PackedScene" uid="uid://bhmo13wh5gdlh" path="res://Assets/DungeonParts/Parts/shelf_large.gltf" id="91_iu67j"]
+[ext_resource type="PackedScene" uid="uid://tbogfnvsl1dv" path="res://Assets/DungeonParts/Parts/shelf_small.gltf" id="92_hkv4u"]
+[ext_resource type="PackedScene" uid="uid://dwvirk48bnc1r" path="res://Assets/DungeonParts/Parts/shelf_small_books.gltf" id="93_c556l"]
+[ext_resource type="PackedScene" uid="uid://cicrg6lhtpv8q" path="res://Assets/DungeonParts/Parts/shelf_small_candles.gltf" id="94_2yiyg"]
+[ext_resource type="PackedScene" uid="uid://dg50ralw8ug3p" path="res://Assets/DungeonParts/Parts/shelves.gltf" id="95_djjyi"]
+[ext_resource type="PackedScene" uid="uid://dtl1dxcp8flbp" path="res://Assets/DungeonParts/Parts/shelves_decorated.gltf" id="96_fggik"]
+[ext_resource type="PackedScene" uid="uid://ftr1op7n6n64" path="res://Assets/DungeonParts/Parts/stool.gltf" id="97_ge678"]
+[ext_resource type="PackedScene" uid="uid://clllgk5vvvnqy" path="res://Assets/DungeonParts/Parts/stool_round.gltf" id="98_jqekb"]
+[ext_resource type="PackedScene" uid="uid://casi11tusqlqf" path="res://Assets/DungeonParts/Parts/sword_shield.gltf" id="99_x4j4j"]
+[ext_resource type="PackedScene" uid="uid://dm2tx3wj1c0an" path="res://Assets/DungeonParts/Parts/sword_shield_broken.gltf" id="100_o8gt1"]
+[ext_resource type="PackedScene" uid="uid://dniv00cs4fau1" path="res://Assets/DungeonParts/Parts/sword_shield_gold.gltf" id="101_0fxcl"]
+[ext_resource type="PackedScene" uid="uid://bfmwggi51wiad" path="res://Assets/DungeonParts/Parts/table_long.gltf" id="102_onlwr"]
+[ext_resource type="PackedScene" uid="uid://brihkkpyo6vxu" path="res://Assets/DungeonParts/Parts/table_long_broken.gltf" id="103_ja3w0"]
+[ext_resource type="PackedScene" uid="uid://caqwyu5pxy00j" path="res://Assets/DungeonParts/Parts/table_long_decorated_A.gltf" id="104_m5hc4"]
+[ext_resource type="PackedScene" uid="uid://bmytxpcwdurrj" path="res://Assets/DungeonParts/Parts/table_long_decorated_B.gltf" id="105_t3l77"]
+[ext_resource type="PackedScene" uid="uid://vpf21h2u6ww4" path="res://Assets/DungeonParts/Parts/table_long_decorated_C.gltf" id="106_dxyf3"]
+[ext_resource type="PackedScene" uid="uid://bl0mtbll4cbx5" path="res://Assets/DungeonParts/Parts/table_long_tablecloth.gltf" id="107_naquh"]
+[ext_resource type="PackedScene" uid="uid://lduugqifonl5" path="res://Assets/DungeonParts/Parts/table_long_tablecloth_decorated_A.gltf" id="108_wjuax"]
+[ext_resource type="PackedScene" uid="uid://xrhq1c3mtcjm" path="res://Assets/DungeonParts/Parts/table_medium.gltf" id="109_vsg84"]
+[ext_resource type="PackedScene" uid="uid://bholmjjn13h34" path="res://Assets/DungeonParts/Parts/table_medium_broken.gltf" id="110_7o2v5"]
+[ext_resource type="PackedScene" uid="uid://cy6fad372upxg" path="res://Assets/DungeonParts/Parts/table_medium_decorated_A.gltf" id="111_0og5k"]
+[ext_resource type="PackedScene" uid="uid://clktfveirkl1e" path="res://Assets/DungeonParts/Parts/table_medium_decorated_B.gltf" id="112_h3rek"]
+[ext_resource type="PackedScene" uid="uid://b6khqdwo7p5n0" path="res://Assets/DungeonParts/Parts/table_medium_tablecloth.gltf" id="113_kpsp1"]
+[ext_resource type="PackedScene" uid="uid://cr068obnopinn" path="res://Assets/DungeonParts/Parts/table_medium_tablecloth_decorated_B.gltf" id="114_5uv43"]
+[ext_resource type="PackedScene" uid="uid://bvkrea1ks43ut" path="res://Assets/DungeonParts/Parts/table_round_large.gltf" id="115_yio52"]
+[ext_resource type="PackedScene" uid="uid://bndgyd8k0e4k0" path="res://Assets/DungeonParts/Parts/table_round_medium.gltf" id="116_1y8td"]
+[ext_resource type="PackedScene" uid="uid://ds35g0ltyksxq" path="res://Assets/DungeonParts/Parts/table_round_small.gltf" id="117_yxvsn"]
+[ext_resource type="PackedScene" uid="uid://biost3yy5wov0" path="res://Assets/DungeonParts/Parts/table_small.gltf" id="118_juy46"]
+[ext_resource type="PackedScene" uid="uid://bldimyrkoepwf" path="res://Assets/DungeonParts/Parts/table_small_decorated_A.gltf" id="119_vmyj4"]
+[ext_resource type="PackedScene" uid="uid://ttby7c4ywdhd" path="res://Assets/DungeonParts/Parts/table_small_decorated_B.gltf" id="120_cfo1u"]
+[ext_resource type="PackedScene" uid="uid://b5yxdp4eo1800" path="res://Assets/DungeonParts/Parts/table_small_decorated_C.gltf" id="121_muycs"]
+[ext_resource type="PackedScene" uid="uid://bh1ewvkk6m0a1" path="res://Assets/DungeonParts/Parts/torch.gltf" id="122_4jjav"]
+[ext_resource type="PackedScene" uid="uid://c8ac0xdo3ef0v" path="res://Assets/DungeonParts/Parts/torch_lit.gltf" id="123_3jckk"]
+[ext_resource type="PackedScene" uid="uid://bmd10u2tkw7rf" path="res://Assets/DungeonParts/Parts/torch_mounted.gltf" id="124_4g2ud"]
+[ext_resource type="PackedScene" uid="uid://kwgt2snyhjw2" path="res://Assets/DungeonParts/Parts/trunk_large_A.gltf" id="125_jhfy8"]
+[ext_resource type="PackedScene" uid="uid://rfsfdnsoaqyb" path="res://Assets/DungeonParts/Parts/trunk_large_B.gltf" id="126_5ws5f"]
+[ext_resource type="PackedScene" uid="uid://lu13mw0eud7t" path="res://Assets/DungeonParts/Parts/trunk_large_C.gltf" id="127_gxkbk"]
+[ext_resource type="PackedScene" uid="uid://cvurvpb1ykjl" path="res://Assets/DungeonParts/Parts/trunk_medium_A.gltf" id="128_x0q1x"]
+[ext_resource type="PackedScene" uid="uid://2q7q74dkklcv" path="res://Assets/DungeonParts/Parts/trunk_medium_B.gltf" id="129_wny67"]
+[ext_resource type="PackedScene" uid="uid://bqen4eidw03kf" path="res://Assets/DungeonParts/Parts/trunk_medium_C.gltf" id="130_d6ve8"]
+[ext_resource type="PackedScene" uid="uid://suv7byqit2j2" path="res://Assets/DungeonParts/Parts/trunk_small_A.gltf" id="131_a7gni"]
+[ext_resource type="PackedScene" uid="uid://cimdmw7eygbne" path="res://Assets/DungeonParts/Parts/trunk_small_B.gltf" id="132_26ef1"]
+[ext_resource type="PackedScene" uid="uid://xhpowp5rw8he" path="res://Assets/DungeonParts/Parts/trunk_small_C.gltf" id="133_hoagt"]
+
+[node name="DungeonProps" type="Node3D"]
+
+[node name="barrel_large2" parent="." instance=ExtResource("1_oh5sm")]
+
+[node name="barrel_large_decorated2" parent="." instance=ExtResource("2_xtmev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="barrel_small2" parent="." instance=ExtResource("3_rctvk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="barrel_small_stack2" parent="." instance=ExtResource("4_2obx0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="barrier2" parent="." instance=ExtResource("5_q7e7k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="barrier_column2" parent="." instance=ExtResource("6_55iv4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="barrier_colum_half2" parent="." instance=ExtResource("7_echii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="barrier_corner2" parent="." instance=ExtResource("8_ee36t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="barrier_half2" parent="." instance=ExtResource("9_m3s2a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="bartop_A_large2" parent="." instance=ExtResource("10_2piqx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="bartop_A_medium2" parent="." instance=ExtResource("11_ex81k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="bartop_A_small2" parent="." instance=ExtResource("12_7ue3h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 10)
+
+[node name="bartop_B_large2" parent="." instance=ExtResource("13_lvva5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 10)
+
+[node name="bartop_B_medium2" parent="." instance=ExtResource("14_01s5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 10)
+
+[node name="bartop_B_small2" parent="." instance=ExtResource("15_0tsfn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 10)
+
+[node name="bar_innercorner2" parent="." instance=ExtResource("16_727dt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 10)
+
+[node name="bar_outercorner2" parent="." instance=ExtResource("17_s4sh6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 10)
+
+[node name="bar_straight_A2" parent="." instance=ExtResource("18_ws0xu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 10)
+
+[node name="bar_straight_A_short2" parent="." instance=ExtResource("19_534ba")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 10)
+
+[node name="bar_straight_B2" parent="." instance=ExtResource("20_5wvmq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 10)
+
+[node name="bar_straight_B_short2" parent="." instance=ExtResource("21_mnkwo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 10)
+
+[node name="bar_straight_C2" parent="." instance=ExtResource("22_kppxt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 10)
+
+[node name="bar_straight_C_short2" parent="." instance=ExtResource("23_hjof4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 10)
+
+[node name="bed_A_double2" parent="." instance=ExtResource("24_bk8lp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 10)
+
+[node name="bed_A_single2" parent="." instance=ExtResource("25_2u5ci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 10)
+
+[node name="bed_A_stacked2" parent="." instance=ExtResource("26_fbw54")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 10)
+
+[node name="bed_B_double2" parent="." instance=ExtResource("27_8usjo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="bed_B_single2" parent="." instance=ExtResource("28_sodma")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 20)
+
+[node name="bed_decorated2" parent="." instance=ExtResource("29_u6vak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20)
+
+[node name="bed_floor2" parent="." instance=ExtResource("30_7vx82")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 20)
+
+[node name="bed_frame2" parent="." instance=ExtResource("31_bf3f1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 20)
+
+[node name="bench2" parent="." instance=ExtResource("32_j7awi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 20)
+
+[node name="bookcase_double2" parent="." instance=ExtResource("33_3wwam")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 20)
+
+[node name="bookcase_double_decoratedA2" parent="." instance=ExtResource("34_tl6xm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 20)
+
+[node name="bookcase_double_decoratedB2" parent="." instance=ExtResource("35_qxcjc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 20)
+
+[node name="bookcase_single2" parent="." instance=ExtResource("36_7x8qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 20)
+
+[node name="bookcase_single_decoratedA2" parent="." instance=ExtResource("37_hfxnc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 20)
+
+[node name="bookcase_single_decoratedB2" parent="." instance=ExtResource("38_7t7oa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 20)
+
+[node name="book_brown2" parent="." instance=ExtResource("39_e0a85")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 20)
+
+[node name="book_grey2" parent="." instance=ExtResource("40_3px5m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 20)
+
+[node name="book_tan2" parent="." instance=ExtResource("41_e7eed")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 20)
+
+[node name="bottle_A_brown2" parent="." instance=ExtResource("42_rjqh2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 20)
+
+[node name="bottle_A_green2" parent="." instance=ExtResource("43_bnvkr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 20)
+
+[node name="bottle_A_labeled_brown2" parent="." instance=ExtResource("44_01rrr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30)
+
+[node name="bottle_A_labeled_green2" parent="." instance=ExtResource("45_oc6nr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 30)
+
+[node name="bottle_B_brown2" parent="." instance=ExtResource("46_jr7yv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 30)
+
+[node name="bottle_B_green2" parent="." instance=ExtResource("47_6qrou")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 30)
+
+[node name="bottle_C_brown2" parent="." instance=ExtResource("48_4snm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 30)
+
+[node name="bottle_C_green2" parent="." instance=ExtResource("49_jv2bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 30)
+
+[node name="box_large2" parent="." instance=ExtResource("50_cc6x4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 30)
+
+[node name="box_small2" parent="." instance=ExtResource("51_jtv4m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 30)
+
+[node name="box_small_decorated2" parent="." instance=ExtResource("52_m0j21")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 30)
+
+[node name="box_stacked2" parent="." instance=ExtResource("53_3btvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 30)
+
+[node name="bucket2" parent="." instance=ExtResource("54_bqg8u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 30)
+
+[node name="bucket_pickaxes2" parent="." instance=ExtResource("55_p7kvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 30)
+
+[node name="candle2" parent="." instance=ExtResource("56_arto4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 30)
+
+[node name="candle_lit2" parent="." instance=ExtResource("57_lgjlh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 30)
+
+[node name="candle_melted2" parent="." instance=ExtResource("58_ag62s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 30)
+
+[node name="candle_thin2" parent="." instance=ExtResource("59_kfjrv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 30)
+
+[node name="candle_thin_lit2" parent="." instance=ExtResource("60_56l4o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 30)
+
+[node name="candle_triple2" parent="." instance=ExtResource("61_vaia2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 40)
+
+[node name="chair2" parent="." instance=ExtResource("62_i2bus")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 40)
+
+[node name="chest2" parent="." instance=ExtResource("63_5oopk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 40)
+
+[node name="chest_gold2" parent="." instance=ExtResource("64_5q414")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 40)
+
+[node name="chest_large2" parent="." instance=ExtResource("65_kab52")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 40)
+
+[node name="chest_large_gold2" parent="." instance=ExtResource("66_bfmyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 40)
+
+[node name="chest_mimic2" parent="." instance=ExtResource("67_dp0ht")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 40)
+
+[node name="coin2" parent="." instance=ExtResource("68_jwh80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 40)
+
+[node name="coin_stack_large2" parent="." instance=ExtResource("69_jtp22")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 40)
+
+[node name="coin_stack_medium2" parent="." instance=ExtResource("70_e6up3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 40)
+
+[node name="coin_stack_small2" parent="." instance=ExtResource("71_cya84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 40)
+
+[node name="column2" parent="." instance=ExtResource("72_17ult")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 40)
+
+[node name="crates_stacked2" parent="." instance=ExtResource("73_lpydn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 40)
+
+[node name="crate_large2" parent="." instance=ExtResource("74_xykvs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 40)
+
+[node name="crate_large_decorated2" parent="." instance=ExtResource("75_t1t0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 40)
+
+[node name="crate_small2" parent="." instance=ExtResource("76_w6y44")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 40)
+
+[node name="keg2" parent="." instance=ExtResource("77_igdbp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 50)
+
+[node name="keg_decorated2" parent="." instance=ExtResource("78_hqydr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 50)
+
+[node name="key2" parent="." instance=ExtResource("79_l288m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 50)
+
+[node name="keyring2" parent="." instance=ExtResource("80_5uo3x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 50)
+
+[node name="keyring_hanging2" parent="." instance=ExtResource("81_33cl5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 50)
+
+[node name="key_gold2" parent="." instance=ExtResource("82_y0pmw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 50)
+
+[node name="pickaxe2" parent="." instance=ExtResource("83_awo1y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 50)
+
+[node name="pickaxe_gold2" parent="." instance=ExtResource("84_iu0x1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 50)
+
+[node name="plate2" parent="." instance=ExtResource("85_ajefv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 50)
+
+[node name="plate_food_A2" parent="." instance=ExtResource("86_t6vye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 50)
+
+[node name="plate_food_B2" parent="." instance=ExtResource("87_gh161")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 50)
+
+[node name="plate_small2" parent="." instance=ExtResource("88_d54hx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 50)
+
+[node name="plate_stack2" parent="." instance=ExtResource("89_ltvrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 50)
+
+[node name="post2" parent="." instance=ExtResource("90_qaul6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 50)
+
+[node name="shelf_large2" parent="." instance=ExtResource("91_iu67j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 60)
+
+[node name="shelf_small2" parent="." instance=ExtResource("92_hkv4u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 60)
+
+[node name="shelf_small_books2" parent="." instance=ExtResource("93_c556l")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 60)
+
+[node name="shelf_small_candles2" parent="." instance=ExtResource("94_2yiyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 60)
+
+[node name="shelves2" parent="." instance=ExtResource("95_djjyi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 60)
+
+[node name="shelves_decorated2" parent="." instance=ExtResource("96_fggik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 60)
+
+[node name="stool2" parent="." instance=ExtResource("97_ge678")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 70)
+
+[node name="stool_round2" parent="." instance=ExtResource("98_jqekb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 70)
+
+[node name="sword_shield2" parent="." instance=ExtResource("99_x4j4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 70)
+
+[node name="sword_shield_broken2" parent="." instance=ExtResource("100_o8gt1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 70)
+
+[node name="sword_shield_gold2" parent="." instance=ExtResource("101_0fxcl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 70)
+
+[node name="table_long2" parent="." instance=ExtResource("102_onlwr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 70)
+
+[node name="table_long_broken2" parent="." instance=ExtResource("103_ja3w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 70)
+
+[node name="table_long_decorated_A2" parent="." instance=ExtResource("104_m5hc4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 70)
+
+[node name="table_long_decorated_B2" parent="." instance=ExtResource("105_t3l77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 70)
+
+[node name="table_long_decorated_C2" parent="." instance=ExtResource("106_dxyf3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 70)
+
+[node name="table_long_tablecloth2" parent="." instance=ExtResource("107_naquh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 70)
+
+[node name="table_long_tablecloth_decorated_A2" parent="." instance=ExtResource("108_wjuax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 70)
+
+[node name="table_medium2" parent="." instance=ExtResource("109_vsg84")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 70)
+
+[node name="table_medium_broken2" parent="." instance=ExtResource("110_7o2v5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 80)
+
+[node name="table_medium_decorated_A2" parent="." instance=ExtResource("111_0og5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 80)
+
+[node name="table_medium_decorated_B2" parent="." instance=ExtResource("112_h3rek")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 80)
+
+[node name="table_medium_tablecloth2" parent="." instance=ExtResource("113_kpsp1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 80)
+
+[node name="table_medium_tablecloth_decorated_B2" parent="." instance=ExtResource("114_5uv43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 80)
+
+[node name="table_round_large2" parent="." instance=ExtResource("115_yio52")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 80)
+
+[node name="table_round_medium2" parent="." instance=ExtResource("116_1y8td")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 80)
+
+[node name="table_round_small2" parent="." instance=ExtResource("117_yxvsn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 80)
+
+[node name="table_small2" parent="." instance=ExtResource("118_juy46")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 80)
+
+[node name="table_small_decorated_A2" parent="." instance=ExtResource("119_vmyj4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 80)
+
+[node name="table_small_decorated_B2" parent="." instance=ExtResource("120_cfo1u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 80)
+
+[node name="table_small_decorated_C2" parent="." instance=ExtResource("121_muycs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 80)
+
+[node name="torch2" parent="." instance=ExtResource("122_4jjav")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 80)
+
+[node name="torch_lit2" parent="." instance=ExtResource("123_3jckk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 80)
+
+[node name="torch_mounted2" parent="." instance=ExtResource("124_4g2ud")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 80)
+
+[node name="trunk_large_A2" parent="." instance=ExtResource("125_jhfy8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 80)
+
+[node name="trunk_large_B2" parent="." instance=ExtResource("126_5ws5f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 80)
+
+[node name="trunk_large_C2" parent="." instance=ExtResource("127_gxkbk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 90)
+
+[node name="trunk_medium_A2" parent="." instance=ExtResource("128_x0q1x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 90)
+
+[node name="trunk_medium_B2" parent="." instance=ExtResource("129_wny67")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 90)
+
+[node name="trunk_medium_C2" parent="." instance=ExtResource("130_d6ve8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 90)
+
+[node name="trunk_small_A2" parent="." instance=ExtResource("131_a7gni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 90)
+
+[node name="trunk_small_B2" parent="." instance=ExtResource("132_26ef1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 90)
+
+[node name="trunk_small_C2" parent="." instance=ExtResource("133_hoagt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 90)
+
+[editable path="barrel_large2"]
+[editable path="barrel_large_decorated2"]
+[editable path="barrel_small2"]
+[editable path="barrel_small_stack2"]
+[editable path="barrier2"]
+[editable path="barrier_column2"]
+[editable path="barrier_colum_half2"]
+[editable path="barrier_corner2"]
+[editable path="barrier_half2"]
+[editable path="bartop_A_large2"]
+[editable path="bartop_A_medium2"]
+[editable path="bartop_A_small2"]
+[editable path="bartop_B_large2"]
+[editable path="bartop_B_medium2"]
+[editable path="bartop_B_small2"]
+[editable path="bar_innercorner2"]
+[editable path="bar_outercorner2"]
+[editable path="bar_straight_A2"]
+[editable path="bar_straight_A_short2"]
+[editable path="bar_straight_B2"]
+[editable path="bar_straight_B_short2"]
+[editable path="bar_straight_C2"]
+[editable path="bar_straight_C_short2"]
+[editable path="bed_A_double2"]
+[editable path="bed_A_single2"]
+[editable path="bed_A_stacked2"]
+[editable path="bed_B_double2"]
+[editable path="bed_B_single2"]
+[editable path="bed_decorated2"]
+[editable path="bed_floor2"]
+[editable path="bed_frame2"]
+[editable path="bench2"]
+[editable path="bookcase_double2"]
+[editable path="bookcase_double_decoratedA2"]
+[editable path="bookcase_double_decoratedB2"]
+[editable path="bookcase_single2"]
+[editable path="bookcase_single_decoratedA2"]
+[editable path="bookcase_single_decoratedB2"]
+[editable path="book_brown2"]
+[editable path="book_grey2"]
+[editable path="book_tan2"]
+[editable path="bottle_A_brown2"]
+[editable path="bottle_A_green2"]
+[editable path="bottle_A_labeled_brown2"]
+[editable path="bottle_A_labeled_green2"]
+[editable path="bottle_B_brown2"]
+[editable path="bottle_B_green2"]
+[editable path="bottle_C_brown2"]
+[editable path="bottle_C_green2"]
+[editable path="box_large2"]
+[editable path="box_small2"]
+[editable path="box_small_decorated2"]
+[editable path="box_stacked2"]
+[editable path="bucket2"]
+[editable path="bucket_pickaxes2"]
+[editable path="candle2"]
+[editable path="candle_lit2"]
+[editable path="candle_melted2"]
+[editable path="candle_thin2"]
+[editable path="candle_thin_lit2"]
+[editable path="candle_triple2"]
+[editable path="chair2"]
+[editable path="chest2"]
+[editable path="chest_gold2"]
+[editable path="chest_large2"]
+[editable path="chest_large_gold2"]
+[editable path="chest_mimic2"]
+[editable path="coin2"]
+[editable path="coin_stack_large2"]
+[editable path="coin_stack_medium2"]
+[editable path="coin_stack_small2"]
+[editable path="column2"]
+[editable path="crates_stacked2"]
+[editable path="crate_large2"]
+[editable path="crate_large_decorated2"]
+[editable path="crate_small2"]
+[editable path="keg2"]
+[editable path="keg_decorated2"]
+[editable path="key2"]
+[editable path="keyring2"]
+[editable path="keyring_hanging2"]
+[editable path="key_gold2"]
+[editable path="pickaxe2"]
+[editable path="pickaxe_gold2"]
+[editable path="plate2"]
+[editable path="plate_food_A2"]
+[editable path="plate_food_B2"]
+[editable path="plate_small2"]
+[editable path="plate_stack2"]
+[editable path="post2"]
+[editable path="shelf_large2"]
+[editable path="shelf_small2"]
+[editable path="shelf_small_books2"]
+[editable path="shelf_small_candles2"]
+[editable path="shelves2"]
+[editable path="shelves_decorated2"]
+[editable path="stool2"]
+[editable path="stool_round2"]
+[editable path="sword_shield2"]
+[editable path="sword_shield_broken2"]
+[editable path="sword_shield_gold2"]
+[editable path="table_long2"]
+[editable path="table_long_broken2"]
+[editable path="table_long_decorated_A2"]
+[editable path="table_long_decorated_B2"]
+[editable path="table_long_decorated_C2"]
+[editable path="table_long_tablecloth2"]
+[editable path="table_long_tablecloth_decorated_A2"]
+[editable path="table_medium2"]
+[editable path="table_medium_broken2"]
+[editable path="table_medium_decorated_A2"]
+[editable path="table_medium_decorated_B2"]
+[editable path="table_medium_tablecloth2"]
+[editable path="table_medium_tablecloth_decorated_B2"]
+[editable path="table_round_large2"]
+[editable path="table_round_medium2"]
+[editable path="table_round_small2"]
+[editable path="table_small2"]
+[editable path="table_small_decorated_A2"]
+[editable path="table_small_decorated_B2"]
+[editable path="table_small_decorated_C2"]
+[editable path="torch2"]
+[editable path="torch_lit2"]
+[editable path="torch_mounted2"]
+[editable path="trunk_large_A2"]
+[editable path="trunk_large_B2"]
+[editable path="trunk_large_C2"]
+[editable path="trunk_medium_A2"]
+[editable path="trunk_medium_B2"]
+[editable path="trunk_medium_C2"]
+[editable path="trunk_small_A2"]
+[editable path="trunk_small_B2"]
+[editable path="trunk_small_C2"]

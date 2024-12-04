@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://44ny436shuuk"]
+
+[ext_resource type="PackedScene" uid="uid://novycgu0enec" path="res://Assets/DungeonParts/Parts/pillar.gltf" id="1_fkuf1"]
+[ext_resource type="PackedScene" uid="uid://btojmvbwtr61a" path="res://Assets/DungeonParts/Parts/pillar_decorated.gltf" id="2_j0jev"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ex4q4"]
+points = PackedVector3Array(0.749123, 3.88691, 0.277176, -0.71739, 0.133372, -0.30891, -0.700854, 0.175695, 0.325446, 0.749123, 0.11309, 0.277176, -0.30891, 3.86663, -0.71739, -0.301636, 3.8243, 0.724663, 0.325446, 0.175695, -0.700854, 0.277176, 0.11309, 0.749123, -0.71739, 3.86663, -0.30891, 0.724663, 3.8243, -0.301636, 0.277176, 3.88691, 0.749123, -0.30891, 0.133372, -0.71739, 0.325446, 3.8243, -0.700854, -0.700854, 3.8243, 0.325446, 0.724663, 0.175695, -0.301636, -0.301636, 0.175695, 0.724663)
+
+[node name="DungeonPillars" type="Node3D"]
+
+[node name="pillar2" parent="." instance=ExtResource("1_fkuf1")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pillar2/pillar" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pillar2/pillar/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_ex4q4")
+
+[node name="pillar_decorated2" parent="." instance=ExtResource("2_j0jev")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="pillar_decorated2/pillar_decorated" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="pillar_decorated2/pillar_decorated/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_ex4q4")
+
+[editable path="pillar2"]
+[editable path="pillar_decorated2"]

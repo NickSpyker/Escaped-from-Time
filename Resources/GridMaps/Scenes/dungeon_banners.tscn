@@ -1,0 +1,214 @@
+[gd_scene load_steps=43 format=3 uid="uid://be44qwp6wv0l5"]
+
+[ext_resource type="PackedScene" uid="uid://bwij145hfb76d" path="res://Assets/DungeonParts/Parts/banner_blue.gltf" id="1_xs2ay"]
+[ext_resource type="PackedScene" uid="uid://cgg7o2rsy03gw" path="res://Assets/DungeonParts/Parts/banner_brown.gltf" id="2_u5jjf"]
+[ext_resource type="PackedScene" uid="uid://bbtato2mxuago" path="res://Assets/DungeonParts/Parts/banner_green.gltf" id="3_iodak"]
+[ext_resource type="PackedScene" uid="uid://dc1oxrty20u6s" path="res://Assets/DungeonParts/Parts/banner_patternA_blue.gltf" id="4_3c4e6"]
+[ext_resource type="PackedScene" uid="uid://berq7lyqx3gvn" path="res://Assets/DungeonParts/Parts/banner_patternA_brown.gltf" id="5_8w76n"]
+[ext_resource type="PackedScene" uid="uid://bk5mxoibt00hd" path="res://Assets/DungeonParts/Parts/banner_patternA_green.gltf" id="6_7kp0e"]
+[ext_resource type="PackedScene" uid="uid://3n0oai6mytes" path="res://Assets/DungeonParts/Parts/banner_patternA_red.gltf" id="7_djklh"]
+[ext_resource type="PackedScene" uid="uid://dtt74ldwxb724" path="res://Assets/DungeonParts/Parts/banner_patternA_white.gltf" id="8_nk50j"]
+[ext_resource type="PackedScene" uid="uid://dxn8626bf13ql" path="res://Assets/DungeonParts/Parts/banner_patternA_yellow.gltf" id="9_273jc"]
+[ext_resource type="PackedScene" uid="uid://787bi3pereen" path="res://Assets/DungeonParts/Parts/banner_patternB_blue.gltf" id="10_03dkv"]
+[ext_resource type="PackedScene" uid="uid://c7k8k70stieju" path="res://Assets/DungeonParts/Parts/banner_patternB_brown.gltf" id="11_wug4a"]
+[ext_resource type="PackedScene" uid="uid://bkvm6ljefdd8n" path="res://Assets/DungeonParts/Parts/banner_patternB_green.gltf" id="12_btidy"]
+[ext_resource type="PackedScene" uid="uid://dycl7jr6fomn" path="res://Assets/DungeonParts/Parts/banner_patternB_red.gltf" id="13_rk28b"]
+[ext_resource type="PackedScene" uid="uid://da43pkn5w5anr" path="res://Assets/DungeonParts/Parts/banner_patternB_white.gltf" id="14_5r28j"]
+[ext_resource type="PackedScene" uid="uid://gnlr2pn1qy66" path="res://Assets/DungeonParts/Parts/banner_patternB_yellow.gltf" id="15_dmhys"]
+[ext_resource type="PackedScene" uid="uid://d0ldxnactdvs1" path="res://Assets/DungeonParts/Parts/banner_patternC_blue.gltf" id="16_76deb"]
+[ext_resource type="PackedScene" uid="uid://dklbtw3h7obq6" path="res://Assets/DungeonParts/Parts/banner_patternC_brown.gltf" id="17_yt1ys"]
+[ext_resource type="PackedScene" uid="uid://bihbtutaxdvwy" path="res://Assets/DungeonParts/Parts/banner_patternC_green.gltf" id="18_8rsng"]
+[ext_resource type="PackedScene" uid="uid://f8y3otimkkt0" path="res://Assets/DungeonParts/Parts/banner_patternC_red.gltf" id="19_0xcac"]
+[ext_resource type="PackedScene" uid="uid://p3tw633pkuur" path="res://Assets/DungeonParts/Parts/banner_patternC_white.gltf" id="20_u2m22"]
+[ext_resource type="PackedScene" uid="uid://bjonmkyflqh2w" path="res://Assets/DungeonParts/Parts/banner_patternC_yellow.gltf" id="21_pkywk"]
+[ext_resource type="PackedScene" uid="uid://cxlnjvqrmo17n" path="res://Assets/DungeonParts/Parts/banner_red.gltf" id="22_6c3hk"]
+[ext_resource type="PackedScene" uid="uid://bwlpaiy0ctlxh" path="res://Assets/DungeonParts/Parts/banner_shield_blue.gltf" id="23_21tbj"]
+[ext_resource type="PackedScene" uid="uid://dryqgjotl1u2g" path="res://Assets/DungeonParts/Parts/banner_shield_brown.gltf" id="24_cjekb"]
+[ext_resource type="PackedScene" uid="uid://bjwyvpfseq3qp" path="res://Assets/DungeonParts/Parts/banner_shield_green.gltf" id="25_0b45y"]
+[ext_resource type="PackedScene" uid="uid://d1yup5sdgtmj4" path="res://Assets/DungeonParts/Parts/banner_shield_red.gltf" id="26_43kam"]
+[ext_resource type="PackedScene" uid="uid://2h645s3p00fg" path="res://Assets/DungeonParts/Parts/banner_shield_white.gltf" id="27_khxpe"]
+[ext_resource type="PackedScene" uid="uid://d4a1sqkd3lv76" path="res://Assets/DungeonParts/Parts/banner_shield_yellow.gltf" id="28_67ap8"]
+[ext_resource type="PackedScene" uid="uid://b2ufqpx7x0ep8" path="res://Assets/DungeonParts/Parts/banner_thin_blue.gltf" id="29_ns1aj"]
+[ext_resource type="PackedScene" uid="uid://ckwp3yk8wkwx0" path="res://Assets/DungeonParts/Parts/banner_thin_brown.gltf" id="30_t12c1"]
+[ext_resource type="PackedScene" uid="uid://bgukruuxeemfw" path="res://Assets/DungeonParts/Parts/banner_thin_green.gltf" id="31_tjc0h"]
+[ext_resource type="PackedScene" uid="uid://bfl3770ij1mrg" path="res://Assets/DungeonParts/Parts/banner_thin_red.gltf" id="32_p81ik"]
+[ext_resource type="PackedScene" uid="uid://bmndqfb0t5ng4" path="res://Assets/DungeonParts/Parts/banner_thin_white.gltf" id="33_6kqfc"]
+[ext_resource type="PackedScene" uid="uid://c4104e72amwon" path="res://Assets/DungeonParts/Parts/banner_thin_yellow.gltf" id="34_q2437"]
+[ext_resource type="PackedScene" uid="uid://cr2k4mmq8hwii" path="res://Assets/DungeonParts/Parts/banner_triple_blue.gltf" id="35_v3101"]
+[ext_resource type="PackedScene" uid="uid://dtn74eg6h7gf1" path="res://Assets/DungeonParts/Parts/banner_triple_brown.gltf" id="36_x77qf"]
+[ext_resource type="PackedScene" uid="uid://sxj4o3a67sxx" path="res://Assets/DungeonParts/Parts/banner_triple_green.gltf" id="37_0ih01"]
+[ext_resource type="PackedScene" uid="uid://y24ee1wcbnnm" path="res://Assets/DungeonParts/Parts/banner_triple_red.gltf" id="38_gon0c"]
+[ext_resource type="PackedScene" uid="uid://ddgivt6a7wmck" path="res://Assets/DungeonParts/Parts/banner_triple_white.gltf" id="39_yqdfx"]
+[ext_resource type="PackedScene" uid="uid://bklks0mvd6smn" path="res://Assets/DungeonParts/Parts/banner_triple_yellow.gltf" id="40_xes0r"]
+[ext_resource type="PackedScene" uid="uid://bf10e0u2ueqqc" path="res://Assets/DungeonParts/Parts/banner_white.gltf" id="41_vaf5w"]
+[ext_resource type="PackedScene" uid="uid://bh2xprqhkg85b" path="res://Assets/DungeonParts/Parts/banner_yellow.gltf" id="42_0h2pk"]
+
+[node name="DungeonBanners" type="Node3D"]
+
+[node name="banner_blue2" parent="." instance=ExtResource("1_xs2ay")]
+
+[node name="banner_brown2" parent="." instance=ExtResource("2_u5jjf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="banner_green2" parent="." instance=ExtResource("3_iodak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="banner_patternA_blue2" parent="." instance=ExtResource("4_3c4e6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="banner_patternA_brown2" parent="." instance=ExtResource("5_8w76n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="banner_patternA_green2" parent="." instance=ExtResource("6_7kp0e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="banner_patternA_red2" parent="." instance=ExtResource("7_djklh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="banner_patternA_white2" parent="." instance=ExtResource("8_nk50j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="banner_patternA_yellow2" parent="." instance=ExtResource("9_273jc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="banner_patternB_blue2" parent="." instance=ExtResource("10_03dkv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 0)
+
+[node name="banner_patternB_brown2" parent="." instance=ExtResource("11_wug4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0)
+
+[node name="banner_patternB_green2" parent="." instance=ExtResource("12_btidy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 0)
+
+[node name="banner_patternB_red2" parent="." instance=ExtResource("13_rk28b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 0)
+
+[node name="banner_patternB_white2" parent="." instance=ExtResource("14_5r28j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 0)
+
+[node name="banner_patternB_yellow2" parent="." instance=ExtResource("15_dmhys")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 0)
+
+[node name="banner_patternC_blue2" parent="." instance=ExtResource("16_76deb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 0)
+
+[node name="banner_patternC_brown2" parent="." instance=ExtResource("17_yt1ys")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 0)
+
+[node name="banner_patternC_green2" parent="." instance=ExtResource("18_8rsng")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10)
+
+[node name="banner_patternC_red2" parent="." instance=ExtResource("19_0xcac")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
+
+[node name="banner_patternC_white2" parent="." instance=ExtResource("20_u2m22")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 10)
+
+[node name="banner_patternC_yellow2" parent="." instance=ExtResource("21_pkywk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 10)
+
+[node name="banner_red2" parent="." instance=ExtResource("22_6c3hk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 10)
+
+[node name="banner_shield_blue2" parent="." instance=ExtResource("23_21tbj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 10)
+
+[node name="banner_shield_brown2" parent="." instance=ExtResource("24_cjekb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 10)
+
+[node name="banner_shield_green2" parent="." instance=ExtResource("25_0b45y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 10)
+
+[node name="banner_shield_red2" parent="." instance=ExtResource("26_43kam")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 10)
+
+[node name="banner_shield_white2" parent="." instance=ExtResource("27_khxpe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 10)
+
+[node name="banner_shield_yellow2" parent="." instance=ExtResource("28_67ap8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 10)
+
+[node name="banner_thin_blue2" parent="." instance=ExtResource("29_ns1aj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 10)
+
+[node name="banner_thin_brown2" parent="." instance=ExtResource("30_t12c1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 10)
+
+[node name="banner_thin_green2" parent="." instance=ExtResource("31_tjc0h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 10)
+
+[node name="banner_thin_red2" parent="." instance=ExtResource("32_p81ik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 10)
+
+[node name="banner_thin_white2" parent="." instance=ExtResource("33_6kqfc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 150, 0, 10)
+
+[node name="banner_thin_yellow2" parent="." instance=ExtResource("34_q2437")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, 10)
+
+[node name="banner_triple_blue2" parent="." instance=ExtResource("35_v3101")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 20)
+
+[node name="banner_triple_brown2" parent="." instance=ExtResource("36_x77qf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 20)
+
+[node name="banner_triple_green2" parent="." instance=ExtResource("37_0ih01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20)
+
+[node name="banner_triple_red2" parent="." instance=ExtResource("38_gon0c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 20)
+
+[node name="banner_triple_white2" parent="." instance=ExtResource("39_yqdfx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 20)
+
+[node name="banner_triple_yellow2" parent="." instance=ExtResource("40_xes0r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 20)
+
+[node name="banner_white2" parent="." instance=ExtResource("41_vaf5w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 20)
+
+[node name="banner_yellow2" parent="." instance=ExtResource("42_0h2pk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 20)
+
+[editable path="banner_blue2"]
+[editable path="banner_brown2"]
+[editable path="banner_green2"]
+[editable path="banner_patternA_blue2"]
+[editable path="banner_patternA_brown2"]
+[editable path="banner_patternA_green2"]
+[editable path="banner_patternA_red2"]
+[editable path="banner_patternA_white2"]
+[editable path="banner_patternA_yellow2"]
+[editable path="banner_patternB_blue2"]
+[editable path="banner_patternB_brown2"]
+[editable path="banner_patternB_green2"]
+[editable path="banner_patternB_red2"]
+[editable path="banner_patternB_white2"]
+[editable path="banner_patternB_yellow2"]
+[editable path="banner_patternC_blue2"]
+[editable path="banner_patternC_brown2"]
+[editable path="banner_patternC_green2"]
+[editable path="banner_patternC_red2"]
+[editable path="banner_patternC_white2"]
+[editable path="banner_patternC_yellow2"]
+[editable path="banner_red2"]
+[editable path="banner_shield_blue2"]
+[editable path="banner_shield_brown2"]
+[editable path="banner_shield_green2"]
+[editable path="banner_shield_red2"]
+[editable path="banner_shield_white2"]
+[editable path="banner_shield_yellow2"]
+[editable path="banner_thin_blue2"]
+[editable path="banner_thin_brown2"]
+[editable path="banner_thin_green2"]
+[editable path="banner_thin_red2"]
+[editable path="banner_thin_white2"]
+[editable path="banner_thin_yellow2"]
+[editable path="banner_triple_blue2"]
+[editable path="banner_triple_brown2"]
+[editable path="banner_triple_green2"]
+[editable path="banner_triple_red2"]
+[editable path="banner_triple_white2"]
+[editable path="banner_triple_yellow2"]
+[editable path="banner_white2"]
+[editable path="banner_yellow2"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://blxhxvc5lpu0e"]
+
+[ext_resource type="PackedScene" uid="uid://xhppibd77k86" path="res://Assets/DungeonParts/Parts/ceiling_tile.gltf" id="1_iy40x"]
+
+[node name="DungeonCeiling" type="Node3D"]
+
+[node name="ceiling_tile2" parent="." instance=ExtResource("1_iy40x")]
+
+[editable path="ceiling_tile2"]

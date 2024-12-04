@@ -1,0 +1,79 @@
+[gd_scene load_steps=16 format=3 uid="uid://bjggeuvgw1sw8"]
+
+[ext_resource type="PackedScene" uid="uid://cj0er0ht50vh" path="res://Assets/DungeonParts/Parts/stairs.gltf" id="1_s6jku"]
+[ext_resource type="PackedScene" uid="uid://ctdncsg8df38" path="res://Assets/DungeonParts/Parts/stairs_long.gltf" id="2_bojrf"]
+[ext_resource type="PackedScene" uid="uid://dahm77l8s44oi" path="res://Assets/DungeonParts/Parts/stairs_long_modular_center.gltf" id="3_v34he"]
+[ext_resource type="PackedScene" uid="uid://crkmm1o7bp5bc" path="res://Assets/DungeonParts/Parts/stairs_long_modular_left.gltf" id="4_j3phd"]
+[ext_resource type="PackedScene" uid="uid://cdqs0vwp0l3g5" path="res://Assets/DungeonParts/Parts/stairs_long_modular_right.gltf" id="5_i0tbn"]
+[ext_resource type="PackedScene" uid="uid://b5rmdy0ur48hj" path="res://Assets/DungeonParts/Parts/stairs_modular_center.gltf" id="6_oh0u3"]
+[ext_resource type="PackedScene" uid="uid://tq2mjcb0d2uc" path="res://Assets/DungeonParts/Parts/stairs_modular_left.gltf" id="7_kr5ak"]
+[ext_resource type="PackedScene" uid="uid://ddlfk00tjcw2n" path="res://Assets/DungeonParts/Parts/stairs_modular_right.gltf" id="8_fljti"]
+[ext_resource type="PackedScene" uid="uid://binvhd4byjkiy" path="res://Assets/DungeonParts/Parts/stairs_narrow.gltf" id="9_aryf8"]
+[ext_resource type="PackedScene" uid="uid://cp2e7ir37b0" path="res://Assets/DungeonParts/Parts/stairs_walled.gltf" id="10_3x06t"]
+[ext_resource type="PackedScene" uid="uid://cct24mwbjwxxk" path="res://Assets/DungeonParts/Parts/stairs_wall_left.gltf" id="11_wder2"]
+[ext_resource type="PackedScene" uid="uid://dbgubbrrno21b" path="res://Assets/DungeonParts/Parts/stairs_wall_right.gltf" id="12_mntcv"]
+[ext_resource type="PackedScene" uid="uid://ntr76jcyx0im" path="res://Assets/DungeonParts/Parts/stairs_wide.gltf" id="13_ksbha"]
+[ext_resource type="PackedScene" uid="uid://di2gaqncaphpm" path="res://Assets/DungeonParts/Parts/stairs_wood.gltf" id="14_vqpdp"]
+[ext_resource type="PackedScene" uid="uid://brxjp1cum0sre" path="res://Assets/DungeonParts/Parts/stairs_wood_decorated.gltf" id="15_hc1gl"]
+
+[node name="DungeonStairs" type="Node3D"]
+
+[node name="stairs2" parent="." instance=ExtResource("1_s6jku")]
+
+[node name="stairs_long2" parent="." instance=ExtResource("2_bojrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="stairs_long_modular_center2" parent="." instance=ExtResource("3_v34he")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="stairs_long_modular_left2" parent="." instance=ExtResource("4_j3phd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="stairs_long_modular_right2" parent="." instance=ExtResource("5_i0tbn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="stairs_modular_center2" parent="." instance=ExtResource("6_oh0u3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="stairs_modular_left2" parent="." instance=ExtResource("7_kr5ak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
+
+[node name="stairs_modular_right2" parent="." instance=ExtResource("8_fljti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 0)
+
+[node name="stairs_narrow2" parent="." instance=ExtResource("9_aryf8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="stairs_walled2" parent="." instance=ExtResource("10_3x06t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, 0)
+
+[node name="stairs_wall_left2" parent="." instance=ExtResource("11_wder2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0)
+
+[node name="stairs_wall_right2" parent="." instance=ExtResource("12_mntcv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110, 0, 0)
+
+[node name="stairs_wide2" parent="." instance=ExtResource("13_ksbha")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 0)
+
+[node name="stairs_wood2" parent="." instance=ExtResource("14_vqpdp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 130, 0, 0)
+
+[node name="stairs_wood_decorated2" parent="." instance=ExtResource("15_hc1gl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140, 0, 0)
+
+[editable path="stairs2"]
+[editable path="stairs_long2"]
+[editable path="stairs_long_modular_center2"]
+[editable path="stairs_long_modular_left2"]
+[editable path="stairs_long_modular_right2"]
+[editable path="stairs_modular_center2"]
+[editable path="stairs_modular_left2"]
+[editable path="stairs_modular_right2"]
+[editable path="stairs_narrow2"]
+[editable path="stairs_walled2"]
+[editable path="stairs_wall_left2"]
+[editable path="stairs_wall_right2"]
+[editable path="stairs_wide2"]
+[editable path="stairs_wood2"]
+[editable path="stairs_wood_decorated2"]

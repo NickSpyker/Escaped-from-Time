@@ -1,0 +1,75 @@
+[gd_scene load_steps=9 format=3 uid="uid://blklfpnot2ng2"]
+
+[ext_resource type="PackedScene" uid="uid://bxbwi1ryb67jk" path="res://Assets/DungeonParts/Parts/floor_foundation_allsides.gltf" id="1_v4i37"]
+[ext_resource type="PackedScene" uid="uid://kn7la3e53311" path="res://Assets/DungeonParts/Parts/floor_foundation_corner.gltf" id="2_7c85b"]
+[ext_resource type="PackedScene" uid="uid://d2wmeuxqxt6h0" path="res://Assets/DungeonParts/Parts/floor_foundation_diagonal_corner.gltf" id="3_t4ewr"]
+[ext_resource type="PackedScene" uid="uid://b0wyr8wjyqvnq" path="res://Assets/DungeonParts/Parts/floor_foundation_front.gltf" id="4_pyw68"]
+[ext_resource type="PackedScene" uid="uid://ny87tga6031x" path="res://Assets/DungeonParts/Parts/floor_foundation_front_and_back.gltf" id="5_1iu6p"]
+[ext_resource type="PackedScene" uid="uid://dvk5675aauuy8" path="res://Assets/DungeonParts/Parts/floor_foundation_front_and_sides.gltf" id="6_j17tj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vvfsw"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_8lxdk"]
+points = PackedVector3Array(-1.1, 0, -1, -1.1, 2, -1, 1, 0, -1, 1, 0, 1.1, 1, 2, 1.1, 1, 2, -1)
+
+[node name="DungeonFundationsSmall" type="Node3D"]
+
+[node name="floor_foundation_allsides2" parent="." instance=ExtResource("1_v4i37")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_foundation_allsides2/floor_foundation_allsides" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_foundation_allsides2/floor_foundation_allsides/StaticBody3D"]
+shape = SubResource("BoxShape3D_vvfsw")
+
+[node name="floor_foundation_corner2" parent="." instance=ExtResource("2_7c85b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_foundation_corner2/floor_foundation_corner" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_foundation_corner2/floor_foundation_corner/StaticBody3D"]
+shape = SubResource("BoxShape3D_vvfsw")
+
+[node name="floor_foundation_diagonal_corner2" parent="." instance=ExtResource("3_t4ewr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_foundation_diagonal_corner2/floor_foundation_diagonal_corner" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_foundation_diagonal_corner2/floor_foundation_diagonal_corner/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_8lxdk")
+
+[node name="floor_foundation_front2" parent="." instance=ExtResource("4_pyw68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_foundation_front2/floor_foundation_front" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_foundation_front2/floor_foundation_front/StaticBody3D"]
+shape = SubResource("BoxShape3D_vvfsw")
+
+[node name="floor_foundation_front_and_back2" parent="." instance=ExtResource("5_1iu6p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_foundation_front_and_back2/floor_foundation_front_and_back" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_foundation_front_and_back2/floor_foundation_front_and_back/StaticBody3D"]
+shape = SubResource("BoxShape3D_vvfsw")
+
+[node name="floor_foundation_front_and_sides2" parent="." instance=ExtResource("6_j17tj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_foundation_front_and_sides2/floor_foundation_front_and_sides" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_foundation_front_and_sides2/floor_foundation_front_and_sides/StaticBody3D"]
+shape = SubResource("BoxShape3D_vvfsw")
+
+[editable path="floor_foundation_allsides2"]
+[editable path="floor_foundation_corner2"]
+[editable path="floor_foundation_diagonal_corner2"]
+[editable path="floor_foundation_front2"]
+[editable path="floor_foundation_front_and_back2"]
+[editable path="floor_foundation_front_and_sides2"]
