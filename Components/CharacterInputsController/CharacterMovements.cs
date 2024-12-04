@@ -89,43 +89,63 @@ public partial class CharacterMovements : Node
 
 	private void HandleGroundedMovement()
 	{
-		_velocity.X = 0;
-		_velocity.Z = 0;
+	    _velocity.X = 0;
+	    _velocity.Z = 0;
 
-		Vector3 forward = SpringArm.GlobalTransform.Basis.Z;
-		forward.Y = 0;
-		forward = forward.Normalized();
+	    Vector3 forward = SpringArm.GlobalTransform.Basis.Z;
+	    forward.Y = 0;
+	    forward = forward.Normalized();
 
-		Vector3 right = SpringArm.GlobalTransform.Basis.X;
-		right.Y = 0;
-		right = right.Normalized();
+	    Vector3 right = SpringArm.GlobalTransform.Basis.X;
+	    right.Y = 0;
+	    right = right.Normalized();
 
-		Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
-		moveDirection = moveDirection.Normalized();
+	    Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
+	    moveDirection = moveDirection.Normalized();
 
-		if (moveAmount > 0.5f)
-		{
-			_velocity.X = moveDirection.X * SprintSpeed;
-			_velocity.Z = moveDirection.Z * SprintSpeed;
+	    if (moveAmount > 0.5f)
+	    {
+	        _velocity.X = moveDirection.X * SprintSpeed;
+	        _velocity.Z = moveDirection.Z * SprintSpeed;
 
-			CharacterAnimations.Play(CharacterAnimation.Run);
-		}
-		else if (moveAmount <= 0.5f && moveAmount > 0.0f)
-		{
-			_velocity.X = moveDirection.X * WalkingSpeed;
-			_velocity.Z = moveDirection.Z * WalkingSpeed;
+	        CharacterAnimations.Play(CharacterAnimation.Run);
+	    }
+	    else if (moveAmount <= 0.5f && moveAmount > 0.0f)
+	    {
+	        _velocity.X = moveDirection.X * WalkingSpeed;
+	        _velocity.Z = moveDirection.Z * WalkingSpeed;
 
-			CharacterAnimations.Play(CharacterAnimation.Walk);
-		}
-		else
-		{
-			_velocity.X = 0;
-			_velocity.Z = 0;
+	        CharacterAnimations.Play(CharacterAnimation.Walk);
+	    }
+	    else
+	    {
+	        _velocity.X = 0;
+	        _velocity.Z = 0;
 
-			CharacterAnimations.Play(CharacterAnimation.Idle);
-		}
+	        CharacterAnimations.Play(CharacterAnimation.Idle);
+	    }
 
-		Character.LookAt(Character.GlobalTransform.Origin + moveDirection, Vector3.Up);
+	    SmoothLookAt(moveDirection);
+	}
+
+	private void SmoothLookAt(Vector3 targetDirection)
+	{
+		if (targetDirection.Length() == 0) return;
+
+		Transform3D transform = Character.GlobalTransform;
+		Vector3 currentForward = transform.Basis.Z.Normalized();
+		Vector3 desiredForward = -targetDirection.Normalized();
+
+		Vector3 interpolatedForward = currentForward.Lerp(desiredForward, 0.25f);
+		interpolatedForward.Y = 0;
+		interpolatedForward = interpolatedForward.Normalized();
+
+		Vector3 up = Vector3.Up;
+		Vector3 right = up.Cross(interpolatedForward).Normalized();
+		Vector3 adjustedUp = interpolatedForward.Cross(right).Normalized();
+
+		transform.Basis = new Basis(right, adjustedUp, interpolatedForward);
+		Character.GlobalTransform = transform;
 	}
 
 	private void HandleAirborneMovement(double delta)
@@ -156,6 +176,6 @@ public partial class CharacterMovements : Node
 			_velocity.Z = moveDirection.Z * JumpingMovementSpeed;
 		}
 
-		Character.LookAt(Character.GlobalTransform.Origin + moveDirection, Vector3.Up);
+		SmoothLookAt(moveDirection);
 	}
 }
