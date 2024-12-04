@@ -1,3 +1,4 @@
+using System;
 using EscapedfromTime.Components.CharacterAnimationsHandler;
 using EscapedfromTime.Objects.TopDownCamera;
 using Godot;
@@ -11,27 +12,26 @@ public partial class CharacterMovements : Node
 	[Export] public CharacterAnimations CharacterAnimations;
 	[Export] public TopDownCamera SpringArm;
 
-
+	[Export] public float JumpingMovementSpeed = 3.0f;
+	[Export] public float JumpingAndRunningMovementSpeed = 7.0f;
 	[Export] public float WalkingSpeed = 5.0f;
 	[Export] public float SprintSpeed = 10.0f;
+	[Export] public float JumpVelocity = 4.5f;
+	[Export] public float Gravity = -9.8f;
 
-	// [Export] public float JumpVelocity = 4.5f;
-	// [Export] public float Gravity = -9.8f;
+	private Vector3 _velocity;
+	private float verticalInput;
+	private float horizontalInput;
+	private float moveAmount;
 
-
-
-	// private Vector3 _velocity;
-	 private float verticalInput;
-	 private float horizontalInput;
-	 private float moveAmount;
-
+	private bool IsPlayerSprintingWhileJumping = false;
 
 	public override void _PhysicsProcess(double delta)
 	{
 		base._PhysicsProcess(delta);
 
 		HandleMovementInput();
-		HandleAllMovements();
+		HandleAllMovements(delta);
 	}
 
 	private void HandleMovementInput()
@@ -41,9 +41,13 @@ public partial class CharacterMovements : Node
 		verticalInput = inputDir.Y;
 		horizontalInput = inputDir.X;
 
-
-
 		moveAmount = Mathf.Clamp(Mathf.Abs(verticalInput) + Mathf.Abs(horizontalInput), 0.0f, 1.0f);
+
+
+		if (!Input.IsActionPressed("player_run"))
+		{
+			moveAmount *= 0.5f;
+		}
 
 		if (moveAmount <= 0.5 && moveAmount > 0.0)
 		{
@@ -53,24 +57,41 @@ public partial class CharacterMovements : Node
 		{
 			moveAmount = 1.0f;
 		}
-
-		// GD.Print("Move Amount: " + moveAmount);
 	}
 
-	private void HandleAllMovements()
+	private void HandleAllMovements(double delta)
 	{
-		// if (Character.IsOnFloor())
-		// {
+		if (Character.IsOnFloor())
+		{
 			HandleGroundedMovement();
-		// }
-		// else
-		// {
-			// HandleAirborneMovement();
-		// }
+
+			if (Input.IsActionJustPressed("player_jump"))
+			{
+				if (moveAmount > 0.5)
+				{
+					IsPlayerSprintingWhileJumping = true;
+				}
+				else
+				{
+					IsPlayerSprintingWhileJumping = false;
+				}
+				_velocity.Y = JumpVelocity;
+			}
+		}
+		else
+		{
+			HandleAirborneMovement(delta);
+		}
+
+		Character.Velocity = _velocity;
+		Character.MoveAndSlide();
 	}
 
 	private void HandleGroundedMovement()
 	{
+		_velocity.X = 0;
+		_velocity.Z = 0;
+
 		Vector3 forward = SpringArm.GlobalTransform.Basis.Z;
 		forward.Y = 0;
 		forward = forward.Normalized();
@@ -79,22 +100,62 @@ public partial class CharacterMovements : Node
 		right.Y = 0;
 		right = right.Normalized();
 
-		Vector3 moveDirection = forward * verticalInput;
-		moveDirection = moveDirection + right * horizontalInput;
-
+		Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
 		moveDirection = moveDirection.Normalized();
-
-		moveDirection.Y = 0;
 
 		if (moveAmount > 0.5f)
 		{
-			Character.Velocity = moveDirection * SprintSpeed;
+			_velocity.X = moveDirection.X * SprintSpeed;
+			_velocity.Z = moveDirection.Z * SprintSpeed;
+
+			CharacterAnimations.Play(CharacterAnimation.Run);
 		}
-		else if (moveAmount <= 0.5f)
+		else if (moveAmount <= 0.5f && moveAmount > 0.0f)
 		{
-			Character.Velocity = moveDirection * WalkingSpeed;
+			_velocity.X = moveDirection.X * WalkingSpeed;
+			_velocity.Z = moveDirection.Z * WalkingSpeed;
+
+			CharacterAnimations.Play(CharacterAnimation.Walk);
 		}
+		else
+		{
+			_velocity.X = 0;
+			_velocity.Z = 0;
+
+			CharacterAnimations.Play(CharacterAnimation.Idle);
+		}
+
 		Character.LookAt(Character.GlobalTransform.Origin + moveDirection, Vector3.Up);
-		Character.MoveAndSlide();
+	}
+
+	private void HandleAirborneMovement(double delta)
+	{
+		_velocity.Y += Gravity * (float)delta;
+
+		CharacterAnimations.Play(CharacterAnimation.Jump);
+
+		Vector3 forward = SpringArm.GlobalTransform.Basis.Z;
+		forward.Y = 0;
+		forward = forward.Normalized();
+
+		Vector3 right = SpringArm.GlobalTransform.Basis.X;
+		right.Y = 0;
+		right = right.Normalized();
+
+		Vector3 moveDirection = forward * verticalInput + right * horizontalInput;
+		moveDirection = moveDirection.Normalized();
+
+		if (IsPlayerSprintingWhileJumping)
+		{
+			_velocity.X = moveDirection.X * JumpingAndRunningMovementSpeed;
+			_velocity.Z = moveDirection.Z * JumpingAndRunningMovementSpeed;
+		}
+		else
+		{
+			_velocity.X = moveDirection.X * JumpingMovementSpeed;
+			_velocity.Z = moveDirection.Z * JumpingMovementSpeed;
+		}
+
+		Character.LookAt(Character.GlobalTransform.Origin + moveDirection, Vector3.Up);
 	}
 }
