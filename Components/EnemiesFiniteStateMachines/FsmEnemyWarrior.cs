@@ -11,9 +11,17 @@ public partial class FsmEnemyWarrior : Node3D
     [Export] public RayCast3D RayCast;
     [Export] public CharacterAnimations CharacterAnimations;
     [Export] public CharacterBody3D Skeleton;
+    [Export] public NavigationAgent3D NavigationAgent;
 
-    private CharacterBody3D _targetPlayer;
+    private CharacterBody3D _targetedPlayer; // Skeleton favorite enemy <3
+    
+    // STATE DATA: Wander
+    private float _moveToAnotherPlaceTimer;
 
+    // STATE DATA: CuriouslySearching
+    
+    // STATE DATA: Attacking
+    
     private State _currentState = 0;
     private enum State
     {
@@ -48,23 +56,23 @@ public partial class FsmEnemyWarrior : Node3D
     {
         if (body is not CharacterBody3D character || !character.Name.ToString().StartsWith("Player")) return;
         _currentState = State.CuriouslySearching;
-        _targetPlayer = character;
-        CharacterAnimations.Play(CharacterAnimation.SkSearching);
+        _targetedPlayer = character;
+        CharacterAnimations.Play(CharacterAnimation.Searching);
     }
 
     public void OnFieldOfTargetBodyEntered(Node body)
     {
         if (body is not CharacterBody3D character || !character.Name.ToString().StartsWith("Player")) return;
         _currentState = State.CheckIfTargetVisible;
-        _targetPlayer = character;
-        CharacterAnimations.Play(CharacterAnimation.SkTaunt);
+        _targetedPlayer = character;
+        CharacterAnimations.Play(CharacterAnimation.Taunt);
     }
     public void OnFieldOfTargetBodyExited(Node body)
     {
-        if (body is null || _targetPlayer != body) return;
+        if (body is null || _targetedPlayer != body) return;
         _currentState = State.CuriouslySearching;
         RayCast.SetTargetPosition(new Vector3(0, 0, -30));
-        CharacterAnimations.Play(CharacterAnimation.SkSearching);
+        CharacterAnimations.Play(CharacterAnimation.Searching);
     }
 
     // ---------- States Behaviors ----------
@@ -80,12 +88,12 @@ public partial class FsmEnemyWarrior : Node3D
 
     private void _checkIfTargetVisible()
     {
-        if (_targetPlayer == null) return;
+        if (_targetedPlayer == null) return;
         
-        Vector3 targetPlayerLocalPosition = ToLocal(_targetPlayer.GlobalPosition);
+        Vector3 targetPlayerLocalPosition = ToLocal(_targetedPlayer.GlobalPosition);
         RayCast.SetTargetPosition(targetPlayerLocalPosition + new Vector3(0, 1.5f, 0));
 
-        if (!RayCast.CollideWithBodies || RayCast.GetCollider() is not CharacterBody3D character || character != _targetPlayer)
+        if (!RayCast.CollideWithBodies || RayCast.GetCollider() is not CharacterBody3D character || character != _targetedPlayer)
             return;
 
         _currentState = State.Attacking;
@@ -93,12 +101,12 @@ public partial class FsmEnemyWarrior : Node3D
 
     private void _attacking()
     {
-        if (_targetPlayer == null) return;
+        if (_targetedPlayer == null) return;
         
-        Vector3 targetPlayerLocalPosition = ToLocal(_targetPlayer.GlobalPosition);
+        Vector3 targetPlayerLocalPosition = ToLocal(_targetedPlayer.GlobalPosition);
         RayCast.SetTargetPosition(targetPlayerLocalPosition + new Vector3(0, 1, 0));
 
-        if (!RayCast.CollideWithBodies || RayCast.GetCollider() is not CharacterBody3D character || character != _targetPlayer)
+        if (!RayCast.CollideWithBodies || RayCast.GetCollider() is not CharacterBody3D character || character != _targetedPlayer)
         {
             _currentState = State.CheckIfTargetVisible;
             return;

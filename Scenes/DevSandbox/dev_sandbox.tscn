@@ -1,14 +1,23 @@
-[gd_scene load_steps=15 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=16 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Scenes/DevSandbox/DevSandbox.cs" id="1_b30g4"]
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
 [ext_resource type="Texture2D" uid="uid://e5ubkkbi6qbr" path="res://Assets/Prototypes/Orange/texture_09.png" id="3_bjm0t"]
-[ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
+[ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Objects/Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="4_qmy3s"]
 [ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="4_qvrtx"]
-[ext_resource type="PackedScene" uid="uid://btsek05v74ekr" path="res://Characters/Skeletons/enemy_warrior.tscn" id="4_te5j6"]
+[ext_resource type="PackedScene" uid="uid://btsek05v74ekr" path="res://Objects/Characters/Skeletons/enemy_warrior.tscn" id="4_te5j6"]
 [ext_resource type="MeshLibrary" uid="uid://d1worgrn7qv1x" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" id="5_7ux61"]
 [ext_resource type="MeshLibrary" uid="uid://dxpgc8dxnytip" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" id="6_smokw"]
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_om42q"]
+vertices = PackedVector3Array(-44.5, 1.5, 15.5, -44.5, 1.5, 44.5, -15.5, 1.5, 44.5, -15.5, 1.5, 15.5)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+cell_height = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omqm5"]
+albedo_texture = ExtResource("3_bjm0t")
+uv1_triplanar = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ol1s"]
 albedo_texture = ExtResource("2_sc3cd")
@@ -27,14 +36,19 @@ sky = SubResource("Sky_ak5im")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_omqm5"]
-albedo_texture = ExtResource("3_bjm0t")
-uv1_triplanar = true
-
 [node name="DevSandbox" type="Node3D"]
 script = ExtResource("1_b30g4")
 
 [node name="World" type="Node3D" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="World"]
+navigation_mesh = SubResource("NavigationMesh_om42q")
+
+[node name="CSGBoxFightingClub" type="CSGBox3D" parent="World/NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 30)
+material_override = SubResource("StandardMaterial3D_omqm5")
+use_collision = true
+size = Vector3(30, 1, 30)
 
 [node name="CSGBoxGround" type="CSGBox3D" parent="World"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
@@ -48,12 +62,6 @@ environment = SubResource("Environment_gcoab")
 [node name="DirectionalLight" type="DirectionalLight3D" parent="World"]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
-
-[node name="CSGBoxFightingClub" type="CSGBox3D" parent="World"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 30)
-material_override = SubResource("StandardMaterial3D_omqm5")
-use_collision = true
-size = Vector3(30, 1, 30)
 
 [node name="Dungeon" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)

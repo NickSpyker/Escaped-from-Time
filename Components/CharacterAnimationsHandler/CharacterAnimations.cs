@@ -16,8 +16,8 @@ public enum CharacterAnimation
     BlockHit,
     Death,
     Resurrect,
-    SkSearching,
-    SkTaunt
+    Searching,
+    Taunt
 }
 
 public static class CharacterAnimationStringNames
@@ -34,8 +34,8 @@ public static class CharacterAnimationStringNames
 		{ CharacterAnimation.BlockHit, "block_hit" },
 		{ CharacterAnimation.Death, "death" },
 		{ CharacterAnimation.Resurrect, "resurrect" },
-		{ CharacterAnimation.SkSearching, "searching" },
-		{ CharacterAnimation.SkTaunt, "taunt" },
+		{ CharacterAnimation.Searching, "searching" },
+		{ CharacterAnimation.Taunt, "taunt" },
 	};
 
 	public static string ToStringName(this CharacterAnimation animation)

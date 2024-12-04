@@ -28,8 +28,6 @@ public partial class CharacterMovements : Node
 
 	public override void _PhysicsProcess(double delta)
 	{
-		base._PhysicsProcess(delta);
-
 		HandleMovementInput();
 		HandleAllMovements(delta);
 	}
@@ -42,8 +40,7 @@ public partial class CharacterMovements : Node
 		horizontalInput = inputDir.X;
 
 		moveAmount = Mathf.Clamp(Mathf.Abs(verticalInput) + Mathf.Abs(horizontalInput), 0.0f, 1.0f);
-
-
+		
 		if (!Input.IsActionPressed("player_run"))
 		{
 			moveAmount *= 0.5f;
