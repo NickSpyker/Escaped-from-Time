@@ -1,4 +1,4 @@
-[gd_scene load_steps=134 format=3 uid="uid://dbbefw4v4460m"]
+[gd_scene load_steps=135 format=3 uid="uid://dbbefw4v4460m"]
 
 [ext_resource type="PackedScene" uid="uid://dl2f1hfwtkwaw" path="res://Assets/DungeonParts/Parts/barrel_large.gltf" id="1_oh5sm"]
 [ext_resource type="PackedScene" uid="uid://cqq4t5ay1oq6a" path="res://Assets/DungeonParts/Parts/barrel_large_decorated.gltf" id="2_xtmev"]
@@ -134,12 +134,27 @@
 [ext_resource type="PackedScene" uid="uid://cimdmw7eygbne" path="res://Assets/DungeonParts/Parts/trunk_small_B.gltf" id="132_26ef1"]
 [ext_resource type="PackedScene" uid="uid://xhpowp5rw8he" path="res://Assets/DungeonParts/Parts/trunk_small_C.gltf" id="133_hoagt"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_6ncyb"]
+radius = 1.0
+
 [node name="DungeonProps" type="Node3D"]
 
 [node name="barrel_large2" parent="." instance=ExtResource("1_oh5sm")]
 
+[node name="StaticBody3D" type="StaticBody3D" parent="barrel_large2/barrel_large" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="barrel_large2/barrel_large/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_6ncyb")
+
 [node name="barrel_large_decorated2" parent="." instance=ExtResource("2_xtmev")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="barrel_large_decorated2/barrel_large_decorated" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="barrel_large_decorated2/barrel_large_decorated/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CylinderShape3D_6ncyb")
 
 [node name="barrel_small2" parent="." instance=ExtResource("3_rctvk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)

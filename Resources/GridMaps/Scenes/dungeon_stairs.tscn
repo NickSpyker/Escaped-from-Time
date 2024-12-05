@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bjggeuvgw1sw8"]
+[gd_scene load_steps=18 format=3 uid="uid://bjggeuvgw1sw8"]
 
 [ext_resource type="PackedScene" uid="uid://cj0er0ht50vh" path="res://Assets/DungeonParts/Parts/stairs.gltf" id="1_s6jku"]
 [ext_resource type="PackedScene" uid="uid://ctdncsg8df38" path="res://Assets/DungeonParts/Parts/stairs_long.gltf" id="2_bojrf"]
@@ -16,9 +16,29 @@
 [ext_resource type="PackedScene" uid="uid://di2gaqncaphpm" path="res://Assets/DungeonParts/Parts/stairs_wood.gltf" id="14_vqpdp"]
 [ext_resource type="PackedScene" uid="uid://brxjp1cum0sre" path="res://Assets/DungeonParts/Parts/stairs_wood_decorated.gltf" id="15_hc1gl"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_xsjtt"]
+size = Vector3(4, 5, 0.7)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ir1yj"]
+size = Vector3(3.5, 0.5, 5.75)
+
 [node name="DungeonStairs" type="Node3D"]
 
 [node name="stairs2" parent="." instance=ExtResource("1_s6jku")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="stairs2/stairs" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="stairs2/stairs/StaticBody3D"]
+transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -2.1, 2.5, 2)
+shape = SubResource("BoxShape3D_xsjtt")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="stairs2/stairs/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2.1, 2.5, 2)
+shape = SubResource("BoxShape3D_xsjtt")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="stairs2/stairs/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 1.8273, 2.14109)
+shape = SubResource("BoxShape3D_ir1yj")
 
 [node name="stairs_long2" parent="." instance=ExtResource("2_bojrf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0)

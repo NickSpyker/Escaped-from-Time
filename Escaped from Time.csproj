@@ -8,5 +8,6 @@
     </PropertyGroup>
     <ItemGroup>
       <Folder Include="Components\CharacterBehaviors\" />
+      <Folder Include="Objects\Characters\Adventurers\" />
     </ItemGroup>
 </Project>

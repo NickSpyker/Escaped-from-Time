@@ -46,28 +46,29 @@ public partial class FsmEnemyWarrior : Node3D
 
     // ---------- Events ----------
 
-    public void OnSpawnTimerTimemout()
+    /* Signal */ public void OnSpawnTimerTimemout()
     {
         _currentState = State.Wander;
         CharacterAnimations.Play(CharacterAnimation.Idle);
     }
 
-    public void OnFieldOfViewBodyEntered(Node body)
+    /* Signal */ public void OnFieldOfViewBodyEntered(Node body)
     {
-        if (body is not CharacterBody3D character || !character.Name.ToString().StartsWith("Player")) return;
+        if (body is not CharacterBody3D character || !character.IsInGroup("skeleton_enemy")) return;
         _currentState = State.CuriouslySearching;
         _targetedPlayer = character;
         CharacterAnimations.Play(CharacterAnimation.Searching);
     }
 
-    public void OnFieldOfTargetBodyEntered(Node body)
+    /* Signal */ public void OnFieldOfTargetBodyEntered(Node body)
     {
-        if (body is not CharacterBody3D character || !character.Name.ToString().StartsWith("Player")) return;
+        if (body is not CharacterBody3D character || !character.IsInGroup("skeleton_enemy")) return;
         _currentState = State.CheckIfTargetVisible;
         _targetedPlayer = character;
         CharacterAnimations.Play(CharacterAnimation.Taunt);
     }
-    public void OnFieldOfTargetBodyExited(Node body)
+
+    /* Signal */ public void OnFieldOfTargetBodyExited(Node body)
     {
         if (body is null || _targetedPlayer != body) return;
         _currentState = State.CuriouslySearching;
