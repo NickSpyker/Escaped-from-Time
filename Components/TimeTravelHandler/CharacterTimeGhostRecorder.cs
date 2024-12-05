@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Godot;
 
 namespace EscapedfromTime.Components.TimeTravelHandler;
@@ -6,8 +8,7 @@ namespace EscapedfromTime.Components.TimeTravelHandler;
 [GlobalClass]
 public partial class CharacterTimeGhostRecorder : Node
 {
-    [ExportCategory("Component Properties")]
-    [Export] public CharacterBody3D Character;
+    private readonly Dictionary<uint, List<TimeEvent>> _timeEvents = new();
 
     private TimeMechanicsArea _timeMechanicsArea;
 
@@ -30,7 +31,36 @@ public partial class CharacterTimeGhostRecorder : Node
         throw new InvalidOperationException("CharacterTimeGhostRecorder must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
     }
 
-    public override void _PhysicsProcess(double delta)
+    public void RecordMoveAndSlide(Vector3 velocity)
     {
+        uint t = _timeMechanicsArea.T;
+
+        if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+        _timeEvents[t].Add(new TimeEvent { Type = TimeEventType.VelocityChange, VectorValue = velocity });
+    }
+
+    public void RecordGlobalTransform(Transform3D transform)
+    {
+        uint t = _timeMechanicsArea.T;
+
+        if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+        _timeEvents[t].Add(new TimeEvent { Type = TimeEventType.RotationChange, TransformValue = transform });
+    }
+
+    public Dictionary<uint, List<TimeEvent>> GetTimeEventsAndClear()
+    {
+        Dictionary<uint, List<TimeEvent>> result = _timeEvents.ToDictionary(
+            entry => entry.Key,
+            entry => entry.Value.Select(timeEvent => new TimeEvent {
+                Type = timeEvent.Type,
+                FloatValue = timeEvent.FloatValue,
+                VectorValue = timeEvent.VectorValue,
+                TransformValue = timeEvent.TransformValue
+            }).ToList()
+        );
+        _timeEvents.Clear();
+        return result;
     }
 }

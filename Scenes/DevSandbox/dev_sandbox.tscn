@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
 [ext_resource type="Texture2D" uid="uid://e5ubkkbi6qbr" path="res://Assets/Prototypes/Orange/texture_09.png" id="3_bjm0t"]
 [ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Objects/Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
-[ext_resource type="PackedScene" uid="uid://decpqp0p02s8q" path="res://Objects/Characters/Adventurers/PlayerKnightGhost.tscn" id="3_urbbi"]
+[ext_resource type="PackedScene" uid="uid://decpqp0p02s8q" path="res://Objects/Characters/Adventurers/player_knight_ghost.tscn" id="3_urbbi"]
 [ext_resource type="PackedScene" uid="uid://xg6niaqw02kv" path="res://Objects/InteractableEntities/Inputs/InteractArea.tscn" id="4_e2jel"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="4_qmy3s"]
 [ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="4_qvrtx"]
@@ -65,12 +65,16 @@ navigation_mesh = SubResource("NavigationMesh_om42q")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 30)
 material_override = SubResource("StandardMaterial3D_omqm5")
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(30, 1, 30)
 
 [node name="CSGBoxGround" type="CSGBox3D" parent="World"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 material_override = SubResource("StandardMaterial3D_3ol1s")
 use_collision = true
+collision_layer = 3
+collision_mask = 3
 size = Vector3(1000, 1, 1000)
 
 [node name="Environment" type="WorldEnvironment" parent="World"]

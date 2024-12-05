@@ -71,6 +71,8 @@ public partial class CharacterAnimations : Node
 
 	public void Play(CharacterAnimation animation)
 	{
-		_stateMachine.Travel(animation.ToStringName());
+		string animationName = animation.ToStringName();
+
+		_stateMachine.Travel(animationName);
 	}
 }

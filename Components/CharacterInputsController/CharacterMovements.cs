@@ -1,4 +1,5 @@
 using EscapedfromTime.Components.CharacterAnimationsHandler;
+using EscapedfromTime.Components.TimeTravelHandler;
 using EscapedfromTime.Objects.TopDownCamera;
 using Godot;
 
@@ -8,9 +9,10 @@ namespace EscapedfromTime.Components.CharacterInputsController;
 public partial class CharacterMovements : Node
 {
     [ExportCategory("Component Properties")]
-    [Export] public CharacterBody3D Character;
-    [Export] public CharacterAnimations CharacterAnimations;
-    [Export] public TopDownCamera SpringArm;
+    [Export] public CharacterBody3D Character = null!;
+    [Export] public CharacterAnimations CharacterAnimations = null!;
+    [Export] public TopDownCamera SpringArm = null!;
+    [Export] public CharacterTimeGhostRecorder TimeGhostRecorder = null!;
 
     [Export] public float JumpingMovementSpeed = 3.0f;
     [Export] public float JumpingAndRunningMovementSpeed = 7.0f;
@@ -79,6 +81,7 @@ public partial class CharacterMovements : Node
         }
 
         Character.Velocity = _velocity;
+        TimeGhostRecorder.RecordMoveAndSlide(_velocity);
         Character.MoveAndSlide();
     }
 
@@ -140,6 +143,7 @@ public partial class CharacterMovements : Node
         Vector3 adjustedUp = interpolatedForward.Cross(right).Normalized();
 
         transform.Basis = new Basis(right, adjustedUp, interpolatedForward);
+        TimeGhostRecorder.RecordGlobalTransform(transform);
         Character.GlobalTransform = transform;
     }
 

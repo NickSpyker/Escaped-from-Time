@@ -1,3 +1,4 @@
 ﻿keys,en,fr
 GREET,"Hello","Salut"
 INTERACTION_MESSAGE_LABEL,"Appui sur E pour interagir","Press E to interact"
+GUI_BACK_TO_TIME_LABEL,"Appui sur T pour revenir dans le passé","Press T to go back in time"
