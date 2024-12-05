@@ -1,3 +1,4 @@
+using System;
 using Godot;
 
 namespace EscapedfromTime.Components.CharacterBehaviors;
@@ -6,12 +7,20 @@ namespace EscapedfromTime.Components.CharacterBehaviors;
 public partial class CharacterHealthHandler : Node
 {
     [ExportCategory("Component Properties")]
-    [Export] public float Health = 100f;
-    [Export] public float PossibleDamageReduction = 0.7f;
-    
+    [Export] public float Health = 75f;
+    [Export] public float HealthPassiveRecovery = 1f;
+    [Export] public float PossibleDamageReduction = 0.75f;
+
     public bool IsAlive { get; private set; } = true;
 
     public bool ReduceDamage;
+
+    public override void _PhysicsProcess(double delta)
+    {
+        if (Math.Abs(Health - 100f) < 0.001) return;
+        Health += HealthPassiveRecovery * (float)delta;
+        if (Health > 100f) Health = 100f;
+    }
 
     public void ReceiveAttack(float damage)
     {
