@@ -5,9 +5,9 @@ namespace EscapedfromTime.Components.TimeTravelHandler;
 public enum TimeEventType
 {
     None,
-    NewPosition,
     VelocityChange,
     RotationChange,
+    BackToTime,
     PlayerInteract
 }
 
