@@ -26,6 +26,10 @@ window/size/mode=3
 
 project/assembly_name="Escaped from Time"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/assetplacer/plugin.cfg")
+
 [file_customization]
 
 folder_colors={
@@ -34,7 +38,8 @@ folder_colors={
 "res://Docs/": "orange",
 "res://Resources/": "purple",
 "res://Scenes/": "green",
-"res://Scenes/DevSandbox/": "yellow"
+"res://Scenes/DevSandbox/": "yellow",
+"res://addons/": "gray"
 }
 
 [global_group]
