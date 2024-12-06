@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://mfaebilh826k"]
+[gd_scene load_steps=52 format=3 uid="uid://mfaebilh826k"]
 
 [ext_resource type="PackedScene" uid="uid://d1r56vemjbkhd" path="res://Assets/DungeonParts/Parts/wall.gltf" id="1_ip48t"]
 [ext_resource type="PackedScene" uid="uid://xgx5ghccsgcp" path="res://Assets/DungeonParts/Parts/wall_arched.gltf" id="2_6ij1p"]
@@ -51,14 +51,8 @@ size = Vector3(1, 4, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_1bkaq"]
 size = Vector3(2, 2.5, 0.2)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_8k236"]
-size = Vector3(4, 1, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_3vbng"]
 size = Vector3(1, 3, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_38oc8"]
-size = Vector3(3, 1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1etw6"]
 size = Vector3(0.5, 3, 1)
@@ -69,17 +63,11 @@ size = Vector3(3, 4, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_jieq8"]
 size = Vector3(1, 4, 1.5)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_yh6lr"]
-size = Vector3(2, 1, 1)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_34yh0"]
 size = Vector3(1, 4, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pureg"]
 size = Vector3(2, 4, 1)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_7oi27"]
-size = Vector3(4, 0.5, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_rrt7x"]
 size = Vector3(0.25, 3.5, 1)
@@ -243,10 +231,6 @@ shape = SubResource("BoxShape3D_1bkaq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall_doorway2/wall_doorway" index="1"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_doorway2/wall_doorway/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
-shape = SubResource("BoxShape3D_8k236")
-
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="wall_doorway2/wall_doorway/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, 0)
 shape = SubResource("BoxShape3D_3vbng")
@@ -266,10 +250,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.162048, 0.000915527)
 shape = SubResource("BoxShape3D_1bkaq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall_doorway_scaffold2/wall_doorway_scaffold" index="1"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_doorway_scaffold2/wall_doorway_scaffold/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
-shape = SubResource("BoxShape3D_8k236")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="wall_doorway_scaffold2/wall_doorway_scaffold/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 1.5, 0)
@@ -293,10 +273,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.74845e-07, 0, -4)
 shape = SubResource("BoxShape3D_vpaq1")
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="wall_doorway_sides2/wall_doorway_sides" index="1"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_doorway_sides2/wall_doorway_sides/StaticBody3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
-shape = SubResource("BoxShape3D_38oc8")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="wall_doorway_sides2/wall_doorway_sides/StaticBody3D2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.25, 1.5, 0)
@@ -326,10 +302,6 @@ shape = SubResource("BoxShape3D_jieq8")
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="wall_doorway_Tsplit2/wall_doorway_Tsplit/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 1.25)
 shape = SubResource("BoxShape3D_jieq8")
-
-[node name="CollisionShape3D5" type="CollisionShape3D" parent="wall_doorway_Tsplit2/wall_doorway_Tsplit/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.5, 0)
-shape = SubResource("BoxShape3D_yh6lr")
 
 [node name="wall_endcap2" parent="." instance=ExtResource("17_ywppe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0)
@@ -434,10 +406,6 @@ shape = SubResource("BoxShape3D_vpaq1")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 10)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="wall_open_scaffold2/wall_open_scaffold" index="0"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_open_scaffold2/wall_open_scaffold/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.68744, 0)
-shape = SubResource("BoxShape3D_7oi27")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="wall_open_scaffold2/wall_open_scaffold/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85, 1.65, 0)
