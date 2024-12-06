@@ -14,17 +14,17 @@ public partial class CharacterTimeGhostRecorder : Node
 
     public override void _Ready()
     {
-        Node currentNode = GetParent();
+        Node currentParentNode = GetParent();
 
-        while (currentNode != null)
+        while (currentParentNode != null)
         {
-            if (currentNode is TimeMechanicsArea timeLineArea)
+            if (currentParentNode is TimeMechanicsArea timeLineArea)
             {
                 _timeMechanicsArea = timeLineArea;
                 return;
             }
 
-            currentNode = currentNode.GetParent();
+            currentParentNode = currentParentNode.GetParent();
         }
 
         GD.PrintErr("No TimeLineArea parent found for CharacterTimeGhostRecorder");

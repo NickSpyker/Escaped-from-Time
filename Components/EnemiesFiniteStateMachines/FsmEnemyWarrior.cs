@@ -54,7 +54,7 @@ public partial class FsmEnemyWarrior : Node3D
 
     /* Signal */ public void OnFieldOfViewBodyEntered(Node body)
     {
-        if (body is not CharacterBody3D character || !character.IsInGroup("skeleton_enemy")) return;
+        if (body is not CharacterBody3D character || !character.IsInGroup("player")) return;
         _currentState = State.CuriouslySearching;
         _targetedPlayer = character;
         CharacterAnimations.Play(CharacterAnimation.Searching);
@@ -62,7 +62,7 @@ public partial class FsmEnemyWarrior : Node3D
 
     /* Signal */ public void OnFieldOfTargetBodyEntered(Node body)
     {
-        if (body is not CharacterBody3D character || !character.IsInGroup("skeleton_enemy")) return;
+        if (body is not CharacterBody3D character || !character.IsInGroup("player")) return;
         _currentState = State.CheckIfTargetVisible;
         _targetedPlayer = character;
         CharacterAnimations.Play(CharacterAnimation.Taunt);

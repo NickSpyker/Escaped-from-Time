@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=23 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Components/TimeTravelHandler/TimeMechanicsArea.cs" id="1_wp6h8"]
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
@@ -10,6 +10,7 @@
 [ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="4_qvrtx"]
 [ext_resource type="PackedScene" uid="uid://btsek05v74ekr" path="res://Objects/Characters/Skeletons/enemy_warrior.tscn" id="4_te5j6"]
 [ext_resource type="MeshLibrary" uid="uid://d1worgrn7qv1x" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" id="5_7ux61"]
+[ext_resource type="Script" path="res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs" id="5_qlsug"]
 [ext_resource type="MeshLibrary" uid="uid://dxpgc8dxnytip" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" id="6_smokw"]
 [ext_resource type="MeshLibrary" uid="uid://do5c65vx8au5q" path="res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" id="8_pvjx0"]
 [ext_resource type="MeshLibrary" uid="uid://vldulw42c6p1" path="res://Resources/GridMaps/MeshLibraries/dungeon_props.tres" id="9_rqdic"]
@@ -53,8 +54,11 @@ transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 
 [node name="PlayerKnightGhost" parent="TimeMechanicsArea" instance=ExtResource("3_urbbi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.19384, 0, 7.64474)
 
-[node name="InteractArea" parent="." instance=ExtResource("4_e2jel")]
+[node name="InteractArea" parent="TimeMechanicsArea" instance=ExtResource("4_e2jel")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.30078, 0, 16.5213)
+
+[node name="InteractableEntityRecorderPlayer" type="Node" parent="TimeMechanicsArea/InteractArea"]
+script = ExtResource("5_qlsug")
 
 [node name="World" type="Node3D" parent="."]
 

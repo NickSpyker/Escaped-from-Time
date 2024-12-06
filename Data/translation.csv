@@ -1,6 +1,7 @@
 ﻿keys,en,fr
 GREET,"Hello","Salut"
 INTERACTION_MESSAGE_LABEL,"Press E to interact","Appui sur E pour interagir"
+INTERACTION_IN_PROGRESS,"Ongoing interaction...","Interaction en cours..."
 GUI_BACK_TO_TIME_LABEL,"Press T to go back in time","Appui sur T pour revenir dans le passé"
 LOADING,"Loading...","Chargement..."
 MAIN_MENU_TUTORIAL,"Play tutorial","Jouer le tutoriel"
