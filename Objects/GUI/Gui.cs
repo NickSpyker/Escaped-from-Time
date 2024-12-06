@@ -11,7 +11,7 @@ public partial class Gui : SubViewportContainer
 
 	public override void _Ready()
 	{
-		_progressBar = GetNode<ProgressBar>("SubViewport/Control/PVbar");
+		_progressBar = GetNode<ProgressBar>("SubViewport/Control/MarginContainer/Control/PVbar");
 	}
 
 	public override void _PhysicsProcess(double delta)

@@ -1,4 +1,10 @@
 ﻿keys,en,fr
 GREET,"Hello","Salut"
-INTERACTION_MESSAGE_LABEL,"Appui sur E pour interagir","Press E to interact"
-GUI_BACK_TO_TIME_LABEL,"Appui sur T pour revenir dans le passé","Press T to go back in time"
+INTERACTION_MESSAGE_LABEL,"Press E to interact","Appui sur E pour interagir"
+GUI_BACK_TO_TIME_LABEL,"Press T to go back in time","Appui sur T pour revenir dans le passé"
+LOADING,"Loading...","Chargement..."
+MAIN_MENU_TUTORIAL,"Play tutorial","Jouer le tutoriel"
+MAIN_MENU_PLAY,"Play","Jouer"
+MAIN_MENU_SETTINGS,"Settings","Paramètres"
+MAIN_MENU_EXIT,"Exit to desktop","Quiter vers le bureau"
+MAIN_MENU_DEV_SANDBOX,"Enter into the developer sandbox","Enter dans le back à sable de développeur"

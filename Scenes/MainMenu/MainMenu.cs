@@ -4,8 +4,8 @@ namespace EscapedfromTime.Scenes.MainMenu;
 
 public partial class MainMenu : Control
 {
-	public void OnTimerTimeout()
+	/* Signal */ public void OnButtonPressedDevSandbox()
 	{
-		GetTree().ChangeSceneToFile("res://Scenes/DevSandbox/dev_sandbox.tscn");
+		LoadingScreen.LoadingScreen.LoadScene(this, "res://Scenes/DevSandbox/dev_sandbox.tscn");
 	}
 }

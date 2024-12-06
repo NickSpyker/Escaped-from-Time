@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://d4c2xwqq7ag17"]
+[gd_scene load_steps=2 format=3 uid="uid://qnjs14nbe7ff"]
 
 [ext_resource type="Script" path="res://Scenes/SplashScreen/SplashScreen.cs" id="1_0sq0d"]
 
@@ -18,23 +18,4 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.141176, 0.141176, 0.141176, 1)
-
-[node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Label" type="Label" parent="CenterContainer"]
-layout_mode = 2
-text = "Made by {Epitech} students"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Timer" type="Timer" parent="."]
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]
+color = Color(0, 0, 0, 1)

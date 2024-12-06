@@ -4,8 +4,8 @@ namespace EscapedfromTime.Scenes.SplashScreen;
 
 public partial class SplashScreen : Control
 {
-	public void OnTimerTimeout()
+	public override void _Ready()
 	{
-		GetTree().ChangeSceneToFile("res://Scenes/MainMenu/main_menu.tscn");
+		LoadingScreen.LoadingScreen.LoadScene(this, "res://Scenes/MainMenu/main_menu.tscn");
 	}
 }

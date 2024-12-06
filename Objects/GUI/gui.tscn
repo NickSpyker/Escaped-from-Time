@@ -3,15 +3,6 @@
 [ext_resource type="Theme" uid="uid://cprd0wvvjk0wh" path="res://Resources/Themes/GUI.tres" id="1_4rrrd"]
 [ext_resource type="Script" path="res://Objects/GUI/Gui.cs" id="1_vooh8"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_075ov"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35eek"]
-
-[sub_resource type="Theme" id="Theme_cxhx1"]
-ProgressBar/font_sizes/font_size = 30
-ProgressBar/styles/background = SubResource("StyleBoxFlat_075ov")
-ProgressBar/styles/fill = SubResource("StyleBoxFlat_35eek")
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_njrt3"]
 bg_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 5
@@ -36,6 +27,15 @@ ProgressBar/font_sizes/font_size = 20
 ProgressBar/styles/background = SubResource("StyleBoxFlat_njrt3")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_2wd76")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_075ov"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_35eek"]
+
+[sub_resource type="Theme" id="Theme_cxhx1"]
+ProgressBar/font_sizes/font_size = 30
+ProgressBar/styles/background = SubResource("StyleBoxFlat_075ov")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_35eek")
+
 [node name="GUI" type="SubViewportContainer"]
 script = ExtResource("1_vooh8")
 
@@ -54,23 +54,37 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_4rrrd")
 
-[node name="BackToTimeTouchInstruction" type="Label" parent="SubViewport/Control"]
-layout_mode = 0
-offset_left = 1644.0
-offset_top = 20.0
-offset_right = 1900.0
-offset_bottom = 48.0
-theme = SubResource("Theme_cxhx1")
-text = "GUI_BACK_TO_TIME_LABEL"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="MarginContainer" type="MarginContainer" parent="SubViewport/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
 
-[node name="PVbar" type="ProgressBar" parent="SubViewport/Control"]
-layout_mode = 0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 420.0
-offset_bottom = 60.0
+[node name="Control" type="Control" parent="SubViewport/Control/MarginContainer"]
+layout_mode = 2
+
+[node name="PVbar" type="ProgressBar" parent="SubViewport/Control/MarginContainer/Control"]
+layout_mode = 1
+offset_right = 500.0
+offset_bottom = 28.0
 theme = SubResource("Theme_v657e")
 step = 0.001
 value = 100.0
+
+[node name="BackToTimeTouchInstruction" type="Label" parent="SubViewport/Control/MarginContainer/Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -1900.0
+offset_bottom = 28.0
+grow_horizontal = 0
+theme = SubResource("Theme_cxhx1")
+text = "GUI_BACK_TO_TIME_LABEL"
+horizontal_alignment = 2

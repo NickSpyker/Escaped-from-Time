@@ -1,6 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://v0s4yoclgw3p"]
+[gd_scene load_steps=5 format=3 uid="uid://v0s4yoclgw3p"]
 
 [ext_resource type="Script" path="res://Scenes/MainMenu/MainMenu.cs" id="1_l0ytr"]
+[ext_resource type="Theme" uid="uid://nogjyw54m8rl" path="res://Resources/Themes/MainMenuTheme.tres" id="1_p7low"]
+[ext_resource type="FontFile" uid="uid://bpyfuho2ik1di" path="res://Assets/Fonts/Permanent_Marker/PermanentMarker-Regular.ttf" id="3_86eib"]
+
+[sub_resource type="Theme" id="Theme_8wmrg"]
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_shadow_color = Color(1, 1, 1, 0.498039)
+Label/constants/shadow_outline_size = 3
+Label/font_sizes/font_size = 50
+Label/fonts/font = ExtResource("3_86eib")
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -9,10 +18,67 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_p7low")
 script = ExtResource("1_l0ytr")
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.5
-autostart = true
+[node name="MenuTitleAndMainButtons" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 250
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 250
 
-[connection signal="timeout" from="Timer" to="." method="OnTimerTimeout"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuTitleAndMainButtons"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MenuTitleAndMainButtons/HBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="GameTitle" type="Label" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_8wmrg")
+text = "Escaped From Time"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleSeparator" type="HSeparator" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 115
+
+[node name="TutorialButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_MENU_TUTORIAL"
+
+[node name="PlayButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_MENU_PLAY"
+
+[node name="DevSandboxButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_MENU_DEV_SANDBOX"
+
+[node name="SettingsButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_MENU_SETTINGS"
+
+[node name="ExitButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_MENU_EXIT"
+
+[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/DevSandboxButton" to="." method="OnButtonPressedDevSandbox"]

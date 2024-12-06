@@ -1,0 +1,35 @@
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://nogjyw54m8rl"]
+
+[ext_resource type="FontFile" uid="uid://bpjejrbncj6pl" path="res://Assets/Fonts/Delius/Delius-Regular.ttf" id="1_5g0po"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w4aqx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_00g54"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8vfxk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c8bmt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kc461"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8a3kh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okqp8"]
+bg_color = Color(0, 0, 0, 0.498039)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+shadow_color = Color(0, 0, 0, 0.333333)
+shadow_size = 5
+
+[resource]
+Button/font_sizes/font_size = 25
+Button/fonts/font = ExtResource("1_5g0po")
+Button/styles/disabled = SubResource("StyleBoxEmpty_w4aqx")
+Button/styles/focus = SubResource("StyleBoxEmpty_00g54")
+Button/styles/hover = SubResource("StyleBoxEmpty_8vfxk")
+Button/styles/normal = SubResource("StyleBoxEmpty_c8bmt")
+Button/styles/pressed = SubResource("StyleBoxEmpty_kc461")
+HSeparator/styles/separator = SubResource("StyleBoxEmpty_8a3kh")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_okqp8")
