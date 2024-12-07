@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://67caiq5tr41r"]
+[gd_scene load_steps=23 format=3 uid="uid://67caiq5tr41r"]
 
 [ext_resource type="Script" path="res://Scenes/Maps/TutorialDungeonLevel.cs" id="1_4yydg"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="2_wk77w"]
@@ -18,6 +18,7 @@
 [ext_resource type="MeshLibrary" uid="uid://fmv8cnr7fipt" path="res://Resources/GridMaps/MeshLibraries/dungeon_rocks.tres" id="10_6v7i1"]
 [ext_resource type="MeshLibrary" uid="uid://6bpytbyksvs1" path="res://Resources/GridMaps/MeshLibraries/dungeon_banners.tres" id="11_d3ubx"]
 [ext_resource type="MeshLibrary" uid="uid://do5c65vx8au5q" path="res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" id="12_c7er4"]
+[ext_resource type="PackedScene" uid="uid://dgqwu0pgilmkg" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle.tscn" id="19_lxnci"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gwcpt"]
 sky_top_color = Color(0.768602, 0.85197, 1, 1)
@@ -184,5 +185,76 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 2, 42)
 
 [node name="door_scaffold_tscn" parent="TimeMechanics/TimeOutputs" instance=ExtResource("5_bhigj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 32)
+
+[node name="Props" type="Node3D" parent="."]
+
+[node name="candle_tscn" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0438, 9.53674e-07, 14.7298)
+
+[node name="candle_tscn2" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.98307, 0, 15.0709)
+
+[node name="candle_tscn3" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42551, 0, 1.44524)
+
+[node name="candle_tscn4" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.796, -9.53674e-07, 11.1019)
+
+[node name="candle_tscn5" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3188, -9.53674e-07, 21.0189)
+
+[node name="candle_tscn6" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2696, 0, 19.7761)
+
+[node name="candle_tscn7" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0741, -9.53674e-07, 30.9237)
+
+[node name="candle_tscn8" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2423, 9.53674e-07, 9.66297)
+
+[node name="candle_tscn9" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9479, 0, 30.6077)
+
+[node name="candle_tscn10" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.1746, 0, 30.6227)
+
+[node name="candle_tscn11" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.6958, 0, 17.7473)
+
+[node name="candle_tscn12" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.9162, 0, 9.30798)
+
+[node name="candle_tscn13" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8714, 0, 9.17462)
+
+[node name="candle_tscn14" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.22, 0, 9.14343)
+
+[node name="candle_tscn15" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3832, 0, 18.6628)
+
+[node name="candle_tscn16" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.2237, 0, 33.511)
+
+[node name="candle_tscn17" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4023, 4.05, 44.6447)
+
+[node name="candle_tscn18" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.5518, 0.0499992, 50.417)
+
+[node name="candle_tscn19" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.9254, 0.0499992, 42.1061)
+
+[node name="candle_tscn20" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.03367, 4.05, 49.5316)
+
+[node name="candle_tscn21" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.5259, 4.05, 49.4541)
+
+[node name="candle_tscn22" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43041, 4.05, 59.1768)
+
+[node name="candle_tscn23" type="Node3D" parent="Props" instance=ExtResource("19_lxnci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.3755, 4.05, 70.0032)
 
 [connection signal="PlayerInteracted" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeOutputs/door_scaffold_tscn" method="ToggleDoor"]
