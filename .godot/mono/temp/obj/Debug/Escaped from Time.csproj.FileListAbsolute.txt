@@ -1,0 +1,18 @@
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\bin\Debug\Escaped from Time.deps.json
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\bin\Debug\Escaped from Time.runtimeconfig.json
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\bin\Debug\Escaped from Time.dll
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\bin\Debug\Escaped from Time.pdb
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.csproj.AssemblyReference.cache
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.AssemblyInfoInputs.cache
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.AssemblyInfo.cs
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.csproj.CoreCompileInputs.cache
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.sourcelink.json
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped .3467F421.Up2Date
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.dll
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\refint\Escaped from Time.dll
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.pdb
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\Escaped from Time.genruntimeconfig.cache
+C:\Users\Spijkerman\Repositories\Escaped-from-Time\.godot\mono\temp\obj\Debug\ref\Escaped from Time.dll

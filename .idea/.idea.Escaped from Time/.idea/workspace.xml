@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Fix doors" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16cc92ab834e6a66fd76860bab74ac773106bbea8c544c61209e1342faed/ResourceLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3dc9acf423363fcdab31a9a6d274e54a7b90673b3167bb96dca55efad84d/KinematicCollision3D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a3f6e7387b868cf426d51eddd1816420d11dd139dc9bca244c32f1d22d8b2/GodotObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fb6e8dd4c7a9a8308ba7b679b8bdc07f55a3aa52153f6a4a36473fd0232e3b6f/CharacterBody3D.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2pjwbmbOZm5YzwrQtay26qtpy0z" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "nicolas",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected=".NET Executable.Player">
+    <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
+      <option name="address" value="127.0.0.1" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Programmes/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Spijkerman\Repositories\Escaped-from-Time" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Player" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Programmes/Godot_v4.3-stable_mono_win64/Godot_v4.3-stable_mono_win64.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot;" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Spijkerman\Repositories\Escaped-from-Time" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="" />
+      <created>1722193734619</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722193734619</updated>
+      <workItem from="1722193735657" duration="2000" />
+      <workItem from="1733292870340" duration="44000" />
+      <workItem from="1733292925520" duration="3901000" />
+      <workItem from="1733306118827" duration="2374000" />
+      <workItem from="1733312620757" duration="3880000" />
+      <workItem from="1733371988035" duration="17705000" />
+      <workItem from="1733400087572" duration="2073000" />
+      <workItem from="1733453342822" duration="11275000" />
+      <workItem from="1733486380028" duration="5964000" />
+      <workItem from="1733540402058" duration="10663000" />
+      <workItem from="1733553683390" duration="5819000" />
+      <workItem from="1733569206235" duration="4411000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fix player animation">
+      <option name="closed" value="true" />
+      <created>1733307128028</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733307128028</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix player animation">
+      <option name="closed" value="true" />
+      <created>1733307228852</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733307228852</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add player attack and health handlers">
+      <option name="closed" value="true" />
+      <created>1733316478218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733316478218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Edit sandbox gridmaps">
+      <option name="closed" value="true" />
+      <created>1733373062190</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733373062190</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add time control components">
+      <option name="closed" value="true" />
+      <created>1733384670325</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733384670325</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add player ghost time instances">
+      <option name="closed" value="true" />
+      <created>1733393567338</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733393567338</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix collision bug">
+      <option name="closed" value="true" />
+      <created>1733402376622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733402376622</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add loader and main menu">
+      <option name="closed" value="true" />
+      <created>1733463412853</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1733463412853</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add time mechanics for interactable entities">
+      <option name="closed" value="true" />
+      <created>1733466611031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733466611031</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fix ghost instances collision layer and mask, and fix camera spring arm">
+      <option name="closed" value="true" />
+      <created>1733487363490</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1733487363490</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add gravity to player ghost who have ended actions">
+      <option name="closed" value="true" />
+      <created>1733488511127</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733488511127</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add AssetPlacer plugin">
+      <option name="closed" value="true" />
+      <created>1733490031661</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733490031661</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add CanMoveRigidBody player component">
+      <option name="closed" value="true" />
+      <created>1733496354958</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733496354958</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fix movable cube bug">
+      <option name="closed" value="true" />
+      <created>1733543738049</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733543738049</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add cube in gridmap">
+      <option name="closed" value="true" />
+      <created>1733545193117</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733545193117</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add door output interaction">
+      <option name="closed" value="true" />
+      <created>1733547948340</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733547948340</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add interaction inputs and outputs">
+      <option name="closed" value="true" />
+      <created>1733551750444</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1733551750444</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update ????">
+      <option name="closed" value="true" />
+      <created>1733554188007</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1733554188007</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add tutorial and main maps">
+      <option name="closed" value="true" />
+      <created>1733562514054</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733562514054</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add AssetPlacer libraries">
+      <option name="closed" value="true" />
+      <created>1733563288203</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1733563288203</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Update tutorial gridmap dungeon">
+      <option name="closed" value="true" />
+      <created>1733563930578</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1733563930578</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add debug message for lever in tutorial map">
+      <option name="closed" value="true" />
+      <created>1733569371813</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1733569371813</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add TimeMechanicsHelper">
+      <option name="closed" value="true" />
+      <created>1733573042054</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1733573042054</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fix doors">
+      <option name="closed" value="true" />
+      <created>1733573411815</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1733573411815</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Fix player animation" />
+    <MESSAGE value="Add player attack and health handlers" />
+    <MESSAGE value="Edit sandbox gridmaps" />
+    <MESSAGE value="Add time control components" />
+    <MESSAGE value="Add player ghost time instances" />
+    <MESSAGE value="Fix collision bug" />
+    <MESSAGE value="Add loader and main menu" />
+    <MESSAGE value="Add time mechanics for interactable entities" />
+    <MESSAGE value="Fix ghost instances collision layer and mask, and fix camera spring arm" />
+    <MESSAGE value="Add gravity to player ghost who have ended actions" />
+    <MESSAGE value="Add AssetPlacer plugin" />
+    <MESSAGE value="Add CanMoveRigidBody player component" />
+    <MESSAGE value="Fix movable cube bug" />
+    <MESSAGE value="Add cube in gridmap" />
+    <MESSAGE value="Add door output interaction" />
+    <MESSAGE value="Add interaction inputs and outputs" />
+    <MESSAGE value="Update ????" />
+    <MESSAGE value="Add tutorial and main maps" />
+    <MESSAGE value="Add AssetPlacer libraries" />
+    <MESSAGE value="Update tutorial gridmap dungeon" />
+    <MESSAGE value="Add debug message for lever in tutorial map" />
+    <MESSAGE value="Add TimeMechanicsHelper" />
+    <MESSAGE value="Fix doors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix doors" />
+  </component>
+</project>

@@ -1,0 +1,14 @@
+Door
+StaticBody3D
+OutputInteractableEntity
+Label3D
+Node3D
+InteractableEntityRecorderPlayer
+TimeMechanicsArea
+GridMap
+InputInteractableEntity
+CollisionShape3D
+Area3D
+TimeMovableRigidBody
+AnimationPlayer
+CanMoveRigidBody
