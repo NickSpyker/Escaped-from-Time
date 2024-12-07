@@ -1,0 +1,182 @@
+[gd_scene load_steps=22 format=3 uid="uid://67caiq5tr41r"]
+
+[ext_resource type="Script" path="res://Scenes/Maps/TutorialDungeonLevel.cs" id="1_4yydg"]
+[ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="2_wk77w"]
+[ext_resource type="MeshLibrary" uid="uid://d1worgrn7qv1x" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" id="3_0l5jx"]
+[ext_resource type="Script" path="res://Components/TimeTravelHandler/TimeMechanicsArea.cs" id="3_6soor"]
+[ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Objects/Characters/Adventurers/player_knight.tscn" id="4_m85tq"]
+[ext_resource type="MeshLibrary" uid="uid://dxpgc8dxnytip" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" id="4_vgvws"]
+[ext_resource type="MeshLibrary" uid="uid://dlr46siogwbd6" path="res://Resources/GridMaps/MeshLibraries/dungeon_fundations_s.tres" id="5_6oujx"]
+[ext_resource type="PackedScene" uid="uid://c58b07p7g700t" path="res://Objects/InteractableEntities/Outputs/door_scaffold.tscn" id="5_bhigj"]
+[ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="6_togog"]
+[ext_resource type="Script" path="res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs" id="7_1esuq"]
+[ext_resource type="MeshLibrary" uid="uid://bwiksrjk7ipsc" path="res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" id="7_7d4wf"]
+[ext_resource type="PackedScene" uid="uid://517vmv81wx7l" path="res://Objects/InteractableEntities/Outputs/movable_box.tscn" id="7_i6itb"]
+[ext_resource type="PackedScene" path="res://Objects/InteractableEntities/Inputs/press_to_interact_area.tscn" id="7_ngpbo"]
+[ext_resource type="MeshLibrary" uid="uid://coyag3tyfw8pg" path="res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" id="8_q3lkt"]
+[ext_resource type="MeshLibrary" uid="uid://csvwmnbjav34u" path="res://Resources/GridMaps/MeshLibraries/dungeon_pillars.tres" id="9_xc1yp"]
+[ext_resource type="MeshLibrary" uid="uid://fmv8cnr7fipt" path="res://Resources/GridMaps/MeshLibraries/dungeon_rocks.tres" id="10_6v7i1"]
+[ext_resource type="MeshLibrary" uid="uid://6bpytbyksvs1" path="res://Resources/GridMaps/MeshLibraries/dungeon_banners.tres" id="11_d3ubx"]
+[ext_resource type="MeshLibrary" uid="uid://do5c65vx8au5q" path="res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" id="12_c7er4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gwcpt"]
+sky_top_color = Color(0.768602, 0.85197, 1, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+sky_energy_multiplier = 0.2
+sky_cover_modulate = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_1mjgo"]
+sky_material = SubResource("ProceduralSkyMaterial_gwcpt")
+
+[sub_resource type="Environment" id="Environment_ge28g"]
+background_mode = 2
+sky = SubResource("Sky_1mjgo")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="TutorialDungeonLevel" type="Node3D"]
+script = ExtResource("1_4yydg")
+
+[node name="Dungeon" type="Node3D" parent="."]
+
+[node name="Floors" type="Node3D" parent="Dungeon"]
+
+[node name="Floors_XL" type="GridMap" parent="Dungeon/Floors"]
+mesh_library = ExtResource("2_wk77w")
+cell_size = Vector3(8, 4, 8)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(0, 3, 0, 2, 3, 0, 2, 1, 0, 4, 2, 1441793, 65537, 7, 1048576)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Floors_L" type="GridMap" parent="Dungeon/Floors"]
+mesh_library = ExtResource("3_0l5jx")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(0, 0, 1441797, 1, 0, 1441797, 2, 0, 1441797, 3, 0, 1441797, 3, 1, 1441797, 3, 2, 1441797, 3, 3, 1441797, 2, 3, 1441797, 1, 3, 1441797, 0, 3, 1441797, 0, 2, 1441797, 0, 1, 1441797, 1, 1, 6, 2, 2, 2, 1, 2, 5, 2, 1, 5, 2, 4, 5, 1, 4, 5, 1, 5, 5, 2, 5, 5, 2, 6, 5, 3, 6, 5, 3, 4, 5, 3, 5, 5, 2, 7, 2, 0, 5, 2, 3, 7, 2, 5, 5, 2, 0, 4, 6, 4, 4, 6, 4, 5, 5, 5, 4, 5, 7, 5, 1441797, 8, 3, 1441797, 9, 3, 1441797, 10, 4, 1441797, 10, 5, 1441797, 6, 7, 1441794, 6, 2, 1441794, 11, 2, 1441794, 11, 7, 1441794, 6, 6, 1048584, 6, 5, 1048584, 6, 4, 1048584, 6, 3, 1048584, 7, 2, 8, 8, 2, 8, 9, 2, 8, 10, 2, 8, 11, 3, 1441800, 11, 4, 1441800, 11, 5, 1441800, 11, 6, 1441800, 10, 3, 655366, 7, 4, 655366, 9, 6, 655366, 7, 6, 655365, 8, 6, 655365, 10, 6, 655365, 7, 3, 655365, 10, 7, 655365, 9, 7, 655365, 8, 7, 655365, 7, 7, 655365, 8, 8, 655365, 9, 8, 655365, 7, 8, 655365, 7, 9, 655365, 7, 10, 655365, 10, 10, 655365, 10, 9, 655365, 10, 8, 655365, 10, 11, 655365, 9, 11, 655365, 8, 11, 655365, 7, 11, 655365, 6, 8, 655365, 6, 9, 655365, 6, 10, 655365, 6, 11, 655365, 5, 8, 655365, 5, 9, 655365, 5, 10, 655365, 4, 8, 655365, 4, 9, 655365, 4, 10, 655365, 10, 12, 655365, 9, 12, 655365, 8, 10, 655365, 8, 9, 655365, 9, 9, 655365, 9, 10, 655365, 65543, 12, 655365, 65542, 11, 655365, 65542, 12, 655365, 2, 8, 1441797, 3, 8, 1441797, 3, 9, 1441797, 3, 10, 1441797, 3, 11, 1441797, 3, 12, 1441797, 2, 12, 1441797, 2, 11, 1441797, 2, 10, 1441797, 2, 9, 1441797, 65540, 12, 655365, 65537, 12, 655365, 65537, 13, 655365, 65538, 13, 655365, 65539, 13, 655365, 65540, 13, 655365, 65537, 14, 655366, 65540, 16, 655366, 65537, 17, 655366, 65540, 14, 655365, 65540, 15, 655365, 65537, 15, 655365, 65537, 16, 655365, 65538, 16, 655365, 65539, 16, 655365, 65540, 17, 655365, 65539, 17, 655365, 65538, 17, 655365)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Floors_S" type="GridMap" parent="Dungeon/Floors"]
+mesh_library = ExtResource("4_vgvws")
+cell_size = Vector3(2, 4, 2)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(65552, 24, 655366, 65552, 25, 655366, 65552, 23, 655369, 65551, 22, 655369, 65550, 22, 655366, 65550, 23, 655366, 65551, 23, 655366)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Foundations_S" type="GridMap" parent="Dungeon"]
+mesh_library = ExtResource("5_6oujx")
+cell_center_y = false
+collision_mask = 7
+
+[node name="Walls" type="GridMap" parent="Dungeon"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh_library = ExtResource("6_togog")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(65535, 65535, 1048584, 0, 65535, 29, 65535, 0, 1441821, 1, 65535, 26, 65535, 1, 1441827, 65535, 2, 1441821, 0, 3, 655389, 2, 3, 655389, 3, 2, 1441821, 3, 0, 1441821, 3, 65535, 8, 2, 65535, 29, 65535, 3, 1048608, 3, 3, 1441824, 3, 4, 1441825, 3, 5, 1441799, 2, 5, 655377, 1, 5, 655388, 65535, 4, 1048601, 65535, 5, 1048609, 65535, 6, 1048577, 0, 7, 1, 65535, 7, 655368, 2, 7, 35, 3, 7, 655386, 4, 7, 655370, 5, 6, 1441802, 5, 5, 1441797, 5, 4, 1441814, 3, 1, 1048608, 4, 1, 10, 5, 2, 1441813, 5, 1, 32, 5, 7, 655392, 6, 7, 655360, 6, 1, 655360, 10, 1, 655360, 11, 2, 1048576, 11, 6, 1048576, 7, 1, 23, 8, 1, 25, 9, 1, 26, 11, 3, 1441822, 11, 4, 1048610, 11, 5, 1441792, 11, 1, 6, 11, 7, 1441798, 7, 7, 655389, 9, 7, 655389, 10, 7, 32, 10, 8, 1441792, 10, 10, 1441792, 10, 9, 1441814, 10, 11, 1048586, 10, 12, 1441798, 9, 12, 655360, 7, 11, 655360, 6, 11, 655360, 5, 11, 655366, 4, 10, 0, 3, 10, 1048584, 1, 7, 32, 1, 9, 1441827, 1, 10, 1441821, 1, 11, 1441821, 65543, 12, 655389, 65542, 12, 655389, 65541, 11, 1048605, 65541, 12, 655368, 65544, 12, 655389, 65545, 12, 655389, 65546, 12, 1441800, 65546, 11, 1048607, 5, 10, 1441824, 5, 9, 1048596, 3, 11, 1048605, 3, 12, 1441800, 1, 12, 655368, 2, 12, 655389, 65541, 10, 1441824, 65540, 10, 655389, 65539, 10, 1048584, 65539, 11, 655368, 65540, 11, 8, 65537, 8, 1048607, 65537, 9, 1048605, 65537, 10, 1048605, 65537, 11, 1441800, 65536, 11, 1048584, 65540, 12, 1048605, 65536, 12, 1048605, 65540, 13, 1441818, 65536, 13, 1048601, 65536, 14, 1048605, 65540, 14, 1048605, 65540, 15, 1441815, 65536, 15, 1048600, 65540, 16, 1048605, 65536, 16, 1048605, 65540, 17, 1441800, 65536, 17, 655368, 65537, 17, 655389, 65539, 17, 655389, 65538, 17, 655387, 1, 8, 1048609)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Stairs" type="GridMap" parent="Dungeon"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh_library = ExtResource("7_7d4wf")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(8, 12, 655371)
+}
+
+[node name="Ceilings" type="GridMap" parent="Dungeon"]
+mesh_library = ExtResource("8_q3lkt")
+cell_size = Vector3(4, 3.8, 4)
+cell_center_y = false
+collision_layer = 0
+collision_mask = 0
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Pillars" type="GridMap" parent="Dungeon"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5)
+mesh_library = ExtResource("9_xc1yp")
+cell_size = Vector3(1, 4, 1)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(5, 23, 1441792, 5, 15, 655361, 9, 15, 655361, 65559, 41, 655361, 23, 41, 655360, 32, 47, 655361)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Rocks" type="GridMap" parent="Dungeon"]
+mesh_library = ExtResource("10_6v7i1")
+cell_size = Vector3(1, 4, 1)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(14, 22, 1048577)
+}
+
+[node name="Banners" type="GridMap" parent="Dungeon"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh_library = ExtResource("11_d3ubx")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_layer = 0
+collision_mask = 0
+data = {
+"cells": PackedInt32Array(3, 1, 1441829)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Scaffolds" type="GridMap" parent="Dungeon"]
+mesh_library = ExtResource("12_c7er4")
+cell_size = Vector3(1, 4, 1)
+cell_center_y = false
+collision_mask = 7
+
+[node name="EnvironmentsAndLights" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="EnvironmentsAndLights"]
+transform = Transform3D(0.965926, 0.0669873, -0.25, 0.258819, -0.25, 0.933013, 0, -0.965926, -0.258819, 0, 0, 0)
+light_color = Color(0.845173, 0.91065, 1, 1)
+light_energy = 0.5
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="EnvironmentsAndLights"]
+environment = SubResource("Environment_ge28g")
+
+[node name="TimeMechanics" type="Node3D" parent="."]
+script = ExtResource("3_6soor")
+
+[node name="PlayerKnight" parent="TimeMechanics" instance=ExtResource("4_m85tq")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 8, 0, 8)
+
+[node name="TimeInputs" type="Node3D" parent="TimeMechanics"]
+
+[node name="press_to_interact_area_tscn" parent="TimeMechanics/TimeInputs" instance=ExtResource("7_ngpbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, 27)
+
+[node name="InteractableEntityRecorderPlayer" type="Node" parent="TimeMechanics/TimeInputs/press_to_interact_area_tscn" node_paths=PackedStringArray("InteractableEntity")]
+script = ExtResource("7_1esuq")
+InteractableEntity = NodePath("..")
+
+[node name="TimeOutputs" type="Node3D" parent="TimeMechanics"]
+
+[node name="movable_box_tscn" parent="TimeMechanics/TimeOutputs" instance=ExtResource("7_i6itb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 2, 42)
+
+[node name="door_scaffold_tscn" parent="TimeMechanics/TimeOutputs" instance=ExtResource("5_bhigj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 32)
+
+[connection signal="PlayerInteracted" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeOutputs/door_scaffold_tscn" method="ToggleDoor"]

@@ -81,4 +81,8 @@ text = "MAIN_MENU_SETTINGS"
 layout_mode = 2
 text = "MAIN_MENU_EXIT"
 
+[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/TutorialButton" to="." method="OnButtonPressedTutorial"]
+[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="OnButtonPressedPlay"]
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/DevSandboxButton" to="." method="OnButtonPressedDevSandbox"]
+[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/SettingsButton" to="." method="OnButtonPressedSettings"]
+[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ExitButton" to="." method="OnButtonPressedExit"]

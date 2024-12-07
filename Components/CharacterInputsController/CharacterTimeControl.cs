@@ -59,4 +59,10 @@ public partial class CharacterTimeControl : Node
 
 		_timeMechanicsArea.ReStart();
 	}
+
+	public void NewInitialBackToTimeTransform(Vector3 newPosition, Vector3 newRotation)
+	{
+		_initialPosition = newPosition;
+		_initialRotation = newRotation;
+	}
 }
