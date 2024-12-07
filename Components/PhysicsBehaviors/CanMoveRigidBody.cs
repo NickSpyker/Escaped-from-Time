@@ -1,3 +1,5 @@
+using System;
+using EscapedfromTime.Objects.TimePhysicsObjects;
 using Godot;
 
 namespace EscapedfromTime.Components.PhysicsBehaviors;
@@ -9,20 +11,26 @@ public partial class CanMoveRigidBody : Node
     [Export] public CharacterBody3D Character;
     [Export] public float CharacterMassInKg = 70f;
 
-    private Vector3 _velocity = Vector3.Zero;
-
     public override void _PhysicsProcess(double delta)
     {
-        if (Character.Velocity != Vector3.Zero)
-            _velocity = Character.Velocity * CharacterMassInKg;
-
         for (int i = 0; i < Character.GetSlideCollisionCount(); i++)
         {
             KinematicCollision3D collision = Character.GetSlideCollision(i);
-            if (collision.GetCollider() is RigidBody3D rigidBody)
-            {
-                rigidBody.ApplyForce(-collision.GetNormal() * _velocity);
-            }
+            if (collision.GetCollider() is not TimeMovableRigidBody rigidBody) continue;
+
+            Vector3 normal = collision.GetNormal();
+
+            const float upThreshold = 0.9f;
+            if (normal.Dot(Vector3.Up) > upThreshold) continue;
+
+            Vector3 pushDirection = _getPlanSignVector(-normal);
+
+            rigidBody.ApplyForce(pushDirection * CharacterMassInKg);
         }
+    }
+
+    private Vector3 _getPlanSignVector(Vector3 vector)
+    {
+        return new Vector3(Math.Sign(vector.X), 0, Math.Sign(vector.Z));
     }
 }

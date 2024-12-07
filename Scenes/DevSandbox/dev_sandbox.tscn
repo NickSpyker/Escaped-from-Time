@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=29 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Components/TimeTravelHandler/TimeMechanicsArea.cs" id="1_wp6h8"]
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
@@ -12,11 +12,25 @@
 [ext_resource type="MeshLibrary" uid="uid://d1worgrn7qv1x" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" id="5_7ux61"]
 [ext_resource type="Script" path="res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs" id="5_qlsug"]
 [ext_resource type="MeshLibrary" uid="uid://dxpgc8dxnytip" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" id="6_smokw"]
+[ext_resource type="Texture2D" uid="uid://dj51k2w63yog6" path="res://Assets/Prototypes/Green/texture_04.png" id="7_bfnwu"]
 [ext_resource type="MeshLibrary" uid="uid://do5c65vx8au5q" path="res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" id="8_pvjx0"]
 [ext_resource type="MeshLibrary" uid="uid://vldulw42c6p1" path="res://Resources/GridMaps/MeshLibraries/dungeon_props.tres" id="9_rqdic"]
 [ext_resource type="MeshLibrary" uid="uid://bwiksrjk7ipsc" path="res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" id="13_mhmi3"]
 [ext_resource type="MeshLibrary" uid="uid://coyag3tyfw8pg" path="res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" id="14_14ife"]
-[ext_resource type="Texture2D" uid="uid://fj5mhfof63lv" path="res://Assets/Prototypes/Green/texture_05.png" id="17_65oru"]
+[ext_resource type="Script" path="res://Objects/TimePhysicsObjects/TimeMovableRigidBody.cs" id="17_1hwm6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_bba67"]
+rough = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqp0u"]
+albedo_texture = ExtResource("7_bfnwu")
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_hqi0l"]
+size = Vector3(4, 4, 4)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d2d01"]
+size = Vector3(4, 4, 4)
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_om42q"]
 vertices = PackedVector3Array(-44.5, 1.5, 15.5, -44.5, 1.5, 44.5, -15.5, 1.5, 44.5, -15.5, 1.5, 15.5)
@@ -44,19 +58,6 @@ sky = SubResource("Sky_ak5im")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_y8sf5"]
-bounce = 0.25
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ycjbp"]
-albedo_texture = ExtResource("17_65oru")
-uv1_triplanar = true
-
-[sub_resource type="BoxMesh" id="BoxMesh_0fwb6"]
-size = Vector3(2, 2, 2)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_5xqmc"]
-size = Vector3(2, 2, 2)
-
 [node name="DevSandbox" type="Node3D"]
 
 [node name="TimeMechanicsArea" type="Node3D" parent="."]
@@ -73,6 +74,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.30078, 0, 16.5213)
 
 [node name="InteractableEntityRecorderPlayer" type="Node" parent="TimeMechanicsArea/InteractArea"]
 script = ExtResource("5_qlsug")
+
+[node name="TimeMovableRigidBody" type="RigidBody3D" parent="TimeMechanicsArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 30)
+axis_lock_linear_y = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
+physics_material_override = SubResource("PhysicsMaterial_bba67")
+script = ExtResource("17_1hwm6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TimeMechanicsArea/TimeMovableRigidBody"]
+material_override = SubResource("StandardMaterial3D_iqp0u")
+mesh = SubResource("BoxMesh_hqi0l")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TimeMechanicsArea/TimeMovableRigidBody"]
+shape = SubResource("BoxShape3D_d2d01")
 
 [node name="World" type="Node3D" parent="."]
 
@@ -168,7 +185,7 @@ cell_size = Vector3(4, 4, 4)
 cell_center_y = false
 collision_mask = 7
 data = {
-"cells": PackedInt32Array(5, 2, 1441792)
+"cells": PackedInt32Array(5, 2, 1441792, 65534, 4, 1048576)
 }
 
 [node name="Ceilings" type="GridMap" parent="Dungeon"]
@@ -180,17 +197,3 @@ metadata/_editor_floor_ = Vector3(0, 1, 0)
 
 [node name="EnemyWarrior" parent="." instance=ExtResource("4_te5j6")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -17, 0.5, 17)
-
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(0.866025, 0.433013, 0.25, -0.5, 0.75, 0.433013, 0, -0.5, 0.866025, 0, 6, -12)
-collision_mask = 7
-mass = 2.0
-physics_material_override = SubResource("PhysicsMaterial_y8sf5")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
-material_override = SubResource("StandardMaterial3D_ycjbp")
-mesh = SubResource("BoxMesh_0fwb6")
-skeleton = NodePath("../CollisionShape3D")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-shape = SubResource("BoxShape3D_5xqmc")
