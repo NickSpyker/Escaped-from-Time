@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Fix doors" />
+    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Add .idea and .godot">
+      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Resource" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Resource" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/metadata/ide_messaging_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/metadata/ide_messaging_meta.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +124,7 @@
       <workItem from="1733486380028" duration="5964000" />
       <workItem from="1733540402058" duration="10663000" />
       <workItem from="1733553683390" duration="5819000" />
-      <workItem from="1733569206235" duration="4411000" />
+      <workItem from="1733569206235" duration="6199000" />
     </task>
     <task id="LOCAL-00001" summary="Fix player animation">
       <option name="closed" value="true" />
@@ -310,7 +318,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733573411815</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Remove .idea .vscode .vs and .godot from .gitignore">
+      <option name="closed" value="true" />
+      <created>1733573745217</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1733573745217</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add .idea and .godot">
+      <option name="closed" value="true" />
+      <created>1733573817299</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1733573817299</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +378,8 @@
     <MESSAGE value="Add debug message for lever in tutorial map" />
     <MESSAGE value="Add TimeMechanicsHelper" />
     <MESSAGE value="Fix doors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix doors" />
+    <MESSAGE value="Remove .idea .vscode .vs and .godot from .gitignore" />
+    <MESSAGE value="Add .idea and .godot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .idea and .godot" />
   </component>
 </project>
