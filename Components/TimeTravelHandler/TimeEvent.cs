@@ -1,4 +1,5 @@
-﻿using Godot;
+﻿using EscapedfromTime.Objects.InteractableEntities;
+using Godot;
 
 namespace EscapedfromTime.Components.TimeTravelHandler;
 
@@ -11,6 +12,20 @@ public enum TimeEventType
     PlayerInteract
 }
 
+public struct InteractionData
+{
+    public InteractionData(InputInteractableEntity interactNode, StringName signal, params Variant[] args)
+    {
+        InteractNodeValue = interactNode;
+        SignalName = signal;
+        Args = args;
+    }
+
+    public readonly InputInteractableEntity InteractNodeValue = null!;
+    public StringName SignalName = null!;
+    public Variant[] Args = null!;
+}
+
 public struct TimeEvent
 {
     public TimeEvent() {}
@@ -20,4 +35,5 @@ public struct TimeEvent
     public float FloatValue = default;
     public Vector3 VectorValue = default;
     public Transform3D TransformValue = default;
+    public InteractionData InteractDataValue = default;
 }
