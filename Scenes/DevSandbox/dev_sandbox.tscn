@@ -1,34 +1,26 @@
-[gd_scene load_steps=29 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=28 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Components/TimeTravelHandler/TimeMechanicsArea.cs" id="1_wp6h8"]
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
 [ext_resource type="Texture2D" uid="uid://e5ubkkbi6qbr" path="res://Assets/Prototypes/Orange/texture_09.png" id="3_bjm0t"]
 [ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Objects/Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
 [ext_resource type="PackedScene" uid="uid://decpqp0p02s8q" path="res://Objects/Characters/Adventurers/player_knight_ghost.tscn" id="3_urbbi"]
-[ext_resource type="PackedScene" uid="uid://xg6niaqw02kv" path="res://Objects/InteractableEntities/Inputs/InteractArea.tscn" id="4_e2jel"]
+[ext_resource type="PackedScene" uid="uid://xg6niaqw02kv" path="res://Objects/InteractableEntities/Inputs/press_to_interact_area.tscn" id="4_e2jel"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="4_qmy3s"]
 [ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="4_qvrtx"]
 [ext_resource type="PackedScene" uid="uid://btsek05v74ekr" path="res://Objects/Characters/Skeletons/enemy_warrior.tscn" id="4_te5j6"]
 [ext_resource type="MeshLibrary" uid="uid://d1worgrn7qv1x" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" id="5_7ux61"]
 [ext_resource type="Script" path="res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs" id="5_qlsug"]
+[ext_resource type="Script" path="res://Objects/InteractableEntities/Inputs/InteractArea.cs" id="6_2461k"]
 [ext_resource type="MeshLibrary" uid="uid://dxpgc8dxnytip" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" id="6_smokw"]
-[ext_resource type="Texture2D" uid="uid://dj51k2w63yog6" path="res://Assets/Prototypes/Green/texture_04.png" id="7_bfnwu"]
+[ext_resource type="PackedScene" uid="uid://0hjlprx8wbxi" path="res://Objects/InteractableEntities/Inputs/interact_area.tscn" id="7_2nh7p"]
 [ext_resource type="MeshLibrary" uid="uid://do5c65vx8au5q" path="res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" id="8_pvjx0"]
 [ext_resource type="MeshLibrary" uid="uid://vldulw42c6p1" path="res://Resources/GridMaps/MeshLibraries/dungeon_props.tres" id="9_rqdic"]
-[ext_resource type="PackedScene" uid="uid://bi5s6td3vpcfl" path="res://Objects/InteractableEntities/Outputs/door.tscn" id="10_smwj2"]
 [ext_resource type="MeshLibrary" uid="uid://bwiksrjk7ipsc" path="res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" id="13_mhmi3"]
 [ext_resource type="MeshLibrary" uid="uid://coyag3tyfw8pg" path="res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" id="14_14ife"]
-[ext_resource type="Script" path="res://Objects/TimePhysicsObjects/TimeMovableRigidBody.cs" id="17_1hwm6"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iqp0u"]
-albedo_texture = ExtResource("7_bfnwu")
-uv1_triplanar = true
-
-[sub_resource type="BoxMesh" id="BoxMesh_hqi0l"]
-size = Vector3(4, 4, 4)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_gtih5"]
-size = Vector3(4, 3.5, 4)
+[ext_resource type="PackedScene" uid="uid://517vmv81wx7l" path="res://Objects/InteractableEntities/Outputs/movable_box.tscn" id="18_4h6u4"]
+[ext_resource type="PackedScene" uid="uid://c58b07p7g700t" path="res://Objects/InteractableEntities/Outputs/door_scaffold.tscn" id="19_tcrcj"]
+[ext_resource type="PackedScene" uid="uid://bi5s6td3vpcfl" path="res://Objects/InteractableEntities/Outputs/door.tscn" id="19_xq4s4"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_om42q"]
 vertices = PackedVector3Array(-44.5, 1.5, 15.5, -44.5, 1.5, 44.5, -15.5, 1.5, 44.5, -15.5, 1.5, 15.5)
@@ -61,50 +53,32 @@ glow_enabled = true
 [node name="TimeMechanicsArea" type="Node3D" parent="."]
 script = ExtResource("1_wp6h8")
 
+[node name="movable_box" parent="TimeMechanicsArea" instance=ExtResource("18_4h6u4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 50)
+
+[node name="movable_box2" parent="TimeMechanicsArea" instance=ExtResource("18_4h6u4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 2, 70)
+
 [node name="PlayerKnight" parent="TimeMechanicsArea" instance=ExtResource("3_ctx3q")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 0, 0)
 
 [node name="PlayerKnightGhost" parent="TimeMechanicsArea" instance=ExtResource("3_urbbi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.19384, 0, 7.64474)
 
-[node name="InteractArea" parent="TimeMechanicsArea" instance=ExtResource("4_e2jel")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.30078, 0, 16.5213)
+[node name="interact_area_tscn" type="Node3D" parent="TimeMechanicsArea" instance=ExtResource("7_2nh7p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 14)
+script = ExtResource("6_2461k")
 
-[node name="InteractableEntityRecorderPlayer" type="Node" parent="TimeMechanicsArea/InteractArea" node_paths=PackedStringArray("InteractableEntity")]
+[node name="InteractableEntityRecorderPlayer" type="Node" parent="TimeMechanicsArea/interact_area_tscn" node_paths=PackedStringArray("InteractableEntity")]
 script = ExtResource("5_qlsug")
 InteractableEntity = NodePath("..")
 
-[node name="TimeMovableRigidBody" type="RigidBody3D" parent="TimeMechanicsArea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 2, 70)
-axis_lock_linear_y = true
-axis_lock_angular_x = true
-axis_lock_angular_y = true
-axis_lock_angular_z = true
-script = ExtResource("17_1hwm6")
+[node name="PressToInteractArea" parent="TimeMechanicsArea" instance=ExtResource("4_e2jel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.30078, 0, 25.5213)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="TimeMechanicsArea/TimeMovableRigidBody"]
-material_override = SubResource("StandardMaterial3D_iqp0u")
-mesh = SubResource("BoxMesh_hqi0l")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="TimeMechanicsArea/TimeMovableRigidBody"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-shape = SubResource("BoxShape3D_gtih5")
-
-[node name="TimeMovableRigidBody2" type="RigidBody3D" parent="TimeMechanicsArea"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 50)
-axis_lock_linear_y = true
-axis_lock_angular_x = true
-axis_lock_angular_y = true
-axis_lock_angular_z = true
-script = ExtResource("17_1hwm6")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="TimeMechanicsArea/TimeMovableRigidBody2"]
-material_override = SubResource("StandardMaterial3D_iqp0u")
-mesh = SubResource("BoxMesh_hqi0l")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="TimeMechanicsArea/TimeMovableRigidBody2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
-shape = SubResource("BoxShape3D_gtih5")
+[node name="InteractableEntityRecorderPlayer" type="Node" parent="TimeMechanicsArea/PressToInteractArea" node_paths=PackedStringArray("InteractableEntity")]
+script = ExtResource("5_qlsug")
+InteractableEntity = NodePath("..")
 
 [node name="World" type="Node3D" parent="."]
 
@@ -131,9 +105,6 @@ environment = SubResource("Environment_gcoab")
 [node name="DirectionalLight" type="DirectionalLight3D" parent="World"]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
 shadow_enabled = true
-
-[node name="Door" parent="." instance=ExtResource("10_smwj2")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 26)
 
 [node name="Dungeon" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10)
@@ -173,7 +144,7 @@ cell_size = Vector3(4, 4, 4)
 cell_center_y = false
 collision_mask = 7
 data = {
-"cells": PackedInt32Array(1, 65535, 655360, 2, 65535, 655360, 4, 65535, 655360, 5, 65535, 655360, 6, 65535, 655360, 7, 65535, 655360, 8, 65535, 655360, 9, 65535, 655360, 10, 65535, 655360, 11, 65535, 655360, 12, 65535, 655360, 13, 65535, 655360, 14, 65535, 655360, 15, 65535, 655360, 16, 65535, 655360, 17, 65535, 655360, 18, 65535, 655360, 19, 65535, 655360, 20, 65535, 655360, 21, 65535, 655360, 22, 65535, 655360, 23, 65535, 655360, 24, 65535, 655360, 25, 65535, 655360, 1, 19, 655360, 2, 19, 655360, 3, 19, 655360, 4, 19, 655360, 5, 19, 655360, 6, 19, 655360, 7, 19, 655360, 8, 19, 655360, 9, 19, 655360, 10, 19, 655360, 11, 19, 655360, 12, 19, 655360, 13, 19, 655360, 14, 19, 655360, 15, 19, 655360, 16, 19, 655360, 17, 19, 655360, 18, 19, 655360, 19, 19, 655360, 20, 19, 655360, 21, 19, 655360, 22, 19, 655360, 23, 19, 655360, 24, 19, 655360, 25, 19, 655360, 26, 0, 1048576, 26, 1, 1048576, 26, 2, 1048576, 26, 3, 1048576, 26, 4, 1048576, 26, 5, 1048576, 26, 6, 1048576, 26, 7, 1048576, 26, 8, 1048576, 26, 9, 1048576, 26, 10, 1048576, 26, 11, 1048576, 26, 12, 1048576, 26, 13, 1048576, 26, 14, 1048576, 26, 15, 1048576, 26, 16, 1048576, 26, 17, 1048576, 26, 18, 1048576, 0, 0, 1441792, 0, 1, 1441792, 0, 2, 1441792, 0, 4, 1441792, 0, 5, 1441792, 0, 6, 1441792, 0, 8, 1441792, 0, 9, 1441792, 0, 10, 1441792, 0, 12, 1441792, 0, 13, 1441792, 0, 14, 1441792, 0, 15, 1441792, 0, 16, 1441792, 0, 17, 1441792, 0, 18, 1441792, 26, 65535, 6, 26, 19, 1441798, 0, 19, 655366, 0, 65535, 1048582, 0, 7, 1048588, 3, 65535, 12, 4, 6, 1048579, 4, 7, 1048589, 4, 8, 1048579, 4, 5, 1048584, 5, 5, 23, 5, 9, 655384, 6, 5, 655389, 6, 9, 655389, 7, 9, 655389, 7, 5, 655389, 8, 5, 30, 9, 5, 26, 10, 5, 3, 8, 9, 3, 9, 9, 5, 10, 9, 1441800, 11, 5, 8, 10, 8, 1048584, 11, 8, 1441800, 11, 6, 1441805, 11, 7, 1048611, 4, 9, 1048608, 4, 10, 1048581, 4, 11, 1048587, 3, 11, 10, 0, 11, 1048608, 2, 11, 13, 1, 11, 28, 4, 12, 1441812, 5, 11, 20)
+"cells": PackedInt32Array(1, 65535, 655360, 2, 65535, 655360, 4, 65535, 655360, 5, 65535, 655360, 6, 65535, 655360, 7, 65535, 655360, 8, 65535, 655360, 9, 65535, 655360, 10, 65535, 655360, 11, 65535, 655360, 12, 65535, 655360, 13, 65535, 655360, 14, 65535, 655360, 15, 65535, 655360, 16, 65535, 655360, 17, 65535, 655360, 18, 65535, 655360, 19, 65535, 655360, 20, 65535, 655360, 21, 65535, 655360, 22, 65535, 655360, 23, 65535, 655360, 24, 65535, 655360, 25, 65535, 655360, 1, 19, 655360, 2, 19, 655360, 3, 19, 655360, 4, 19, 655360, 5, 19, 655360, 6, 19, 655360, 7, 19, 655360, 8, 19, 655360, 9, 19, 655360, 10, 19, 655360, 11, 19, 655360, 12, 19, 655360, 13, 19, 655360, 14, 19, 655360, 15, 19, 655360, 16, 19, 655360, 17, 19, 655360, 18, 19, 655360, 19, 19, 655360, 20, 19, 655360, 21, 19, 655360, 22, 19, 655360, 23, 19, 655360, 24, 19, 655360, 25, 19, 655360, 26, 0, 1048576, 26, 1, 1048576, 26, 2, 1048576, 26, 3, 1048576, 26, 4, 1048576, 26, 5, 1048576, 26, 6, 1048576, 26, 7, 1048576, 26, 8, 1048576, 26, 9, 1048576, 26, 10, 1048576, 26, 11, 1048576, 26, 12, 1048576, 26, 13, 1048576, 26, 14, 1048576, 26, 15, 1048576, 26, 16, 1048576, 26, 17, 1048576, 26, 18, 1048576, 0, 1, 1441792, 0, 2, 1441792, 0, 4, 1441792, 0, 5, 1441792, 0, 6, 1441792, 0, 8, 1441792, 0, 9, 1441792, 0, 10, 1441792, 0, 12, 1441792, 0, 13, 1441792, 0, 14, 1441792, 0, 15, 1441792, 0, 16, 1441792, 0, 17, 1441792, 0, 18, 1441792, 26, 65535, 6, 26, 19, 1441798, 0, 19, 655366, 0, 65535, 1048582, 0, 7, 1048588, 3, 65535, 12, 4, 6, 1048579, 4, 7, 1048589, 4, 8, 1048579, 4, 5, 1048584, 5, 5, 23, 5, 9, 655384, 6, 5, 655389, 6, 9, 655389, 7, 9, 655389, 7, 5, 655389, 8, 5, 30, 9, 5, 26, 10, 5, 3, 8, 9, 3, 9, 9, 5, 10, 9, 1441800, 11, 5, 8, 10, 8, 1048584, 11, 8, 1441800, 11, 6, 1441805, 11, 7, 1048611, 4, 9, 1048608, 4, 10, 1048581, 4, 11, 1048587, 3, 11, 10, 0, 11, 1048608, 2, 11, 13, 1, 11, 28, 4, 12, 1441812, 5, 11, 20)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
@@ -216,4 +187,11 @@ metadata/_editor_floor_ = Vector3(0, 1, 0)
 [node name="EnemyWarrior" parent="." instance=ExtResource("4_te5j6")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -17, 0.5, 17)
 
-[connection signal="PlayerInteracted" from="TimeMechanicsArea/InteractArea" to="Door" method="ToggleDoor"]
+[node name="door_scaffold_tscn" parent="." instance=ExtResource("19_tcrcj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, -1.90735e-06, 26)
+
+[node name="door_tscn" parent="." instance=ExtResource("19_xq4s4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, -9.53674e-07, 14)
+
+[connection signal="PlayerInteracted" from="TimeMechanicsArea/interact_area_tscn" to="door_tscn" method="OpenDoor"]
+[connection signal="PlayerInteracted" from="TimeMechanicsArea/PressToInteractArea" to="door_scaffold_tscn" method="ToggleDoor"]
