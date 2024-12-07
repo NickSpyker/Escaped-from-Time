@@ -1,0 +1,30 @@
+[gd_resource type="Resource" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetPersistentData.cs" id="1_nm6md"]
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetLibrary.cs" id="2_vv1an"]
+
+[sub_resource type="Resource" id="Resource_juqwh"]
+script = ExtResource("1_nm6md")
+path = "res://Objects/InteractableEntities/Outputs/door.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_acxvr"]
+script = ExtResource("1_nm6md")
+path = "res://Objects/InteractableEntities/Outputs/door_scaffold.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_dhn4b"]
+script = ExtResource("1_nm6md")
+path = "res://Objects/InteractableEntities/Outputs/movable_box.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[resource]
+script = ExtResource("2_vv1an")
+assetData = [SubResource("Resource_juqwh"), SubResource("Resource_acxvr"), SubResource("Resource_dhn4b")]
+previewPerspective = 0
