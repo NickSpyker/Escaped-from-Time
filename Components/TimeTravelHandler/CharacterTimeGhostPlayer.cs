@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using EscapedfromTime.Helper;
 using Godot;
 
 namespace EscapedfromTime.Components.TimeTravelHandler;
@@ -19,21 +19,7 @@ public partial class CharacterTimeGhostPlayer : Node
 
     public override void _Ready()
     {
-        Node currentParentNode = GetParent();
-
-        while (currentParentNode != null)
-        {
-            if (currentParentNode is TimeMechanicsArea timeLineArea)
-            {
-                _timeMechanicsArea = timeLineArea;
-                return;
-            }
-
-            currentParentNode = currentParentNode.GetParent();
-        }
-
-        GD.PrintErr("No TimeLineArea parent found for CharacterTimeGhostPlayer");
-        throw new InvalidOperationException("CharacterTimeGhostPlayer must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
+        _timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
     }
 
     public void LoadTimeEvents(Dictionary<uint, List<TimeEvent>> timeEvents)

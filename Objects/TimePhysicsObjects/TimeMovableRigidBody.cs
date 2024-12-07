@@ -1,5 +1,5 @@
-using System;
 using EscapedfromTime.Components.TimeTravelHandler;
+using EscapedfromTime.Helper;
 using Godot;
 
 namespace EscapedfromTime.Objects.TimePhysicsObjects;
@@ -19,24 +19,10 @@ public partial class TimeMovableRigidBody : RigidBody3D
 
 	public override void _Ready()
 	{
-		Node currentParentNode = GetParent();
-
-		while (currentParentNode != null)
-		{
-			if (currentParentNode is TimeMechanicsArea timeLineArea)
-			{
-				_timeMechanicsArea = timeLineArea;
-				_timeMechanicsArea.ReStartTime += _onTimeRestart;
-				_initialPosition = GlobalPosition;
-				_initialRotation = GlobalRotation;
-				return;
-			}
-
-			currentParentNode = currentParentNode.GetParent();
-		}
-
-		GD.PrintErr("No TimeLineArea parent found for InteractableEntityRecorderPlayer");
-		throw new InvalidOperationException("InteractableEntityRecorderPlayer must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
+		_timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
+		_timeMechanicsArea.ReStartTime += _onTimeRestart;
+		_initialPosition = GlobalPosition;
+		_initialRotation = GlobalRotation;
 	}
 
 	public override void _PhysicsProcess(double delta)

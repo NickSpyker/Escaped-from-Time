@@ -1,6 +1,6 @@
-using System;
 using System.Linq;
 using EscapedfromTime.Components.TimeTravelHandler;
+using EscapedfromTime.Helper;
 using Godot;
 
 namespace EscapedfromTime.Components.CharacterInputsController;
@@ -19,23 +19,9 @@ public partial class CharacterTimeControl : Node
 
 	public override void _Ready()
 	{
-		Node currentParentNode = GetParent();
-
-		while (currentParentNode != null)
-		{
-			if (currentParentNode is TimeMechanicsArea timeLineArea)
-			{
-				_timeMechanicsArea = timeLineArea;
-				_initialPosition = Character.GlobalPosition;
-				_initialRotation = Character.GlobalRotation;
-				return;
-			}
-
-			currentParentNode = currentParentNode.GetParent();
-		}
-
-		GD.PrintErr("No TimeLineArea parent found for CharacterTimeControl");
-		throw new InvalidOperationException("CharacterTimeControl must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
+		_timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
+		_initialPosition = Character.GlobalPosition;
+		_initialRotation = Character.GlobalRotation;
 	}
 
 	public override void _Input(InputEvent @event)

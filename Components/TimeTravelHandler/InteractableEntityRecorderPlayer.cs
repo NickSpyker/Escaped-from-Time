@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using EscapedfromTime.Helper;
 using EscapedfromTime.Objects.InteractableEntities;
 using Godot;
 
@@ -18,23 +18,9 @@ public partial class InteractableEntityRecorderPlayer : Node
 
     public override void _Ready()
     {
-        Node currentParentNode = GetParent();
-
-        while (currentParentNode != null)
-        {
-            if (currentParentNode is TimeMechanicsArea timeLineArea)
-            {
-                _timeMechanicsArea = timeLineArea;
-                InteractableEntity.PlayerInteracted += _onInteraction;
-                _timeMechanicsArea.ReStartTime += _onTimeRestart;
-                return;
-            }
-
-            currentParentNode = currentParentNode.GetParent();
-        }
-
-        GD.PrintErr("No TimeLineArea parent found for InteractableEntityRecorderPlayer");
-        throw new InvalidOperationException("InteractableEntityRecorderPlayer must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
+        _timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
+        InteractableEntity.PlayerInteracted += _onInteraction;
+        _timeMechanicsArea.ReStartTime += _onTimeRestart;
     }
 
     public override void _PhysicsProcess(double delta)
