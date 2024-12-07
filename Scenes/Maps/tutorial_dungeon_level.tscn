@@ -171,6 +171,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, 27)
 script = ExtResource("7_1esuq")
 InteractableEntity = NodePath("..")
 
+[node name="DevLabel" type="Label3D" parent="TimeMechanics/TimeInputs/press_to_interact_area_tscn"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+billboard = 1
+text = "Lever here"
+font_size = 50
+
 [node name="TimeOutputs" type="Node3D" parent="TimeMechanics"]
 
 [node name="movable_box_tscn" parent="TimeMechanics/TimeOutputs" instance=ExtResource("7_i6itb")]
