@@ -1,3 +1,4 @@
+using EscapedfromTime.Helper;
 using Godot;
 
 namespace EscapedfromTime.Objects.InteractableEntities.Outputs;
@@ -11,6 +12,10 @@ public partial class Door : StaticBody3D
 	public override void _Ready()
 	{
 		_animationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
+		TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this).ReStartTime += () => {
+			_animationPlayer.Play("close_door");
+			IsOpen = false;
+		};
 	}
 
 	public void OpenDoor()

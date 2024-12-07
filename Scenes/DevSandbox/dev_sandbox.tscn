@@ -78,6 +78,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.30078, 0, 25.5213)
 script = ExtResource("5_qlsug")
 InteractableEntity = NodePath("..")
 
+[node name="door_scaffold_tscn" parent="TimeMechanicsArea" instance=ExtResource("19_tcrcj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, -1.90735e-06, 26)
+
+[node name="door_tscn" parent="TimeMechanicsArea" instance=ExtResource("19_xq4s4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, -9.53674e-07, 14)
+
 [node name="World" type="Node3D" parent="."]
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="World"]
@@ -185,11 +191,5 @@ metadata/_editor_floor_ = Vector3(0, 1, 0)
 [node name="EnemyWarrior" parent="." instance=ExtResource("4_te5j6")]
 transform = Transform3D(-0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -17, 0.5, 17)
 
-[node name="door_scaffold_tscn" parent="." instance=ExtResource("19_tcrcj")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, -1.90735e-06, 26)
-
-[node name="door_tscn" parent="." instance=ExtResource("19_xq4s4")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, -9.53674e-07, 14)
-
-[connection signal="PlayerInteracted" from="TimeMechanicsArea/interact_area_tscn" to="door_tscn" method="OpenDoor"]
-[connection signal="PlayerInteracted" from="TimeMechanicsArea/PressToInteractArea" to="door_scaffold_tscn" method="ToggleDoor"]
+[connection signal="PlayerInteracted" from="TimeMechanicsArea/interact_area_tscn" to="TimeMechanicsArea/door_tscn" method="OpenDoor"]
+[connection signal="PlayerInteracted" from="TimeMechanicsArea/PressToInteractArea" to="TimeMechanicsArea/door_scaffold_tscn" method="ToggleDoor"]
