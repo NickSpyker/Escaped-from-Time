@@ -8,7 +8,9 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 
 spring_length = 6.0
 script = ExtResource("1_axy51")
 
-[node name="ToonPostProcessing" parent="." instance=ExtResource("2_er03m")]
-
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 0, 6)
+
+[node name="ToonPostProcessing" parent="Camera" instance=ExtResource("2_er03m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
+skeleton = NodePath("../..")

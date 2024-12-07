@@ -6,7 +6,7 @@
 flip_faces = true
 size = Vector2(2, 2)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_2gt5d"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ncda"]
 render_priority = 0
 shader = ExtResource("1_y0r0i")
 shader_parameter/outlineColor = Color(0, 0, 0, 0.78)
@@ -24,4 +24,4 @@ shader_parameter/grazing_angle_modulation_factor = 50.0
 [node name="ToonPostProcessing" type="MeshInstance3D"]
 extra_cull_margin = 16384.0
 mesh = SubResource("QuadMesh_1qowe")
-surface_material_override/0 = SubResource("ShaderMaterial_2gt5d")
+surface_material_override/0 = SubResource("ShaderMaterial_1ncda")

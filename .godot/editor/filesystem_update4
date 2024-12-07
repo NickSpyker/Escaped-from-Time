@@ -93,3 +93,6 @@ res://Resources/GridMaps/MeshLibraries/dungeon_props.tres
 res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres
 res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres
 res://Resources/Shaders/mobius.gdshader
+res://Resources/Shaders/sketchy.gdshader
+res://Resources/Shaders/panoramic_sky.gdshader
+res://Resources/Shaders/pixel.gdshader
