@@ -77,6 +77,9 @@ public partial class CharacterTimeGhostPlayer : Node
                 case TimeEventType.BackToTime:
                     _characterTimeGhostActionsEnded = true;
                     break;
+                case TimeEventType.TriggerAnimation:
+                    Animations.Play(timeEvent.CharacterAnimationValue);
+                    break;
             }
         });
     }

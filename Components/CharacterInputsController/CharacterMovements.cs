@@ -21,6 +21,8 @@ public partial class CharacterMovements : Node
 	[Export] public float JumpVelocity = 4.5f;
 	[Export] public float Gravity = -9.8f;
 
+	private CharacterAnimation _currentAnimation = 0;
+
 	private Vector3 _velocity;
 	private float _verticalInput;
 	private float _horizontalInput;
@@ -107,19 +109,34 @@ public partial class CharacterMovements : Node
 				_velocity.X = moveDirection.X * SprintSpeed;
 				_velocity.Z = moveDirection.Z * SprintSpeed;
 
-				CharacterAnimations.Play(CharacterAnimation.Run);
+				if (_currentAnimation != CharacterAnimation.Run)
+				{
+					CharacterAnimations.Play(CharacterAnimation.Run);
+					TimeGhostRecorder.RecordAnimation(CharacterAnimation.Run);
+					_currentAnimation = CharacterAnimation.Run;
+				}
 				break;
 			case <= 0.5f and > 0.0f:
 				_velocity.X = moveDirection.X * WalkingSpeed;
 				_velocity.Z = moveDirection.Z * WalkingSpeed;
 
-				CharacterAnimations.Play(CharacterAnimation.Walk);
+				if (_currentAnimation != CharacterAnimation.Walk)
+				{
+					CharacterAnimations.Play(CharacterAnimation.Walk);
+					TimeGhostRecorder.RecordAnimation(CharacterAnimation.Walk);
+					_currentAnimation = CharacterAnimation.Walk;
+				}
 				break;
 			default:
 				_velocity.X = 0;
 				_velocity.Z = 0;
 
-				CharacterAnimations.Play(CharacterAnimation.Idle);
+				if (_currentAnimation != CharacterAnimation.Idle)
+				{
+					CharacterAnimations.Play(CharacterAnimation.Idle);
+					TimeGhostRecorder.RecordAnimation(CharacterAnimation.Idle);
+					_currentAnimation = CharacterAnimation.Idle;
+				}
 				break;
 		}
 
@@ -151,7 +168,12 @@ public partial class CharacterMovements : Node
 	{
 		_velocity.Y += Gravity * (float)delta;
 
-		CharacterAnimations.Play(CharacterAnimation.Jump);
+		if (_currentAnimation != CharacterAnimation.Jump)
+		{
+			CharacterAnimations.Play(CharacterAnimation.Jump);
+			TimeGhostRecorder.RecordAnimation(CharacterAnimation.Jump);
+			_currentAnimation = CharacterAnimation.Jump;
+		}
 
 		Vector3 forward = SpringArm.GlobalTransform.Basis.Z;
 		forward.Y = 0;

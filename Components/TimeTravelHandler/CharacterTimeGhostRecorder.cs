@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using EscapedfromTime.Components.CharacterAnimationsHandler;
 using EscapedfromTime.Helper;
 using Godot;
 
@@ -47,6 +48,14 @@ public partial class CharacterTimeGhostRecorder : Node
 		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
 
 		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.PlayerBlock, BoolValue = isDefending });
+	}
+
+	public void RecordAnimation(CharacterAnimation animation)
+	{
+		uint t = _timeMechanicsArea.T;
+		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.TriggerAnimation, CharacterAnimationValue = animation });
 	}
 
 	public Dictionary<uint, List<TimeEvent>> GetTimeEventsAndClear()

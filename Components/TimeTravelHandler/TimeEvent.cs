@@ -1,4 +1,5 @@
-﻿using EscapedfromTime.Objects.InteractableEntities;
+﻿using EscapedfromTime.Components.CharacterAnimationsHandler;
+using EscapedfromTime.Objects.InteractableEntities;
 using Godot;
 
 namespace EscapedfromTime.Components.TimeTravelHandler;
@@ -6,13 +7,13 @@ namespace EscapedfromTime.Components.TimeTravelHandler;
 public enum TimeEventType
 {
     None,
-    InitialTransform,
     VelocityChange,
     RotationChange,
     BackToTime,
     PlayerInteract,
     PlayerAttack,
-    PlayerBlock
+    PlayerBlock,
+    TriggerAnimation
 }
 
 public struct InteractionData
@@ -40,4 +41,5 @@ public struct TimeEvent
     public Vector3 VectorValue = default;
     public Transform3D TransformValue = default;
     public InteractionData InteractDataValue = default;
+    public CharacterAnimation CharacterAnimationValue = default;
 }
