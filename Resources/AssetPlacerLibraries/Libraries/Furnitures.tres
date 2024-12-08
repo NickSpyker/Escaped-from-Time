@@ -1,0 +1,268 @@
+[gd_resource type="Resource" load_steps=40 format=3]
+
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetPersistentData.cs" id="1_g6kks"]
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetLibrary.cs" id="2_a5qff"]
+
+[sub_resource type="Resource" id="Resource_ypmmt"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_A_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_i0117"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_A_medium.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_o0r82"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_A_small.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_2rtku"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_B_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_qdqfu"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_B_medium.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_44f5f"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_B_small.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_ladll"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_innercorner.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_a507s"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_outercorner.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_yly6m"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_A.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_5rlr6"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_A_short.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_mkjdj"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_B.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_v4otr"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_B_short.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_k0cgb"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_C.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_ou2po"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_C_short.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_vt6b1"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_A_double.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_o5pat"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_A_single.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_2tt1x"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_A_stacked.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_xuuxk"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_B_double.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_u36jk"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_B_single.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_vt516"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_decorated.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_hbyjw"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_floor.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_e7kao"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bed_frame.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_8f5c2"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bench.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_yshf1"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_double.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_ufmsr"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_double_decoratedA.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_c2bup"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_double_decoratedB.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_5jmp7"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_single.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_ty8dr"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_single_decoratedA.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_tbpk1"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_single_decoratedB.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_7uovl"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/chair.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_qtjli"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/shelf_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_r4glb"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/shelf_small.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_gyiuv"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/shelf_small_books.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_tv4gq"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/shelves.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_5exkk"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/shelves_decorated.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_oyxro"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/stool.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_33mjq"]
+script = ExtResource("1_g6kks")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/stool_round.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[resource]
+script = ExtResource("2_a5qff")
+assetData = [SubResource("Resource_ypmmt"), SubResource("Resource_i0117"), SubResource("Resource_o0r82"), SubResource("Resource_2rtku"), SubResource("Resource_qdqfu"), SubResource("Resource_44f5f"), SubResource("Resource_ladll"), SubResource("Resource_a507s"), SubResource("Resource_yly6m"), SubResource("Resource_5rlr6"), SubResource("Resource_mkjdj"), SubResource("Resource_v4otr"), SubResource("Resource_k0cgb"), SubResource("Resource_ou2po"), SubResource("Resource_vt6b1"), SubResource("Resource_o5pat"), SubResource("Resource_2tt1x"), SubResource("Resource_xuuxk"), SubResource("Resource_u36jk"), SubResource("Resource_vt516"), SubResource("Resource_hbyjw"), SubResource("Resource_e7kao"), SubResource("Resource_8f5c2"), SubResource("Resource_yshf1"), SubResource("Resource_ufmsr"), SubResource("Resource_c2bup"), SubResource("Resource_5jmp7"), SubResource("Resource_ty8dr"), SubResource("Resource_tbpk1"), SubResource("Resource_7uovl"), SubResource("Resource_qtjli"), SubResource("Resource_r4glb"), SubResource("Resource_gyiuv"), SubResource("Resource_tv4gq"), SubResource("Resource_5exkk"), SubResource("Resource_oyxro"), SubResource("Resource_33mjq")]
+previewPerspective = 0

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bu5q2ahicpqr3"]
+[gd_scene load_steps=3 format=3 uid="uid://bu5q2ahicpqr3"]
 
 [ext_resource type="Script" path="res://Objects/TopDownCamera/TopDownCamera.cs" id="1_axy51"]
+[ext_resource type="PackedScene" uid="uid://bn8uttwcwj5vf" path="res://Objects/PostProcessing/toon_post_processing.tscn" id="2_er03m"]
 
 [node name="TopDownCamera" type="SpringArm3D"]
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 2, 0)
@@ -9,3 +10,7 @@ script = ExtResource("1_axy51")
 
 [node name="Camera" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 0, 6)
+
+[node name="ToonPostProcessing" parent="Camera" instance=ExtResource("2_er03m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5)
+skeleton = NodePath("../..")

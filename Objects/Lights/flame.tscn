@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://cdiwvqu0eftj0"]
+
+[ext_resource type="Shader" path="res://Resources/Shaders/fire.gdshader" id="1_og3mv"]
+[ext_resource type="Texture2D" uid="uid://flldwuhtdvhp" path="res://Assets/Particls/HoleNoise.png" id="2_je5wy"]
+[ext_resource type="Texture2D" uid="uid://bko6oayqcslrd" path="res://Assets/Particls/FireMask.png" id="3_sf66h"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nxt6i"]
+render_priority = 0
+shader = ExtResource("1_og3mv")
+shader_parameter/emission_intensity = 2.0
+shader_parameter/time_scale = 3.0
+shader_parameter/texture_scale = Vector2(1, 1)
+shader_parameter/edge_softness = 0.1
+shader_parameter/noise_texture = ExtResource("2_je5wy")
+shader_parameter/texture_mask = ExtResource("3_sf66h")
+
+[sub_resource type="Gradient" id="Gradient_x3i6q"]
+colors = PackedColorArray(0.980957, 0.801817, 0, 1, 1, 0, 0.447059, 0)
+
+[sub_resource type="GradientTexture2D" id="3"]
+gradient = SubResource("Gradient_x3i6q")
+width = 128
+
+[sub_resource type="Curve" id="Curve_nw7nh"]
+_data = [Vector2(0, 0), 0.0, 3.65289, 0, 0, Vector2(0.556561, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="5"]
+width = 128
+curve = SubResource("Curve_nw7nh")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_qd3rt"]
+lifetime_randomness = 0.81
+direction = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_min = 0.5
+initial_velocity_max = 0.5
+gravity = Vector3(0, 0, 0)
+linear_accel_min = 4.0
+linear_accel_max = 4.0
+scale_max = 2.0
+scale_curve = SubResource("5")
+color_ramp = SubResource("3")
+
+[sub_resource type="QuadMesh" id="QuadMesh_edxvs"]
+size = Vector2(0.5, 0.5)
+
+[node name="Flame" type="Node3D"]
+
+[node name="FlameGpuParticls" type="GPUParticles3D" parent="."]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_nxt6i")
+cast_shadow = 0
+amount = 50
+randomness = 0.74
+draw_order = 1
+process_material = SubResource("ParticleProcessMaterial_qd3rt")
+draw_pass_1 = SubResource("QuadMesh_edxvs")
+
+[node name="FlameOmniLight" type="OmniLight3D" parent="FlameGpuParticls"]
+light_color = Color(1, 0.901961, 0.560784, 1)
+light_energy = 2.0

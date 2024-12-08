@@ -1,0 +1,14 @@
+Node3D
+OmniLight3D
+GPUParticles3D
+MeshInstance3D
+StaticBody3D
+Label3D
+InteractableEntityRecorderPlayer
+TimeMechanicsArea
+GridMap
+InputInteractableEntity
+CollisionShape3D
+Area3D
+TimeMovableRigidBody
+AnimationPlayer

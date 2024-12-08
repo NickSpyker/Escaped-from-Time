@@ -1,0 +1,212 @@
+[gd_resource type="Resource" load_steps=32 format=3]
+
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetPersistentData.cs" id="1_20qxs"]
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetLibrary.cs" id="2_2o21a"]
+
+[sub_resource type="Resource" id="Resource_tw8e8"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/box_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_cj3x2"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/box_small.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_bko6i"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/box_small_decorated.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_lc02a"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/box_stacked.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_cvtgn"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bucket.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_ma2ke"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/bucket_pickaxes.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_gtitv"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/chest.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_8gy0m"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/chest_gold.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_yfyh4"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/chest_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_gvxfd"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/chest_large_gold.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_1veq1"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/chest_mimic.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_nfodh"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/crates_stacked.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_erktp"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/crate_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_gjjrm"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/crate_large_decorated.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_3mqik"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/crate_small.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_4c0ik"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/keg.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_6hrwy"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/keg_decorated.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_orrag"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_large_A.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_iu5pl"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_large_B.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_5mbm1"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_large_C.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_141d3"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_medium_A.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_a67pr"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_medium_C.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_d7r1g"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_small_A.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_iysvp"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_small_B.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_poho5"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/trunk_small_C.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_1x2h6"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrel_large.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_xcgn5"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrel_large_decorated.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_q5u3n"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrel_small.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_hcd8r"]
+script = ExtResource("1_20qxs")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrel_small_stack.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[resource]
+script = ExtResource("2_2o21a")
+assetData = [SubResource("Resource_tw8e8"), SubResource("Resource_cj3x2"), SubResource("Resource_bko6i"), SubResource("Resource_lc02a"), SubResource("Resource_cvtgn"), SubResource("Resource_ma2ke"), SubResource("Resource_gtitv"), SubResource("Resource_8gy0m"), SubResource("Resource_yfyh4"), SubResource("Resource_gvxfd"), SubResource("Resource_1veq1"), SubResource("Resource_nfodh"), SubResource("Resource_erktp"), SubResource("Resource_gjjrm"), SubResource("Resource_3mqik"), SubResource("Resource_4c0ik"), SubResource("Resource_6hrwy"), SubResource("Resource_orrag"), SubResource("Resource_iu5pl"), SubResource("Resource_5mbm1"), SubResource("Resource_141d3"), SubResource("Resource_a67pr"), SubResource("Resource_d7r1g"), SubResource("Resource_iysvp"), SubResource("Resource_poho5"), SubResource("Resource_1x2h6"), SubResource("Resource_xcgn5"), SubResource("Resource_q5u3n"), SubResource("Resource_hcd8r")]
+previewPerspective = 0

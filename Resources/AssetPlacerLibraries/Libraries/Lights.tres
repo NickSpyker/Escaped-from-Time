@@ -1,0 +1,72 @@
+[gd_resource type="Resource" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetPersistentData.cs" id="1_p3lkj"]
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetLibrary.cs" id="2_eyvq5"]
+
+[sub_resource type="Resource" id="Resource_2efyy"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/candle.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_dd3y6"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/candle_lit.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_pu7o0"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/candle_melted.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_ct4n0"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/candle_thin.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_22sop"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/candle_thin_lit.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_0dt81"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/candle_triple.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_t0nep"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/torch.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_0qfun"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/torch_lit.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_bifyd"]
+script = ExtResource("1_p3lkj")
+path = "res://Resources/AssetPlacerLibraries/Scenes/lights/torch_mounted.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[resource]
+script = ExtResource("2_eyvq5")
+assetData = [SubResource("Resource_2efyy"), SubResource("Resource_dd3y6"), SubResource("Resource_pu7o0"), SubResource("Resource_ct4n0"), SubResource("Resource_22sop"), SubResource("Resource_0dt81"), SubResource("Resource_t0nep"), SubResource("Resource_0qfun"), SubResource("Resource_bifyd")]
+previewPerspective = 0

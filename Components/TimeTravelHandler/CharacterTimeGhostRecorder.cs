@@ -1,6 +1,7 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
+using EscapedfromTime.Components.CharacterAnimationsHandler;
+using EscapedfromTime.Helper;
 using Godot;
 
 namespace EscapedfromTime.Components.TimeTravelHandler;
@@ -14,27 +15,12 @@ public partial class CharacterTimeGhostRecorder : Node
 
 	public override void _Ready()
 	{
-		Node currentParentNode = GetParent();
-
-		while (currentParentNode != null)
-		{
-			if (currentParentNode is TimeMechanicsArea timeLineArea)
-			{
-				_timeMechanicsArea = timeLineArea;
-				return;
-			}
-
-			currentParentNode = currentParentNode.GetParent();
-		}
-
-		GD.PrintErr("No TimeLineArea parent found for CharacterTimeGhostRecorder");
-		throw new InvalidOperationException("CharacterTimeGhostRecorder must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
+		_timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
 	}
 
 	public void RecordMoveAndSlide(Vector3 velocity)
 	{
 		uint t = _timeMechanicsArea.T;
-
 		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
 
 		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.VelocityChange, VectorValue = velocity });
@@ -43,10 +29,33 @@ public partial class CharacterTimeGhostRecorder : Node
 	public void RecordGlobalTransform(Transform3D transform)
 	{
 		uint t = _timeMechanicsArea.T;
-
 		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
 
 		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.RotationChange, TransformValue = transform });
+	}
+
+	public void RecordPlayerAttack()
+	{
+		uint t = _timeMechanicsArea.T;
+		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.PlayerAttack });
+	}
+
+	public void RecordPlayerDefending(bool isDefending)
+	{
+		uint t = _timeMechanicsArea.T;
+		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.PlayerBlock, BoolValue = isDefending });
+	}
+
+	public void RecordAnimation(CharacterAnimation animation)
+	{
+		uint t = _timeMechanicsArea.T;
+		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.TriggerAnimation, CharacterAnimationValue = animation });
 	}
 
 	public Dictionary<uint, List<TimeEvent>> GetTimeEventsAndClear()

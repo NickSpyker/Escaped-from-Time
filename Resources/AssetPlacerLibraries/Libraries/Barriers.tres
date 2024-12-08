@@ -1,0 +1,44 @@
+[gd_resource type="Resource" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetPersistentData.cs" id="1_hiytf"]
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetLibrary.cs" id="2_byq2l"]
+
+[sub_resource type="Resource" id="Resource_kd7nm"]
+script = ExtResource("1_hiytf")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrier.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_pas1q"]
+script = ExtResource("1_hiytf")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrier_column.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_tibbb"]
+script = ExtResource("1_hiytf")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrier_colum_half.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_rir4v"]
+script = ExtResource("1_hiytf")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrier_corner.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_o8or7"]
+script = ExtResource("1_hiytf")
+path = "res://Resources/AssetPlacerLibraries/Scenes/collide/barrier_half.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[resource]
+script = ExtResource("2_byq2l")
+assetData = [SubResource("Resource_kd7nm"), SubResource("Resource_pas1q"), SubResource("Resource_tibbb"), SubResource("Resource_rir4v"), SubResource("Resource_o8or7")]
+previewPerspective = 0

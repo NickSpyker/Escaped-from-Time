@@ -1,5 +1,7 @@
-using System;
 using System.Collections.Generic;
+using EscapedfromTime.Components.CharacterAnimationsHandler;
+using EscapedfromTime.Components.CharacterBehaviors;
+using EscapedfromTime.Helper;
 using Godot;
 
 namespace EscapedfromTime.Components.TimeTravelHandler;
@@ -9,31 +11,29 @@ public partial class CharacterTimeGhostPlayer : Node
 {
     [ExportCategory("Component Properties")]
     [Export] public CharacterBody3D Character;
+    [Export] public CharacterAttackHandler AttackHandler = null!;
+    [Export] public CharacterHealthHandler HealthHandler = null!;
+    [Export] public CharacterAnimations Animations = null!;
     [Export] public float ActionsEndedGravity = -9.8f;
 
     private Dictionary<uint, List<TimeEvent>> _timeEvents = new();
 
     private TimeMechanicsArea _timeMechanicsArea;
 
+    private Vector3 _initialPosition;
+    private Vector3 _initialRotation;
+
     private bool _characterTimeGhostActionsEnded;
 
     public override void _Ready()
     {
-        Node currentParentNode = GetParent();
-
-        while (currentParentNode != null)
-        {
-            if (currentParentNode is TimeMechanicsArea timeLineArea)
-            {
-                _timeMechanicsArea = timeLineArea;
-                return;
-            }
-
-            currentParentNode = currentParentNode.GetParent();
-        }
-
-        GD.PrintErr("No TimeLineArea parent found for CharacterTimeGhostPlayer");
-        throw new InvalidOperationException("CharacterTimeGhostPlayer must be a child of a TimeLineArea node. Current parent hierarchy does not contain TimeLineArea.");
+        _initialPosition = Character.GlobalPosition;
+        _initialRotation = Character.GlobalRotation;
+        _timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
+        _timeMechanicsArea.ReStartTime += () => {
+            Character.GlobalPosition = _initialPosition;
+            Character.GlobalRotation = _initialRotation;
+        };
     }
 
     public void LoadTimeEvents(Dictionary<uint, List<TimeEvent>> timeEvents)
@@ -65,8 +65,20 @@ public partial class CharacterTimeGhostPlayer : Node
                 case TimeEventType.RotationChange:
                     Character.GlobalTransform = timeEvent.TransformValue;
                     break;
+                case TimeEventType.PlayerAttack:
+                    Animations.Play(CharacterAnimation.Attack);
+                    AttackHandler.Attack();
+                    break;
+                case TimeEventType.PlayerBlock:
+                    bool isBlocking = timeEvent.BoolValue;
+                    Animations.Play(isBlocking ? CharacterAnimation.Block : CharacterAnimation.Idle);
+                    HealthHandler.ReduceDamage = isBlocking;
+                    break;
                 case TimeEventType.BackToTime:
                     _characterTimeGhostActionsEnded = true;
+                    break;
+                case TimeEventType.TriggerAnimation:
+                    Animations.Play(timeEvent.CharacterAnimationValue);
                     break;
             }
         });

@@ -2,7 +2,8 @@
 
 [resource]
 transparency = 4
-albedo_color = Color(0.74902, 0.74902, 0.894118, 0.121569)
+albedo_color = Color(0.876528, 0.885686, 1, 0.121569)
 metallic = 0.5
 emission_enabled = true
 emission = Color(0, 0, 0.392157, 1)
+emission_energy_multiplier = 3.0

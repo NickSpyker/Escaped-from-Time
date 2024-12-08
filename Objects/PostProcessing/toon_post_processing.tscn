@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bn8uttwcwj5vf"]
+
+[ext_resource type="Shader" path="res://Resources/Shaders/toon.gdshader" id="1_y0r0i"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_1qowe"]
+flip_faces = true
+size = Vector2(2, 2)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1ncda"]
+render_priority = 0
+shader = ExtResource("1_y0r0i")
+shader_parameter/outlineColor = Color(0, 0, 0, 0.78)
+shader_parameter/depth_threshold = 0.025
+shader_parameter/normal_threshold = 0.5
+shader_parameter/normal_smoothing = 0.25
+shader_parameter/max_thickness = 1.3
+shader_parameter/min_thickness = 0.5
+shader_parameter/max_distance = 75.0
+shader_parameter/min_distance = 2.0
+shader_parameter/grazing_fresnel_power = 5.0
+shader_parameter/grazing_angle_mask_power = 1.0
+shader_parameter/grazing_angle_modulation_factor = 50.0
+
+[node name="ToonPostProcessing" type="MeshInstance3D"]
+extra_cull_margin = 16384.0
+mesh = SubResource("QuadMesh_1qowe")
+surface_material_override/0 = SubResource("ShaderMaterial_1ncda")

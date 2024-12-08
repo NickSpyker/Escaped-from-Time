@@ -1,0 +1,23 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetPersistentData.cs" id="1_368o7"]
+[ext_resource type="Script" path="res://addons/assetplacer/assetPalette/AssetLibrary.cs" id="2_htrau"]
+
+[sub_resource type="Resource" id="Resource_tc2id"]
+script = ExtResource("1_368o7")
+path = "res://Objects/InteractableEntities/Inputs/press_to_interact_area.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[sub_resource type="Resource" id="Resource_rkd5e"]
+script = ExtResource("1_368o7")
+path = "res://Objects/InteractableEntities/Inputs/interact_area.tscn"
+isMesh = false
+previewPerspective = 0
+customPreview = Vector3(-1, -1, -1)
+
+[resource]
+script = ExtResource("2_htrau")
+assetData = [SubResource("Resource_tc2id"), SubResource("Resource_rkd5e")]
+previewPerspective = 0
