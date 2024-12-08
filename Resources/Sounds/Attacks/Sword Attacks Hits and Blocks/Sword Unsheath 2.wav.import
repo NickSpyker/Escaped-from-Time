@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b40gqut61rjvs"
+path="res://.godot/imported/Sword Unsheath 2.wav-342be48cb14ad55c5dfff6c7c494e74f.sample"
+
+[deps]
+
+source_file="res://Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Unsheath 2.wav"
+dest_files=["res://.godot/imported/Sword Unsheath 2.wav-342be48cb14ad55c5dfff6c7c494e74f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

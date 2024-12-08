@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cl7ghtlv2u35d"
+path="res://.godot/imported/Light Torch with Starting Loop 1.wav-d17da66936386509f5ccf3719b61d2ba.sample"
+
+[deps]
+
+source_file="res://Resources/Sounds/Objects/Torch/Light Torch with Starting Loop 1.wav"
+dest_files=["res://.godot/imported/Light Torch with Starting Loop 1.wav-d17da66936386509f5ccf3719b61d2ba.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://gqjmoi7rodsv"
+path="res://.godot/imported/Dirt Chain Jump.wav-0f616b5ba74a2e8cee352cc4735fb804.sample"
+
+[deps]
+
+source_file="res://Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Jump.wav"
+dest_files=["res://.godot/imported/Dirt Chain Jump.wav-0f616b5ba74a2e8cee352cc4735fb804.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
