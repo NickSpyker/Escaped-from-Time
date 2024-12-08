@@ -20,7 +20,7 @@ public partial class InteractableEntityRecorderPlayer : Node
     {
         _timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
         InteractableEntity.PlayerInteracted += _onInteractionStarted;
-        InteractableEntity.PlayerStopInteraction += _onInteractionStoped;
+        InteractableEntity.PlayerStopInteraction += _onInteractionStop;
         _timeMechanicsArea.ReStartTime += _onTimeRestart;
     }
 
@@ -47,7 +47,7 @@ public partial class InteractableEntityRecorderPlayer : Node
         });
     }
 
-    private void _onInteractionStoped()
+    private void _onInteractionStop()
     {
         uint t = _timeMechanicsArea.T;
         if (!_timeEventsRecord.ContainsKey(t))

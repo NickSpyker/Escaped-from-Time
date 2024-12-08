@@ -180,7 +180,9 @@ collision_mask = 7
 
 [node name="InvisibleWalls" type="Node3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="InvisibleWalls"]
+[node name="StaticBody3D" type="StaticBody3D" parent="InvisibleWalls"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InvisibleWalls/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 6.5, 31.999)
 shape = SubResource("BoxShape3D_iaxy2")
 
@@ -297,145 +299,145 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.43041, 4.05, 59.1768)
 [node name="candle_tscn23" parent="Props/Lights" instance=ExtResource("19_lxnci")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.3755, 4.05, 70.0032)
 
-[node name="candle_triple_tscn" type="Node3D" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
+[node name="candle_triple_tscn" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.898607, 4.76837e-07, 7.66115)
 
-[node name="torch_mounted_tscn" type="Node3D" parent="Props/Lights" instance=ExtResource("21_kywvq")]
+[node name="torch_mounted_tscn" parent="Props/Lights" instance=ExtResource("21_kywvq")]
 transform = Transform3D(-0.528527, 0, -0.848916, 0, 1, 0, 0.848916, 0, -0.528527, 7.68092, 1.87574, 23.6087)
 
-[node name="candle_triple_tscn2" type="Node3D" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
+[node name="candle_triple_tscn2" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.907089, 0, 31.1125)
 
-[node name="candle_lit_tscn" type="Node3D" parent="Props/Lights" instance=ExtResource("22_cc0g5")]
+[node name="candle_lit_tscn" parent="Props/Lights" instance=ExtResource("22_cc0g5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.024, 1.01847, 24.0675)
 
-[node name="candle_triple_tscn3" type="Node3D" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
+[node name="candle_triple_tscn3" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.2828, 1.05, 12.5304)
 
-[node name="candle_thin_lit_tscn" type="Node3D" parent="Props/Lights" instance=ExtResource("23_6vk4m")]
+[node name="candle_thin_lit_tscn" parent="Props/Lights" instance=ExtResource("23_6vk4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.6305, 0.0500002, 8.65709)
 
-[node name="candle_triple_tscn4" type="Node3D" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
+[node name="candle_triple_tscn4" parent="Props/Lights" instance=ExtResource("20_k5oaf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.8552, 1.05, 31.0425)
 
-[node name="barrier_colum_half_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("22_jh7sv")]
+[node name="barrier_colum_half_tscn" parent="Props" instance=ExtResource("22_jh7sv")]
 transform = Transform3D(-0.741905, 0, 0.670504, 0, 1, 0, -0.670504, 0, -0.741905, 34.0248, 3.86512, 47.997)
 
-[node name="barrier_column_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("23_6ogry")]
+[node name="barrier_column_tscn" parent="Props" instance=ExtResource("23_6ogry")]
 transform = Transform3D(-0.741566, 0, 0.67088, 0, 1, 0, -0.67088, 0, -0.741566, 31.9687, 3.865, 46.1275)
 
-[node name="barrier_colum_half_tscn2" type="StaticBody3D" parent="Props" instance=ExtResource("22_jh7sv")]
+[node name="barrier_colum_half_tscn2" parent="Props" instance=ExtResource("22_jh7sv")]
 transform = Transform3D(0.741566, 0, -0.67088, 0, 1, 0, 0.67088, 0, 0.741566, 29.9077, 3.865, 44.2572)
 
-[node name="bookcase_double_decoratedA_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("26_y3432")]
+[node name="bookcase_double_decoratedA_tscn" parent="Props" instance=ExtResource("26_y3432")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.9684, 0.0500002, 23.4991)
 
-[node name="bookcase_double_decoratedB_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("27_vipd2")]
+[node name="bookcase_double_decoratedB_tscn" parent="Props" instance=ExtResource("27_vipd2")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.9167, 0.0500002, 27.7103)
 
-[node name="bookcase_single_decoratedA_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("28_w2hpr")]
+[node name="bookcase_single_decoratedA_tscn" parent="Props" instance=ExtResource("28_w2hpr")]
 transform = Transform3D(-0.798109, 0, -0.602511, 0, 1, 0, 0.602511, 0, -0.798109, 46.2196, 0.0500002, 30.6614)
 
-[node name="shelf_small_books_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("29_jgdtb")]
+[node name="shelf_small_books_tscn" parent="Props" instance=ExtResource("29_jgdtb")]
 transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 44.1641, 2.48677, 31.5)
 
-[node name="shelf_small_books_tscn2" type="StaticBody3D" parent="Props" instance=ExtResource("29_jgdtb")]
+[node name="shelf_small_books_tscn2" parent="Props" instance=ExtResource("29_jgdtb")]
 transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 42.8543, 1.49199, 31.5)
 
-[node name="chair_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(-0.0706259, 0, -0.997493, 0, 1, 0, 0.997493, 0, -0.0706259, 44.1308, 0.0500002, 30.893)
 
-[node name="box_large_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("31_idnrn")]
+[node name="box_large_tscn" parent="Props" instance=ExtResource("31_idnrn")]
 transform = Transform3D(0.860074, 0, -0.510167, 0, 1, 0, 0.510167, 0, 0.860074, 46.5506, 0.0500002, 20.4207)
 
-[node name="box_small_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("32_58uft")]
+[node name="box_small_tscn" parent="Props" instance=ExtResource("32_58uft")]
 transform = Transform3D(0.856718, 0, 0.515785, 0, 1, 0, -0.515785, 0, 0.856718, 46.8861, 0.0499997, 18.9475)
 
-[node name="box_stacked_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("33_xrr3p")]
+[node name="box_stacked_tscn" parent="Props" instance=ExtResource("33_xrr3p")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.3663, 0.0500002, 10.233)
 
-[node name="bucket_pickaxes_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("34_wbyqn")]
+[node name="bucket_pickaxes_tscn" parent="Props" instance=ExtResource("34_wbyqn")]
 transform = Transform3D(0.863395, 0, 0.504528, 0, 1, 0, -0.504528, 0, 0.863395, 43.9803, 0.0500002, 8.92151)
 
-[node name="chest_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("35_hqlsk")]
+[node name="chest_tscn" parent="Props" instance=ExtResource("35_hqlsk")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.7642, 0.0500002, 12.9432)
 
-[node name="table_long_decorated_C_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("36_k43fx")]
+[node name="table_long_decorated_C_tscn" parent="Props" instance=ExtResource("36_k43fx")]
 transform = Transform3D(0.698727, 0, -0.715387, 0, 1, 0, 0.715387, 0, 0.698727, 42.4514, 0.0500007, 25.2807)
 
-[node name="chair_tscn2" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn2" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(-0.748377, 0, 0.663273, 0, 1, 0, -0.663273, 0, -0.748377, 40.5024, 0.0500002, 24.7407)
 
-[node name="chair_tscn3" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn3" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(-0.260083, 0, 0.965585, 0, 1, 0, -0.965585, 0, -0.260083, 41.9179, 0.0500002, 23.5725)
 
-[node name="chair_tscn4" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn4" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(0.682636, 0, -0.730758, 0, 1, 0, 0.730758, 0, 0.682636, 44.3593, 0.0500007, 27.1476)
 
-[node name="table_long_tablecloth_decorated_A_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("37_lkfds")]
+[node name="table_long_tablecloth_decorated_A_tscn" parent="Props" instance=ExtResource("37_lkfds")]
 transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 27.2523, 0.0499997, 10.7305)
 
-[node name="table_long_decorated_A_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("38_y5rcj")]
+[node name="table_long_decorated_A_tscn" parent="Props" instance=ExtResource("38_y5rcj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0971, 0.0500007, 10.751)
 
-[node name="stool_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3315, 0.0500007, 9.25429)
 
-[node name="stool_tscn2" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn2" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3075, 0.0500002, 11.2612)
 
-[node name="stool_tscn3" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn3" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6743, 0.0500002, 9.14603)
 
-[node name="stool_tscn4" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn4" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3804, 0.0500002, 11.4277)
 
-[node name="stool_tscn5" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn5" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.8573, 0.0500002, 9.48489)
 
-[node name="stool_tscn6" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn6" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7978, 0.0500002, 11.018)
 
-[node name="stool_tscn7" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn7" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.8287, 0.0500002, 9.45986)
 
-[node name="stool_tscn8" type="StaticBody3D" parent="Props" instance=ExtResource("39_foh2p")]
+[node name="stool_tscn8" parent="Props" instance=ExtResource("39_foh2p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.7386, 0.0500007, 11.2301)
 
-[node name="bed_B_double_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("40_uubjl")]
+[node name="bed_B_double_tscn" parent="Props" instance=ExtResource("40_uubjl")]
 transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 25.7225, 0.0500002, 20.9395)
 
-[node name="bed_decorated_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("41_tfxtf")]
+[node name="bed_decorated_tscn" parent="Props" instance=ExtResource("41_tfxtf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.8694, 0.0500002, 9.86212)
 
-[node name="bartop_A_small_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("42_g6mdl")]
+[node name="bartop_A_small_tscn" parent="Props" instance=ExtResource("42_g6mdl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.1403, 0.0500002, 9.22703)
 
-[node name="bartop_B_small_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("43_gjlsr")]
+[node name="bartop_B_small_tscn" parent="Props" instance=ExtResource("43_gjlsr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5815, 0.0500002, 9.17631)
 
-[node name="bar_innercorner_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("44_mfwvm")]
+[node name="bar_innercorner_tscn" parent="Props" instance=ExtResource("44_mfwvm")]
 transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 25.4751, 0.0500002, 31.0218)
 
-[node name="bar_straight_A_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("45_lj3aq")]
+[node name="bar_straight_A_tscn" parent="Props" instance=ExtResource("45_lj3aq")]
 transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 27.4717, 0.0500002, 31.1019)
 
-[node name="bucket_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("46_3cu0e")]
+[node name="bucket_tscn" parent="Props" instance=ExtResource("46_3cu0e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0721, 0.0500002, 28.6596)
 
-[node name="box_small_decorated_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("47_e8hfx")]
+[node name="box_small_decorated_tscn" parent="Props" instance=ExtResource("47_e8hfx")]
 transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 31.0854, 0.0500002, 31.082)
 
-[node name="table_round_large_tscn" type="StaticBody3D" parent="Props" instance=ExtResource("48_mahrk")]
+[node name="table_round_large_tscn" parent="Props" instance=ExtResource("48_mahrk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.2924, 0.0500002, 12.4077)
 
-[node name="chair_tscn5" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn5" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(-0.698723, 0, 0.715384, 0, 1, 0, -0.715384, 0, -0.698723, 34.8511, 0.0500002, 10.8156)
 
-[node name="chair_tscn6" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn6" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(0.977044, 0, 0.21303, 0, 1, 0, -0.21303, 0, 0.977044, 38.7464, 0.0499997, 12.62)
 
-[node name="chair_tscn7" type="StaticBody3D" parent="Props" instance=ExtResource("30_j6jw0")]
+[node name="chair_tscn7" parent="Props" instance=ExtResource("30_j6jw0")]
 transform = Transform3D(-0.538035, 0, -0.842922, 0, 1, 0, 0.842922, 0, -0.538035, 35.3707, 0.0500002, 14.1348)
 
 [connection signal="PlayerInteracted" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeOutputs/door_scaffold_tscn" method="OpenDoor"]
