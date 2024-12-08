@@ -96,3 +96,4 @@ res://addons/assetplacer/snapping/PlaneSnapping.cs
 res://addons/assetplacer/assetPalette/Asset3DData.cs
 res://addons/assetplacer/Node3DList.cs
 res://addons/assetplacer/ui/DynamicPreviewPanel.cs
+res://Objects/InteractableEntities/Outputs/pillar_elevator.tscn

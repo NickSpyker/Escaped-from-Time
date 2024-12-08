@@ -1,10 +1,9 @@
-[gd_scene load_steps=29 format=3 uid="uid://b4j3xxwiitm50"]
+[gd_scene load_steps=28 format=3 uid="uid://b4j3xxwiitm50"]
 
 [ext_resource type="Script" path="res://Components/TimeTravelHandler/TimeMechanicsArea.cs" id="1_wp6h8"]
 [ext_resource type="Texture2D" uid="uid://djnlppmno0ddi" path="res://Assets/Prototypes/Dark/texture_09.png" id="2_sc3cd"]
 [ext_resource type="Texture2D" uid="uid://e5ubkkbi6qbr" path="res://Assets/Prototypes/Orange/texture_09.png" id="3_bjm0t"]
 [ext_resource type="PackedScene" uid="uid://co2fy37mqdnbl" path="res://Objects/Characters/Adventurers/player_knight.tscn" id="3_ctx3q"]
-[ext_resource type="PackedScene" uid="uid://decpqp0p02s8q" path="res://Objects/Characters/Adventurers/player_knight_ghost.tscn" id="3_urbbi"]
 [ext_resource type="PackedScene" path="res://Objects/InteractableEntities/Inputs/press_to_interact_area.tscn" id="4_e2jel"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="4_qmy3s"]
 [ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="4_qvrtx"]
@@ -62,9 +61,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 2, 70)
 
 [node name="PlayerKnight" parent="TimeMechanicsArea" instance=ExtResource("3_ctx3q")]
 transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 0, 0, 0)
-
-[node name="PlayerKnightGhost" parent="TimeMechanicsArea" instance=ExtResource("3_urbbi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.19384, 0, 7.64474)
 
 [node name="interact_area_tscn" parent="TimeMechanicsArea" instance=ExtResource("7_2nh7p")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 14)

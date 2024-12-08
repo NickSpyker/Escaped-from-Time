@@ -54,6 +54,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_gw572")
 
 [node name="PillarElevator" type="AnimatableBody3D"]
+collision_mask = 7
 script = ExtResource("1_meaip")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
