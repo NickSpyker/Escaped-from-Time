@@ -6,10 +6,13 @@ namespace EscapedfromTime.Components.TimeTravelHandler;
 public enum TimeEventType
 {
     None,
+    InitialTransform,
     VelocityChange,
     RotationChange,
     BackToTime,
-    PlayerInteract
+    PlayerInteract,
+    PlayerAttack,
+    PlayerBlock
 }
 
 public struct InteractionData
@@ -32,6 +35,7 @@ public struct TimeEvent
 
     public TimeEventType Type = default;
 
+    public bool BoolValue = default;
     public float FloatValue = default;
     public Vector3 VectorValue = default;
     public Transform3D TransformValue = default;

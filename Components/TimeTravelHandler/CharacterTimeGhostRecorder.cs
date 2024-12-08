@@ -20,7 +20,6 @@ public partial class CharacterTimeGhostRecorder : Node
 	public void RecordMoveAndSlide(Vector3 velocity)
 	{
 		uint t = _timeMechanicsArea.T;
-
 		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
 
 		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.VelocityChange, VectorValue = velocity });
@@ -29,10 +28,25 @@ public partial class CharacterTimeGhostRecorder : Node
 	public void RecordGlobalTransform(Transform3D transform)
 	{
 		uint t = _timeMechanicsArea.T;
-
 		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
 
 		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.RotationChange, TransformValue = transform });
+	}
+
+	public void RecordPlayerAttack()
+	{
+		uint t = _timeMechanicsArea.T;
+		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.PlayerAttack });
+	}
+
+	public void RecordPlayerDefending(bool isDefending)
+	{
+		uint t = _timeMechanicsArea.T;
+		if (!_timeEvents.ContainsKey(t)) _timeEvents.Add(t, new List<TimeEvent>());
+
+		_timeEvents[t].Add(new TimeEvent { Type = TimeEventType.PlayerBlock, BoolValue = isDefending });
 	}
 
 	public Dictionary<uint, List<TimeEvent>> GetTimeEventsAndClear()
