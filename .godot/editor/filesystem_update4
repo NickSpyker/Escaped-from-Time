@@ -94,3 +94,7 @@ res://Components/CharacterInputsController/CharacterMovements.cs
 res://addons/assetplacer/ui/DynamicPreviewController.cs
 res://addons/assetplacer/SceneData.cs
 res://addons/assetplacer/assetPalette/Asset3DData.cs
+res://Scenes/DevSandbox/dev_sandbox.tscn
+res://Resources/Materials/ghost.tres
+res://Resources/Animations/skeleton_animation_state_machine.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_props.tres

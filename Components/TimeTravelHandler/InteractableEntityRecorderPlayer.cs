@@ -19,7 +19,8 @@ public partial class InteractableEntityRecorderPlayer : Node
     public override void _Ready()
     {
         _timeMechanicsArea = TimeMechanicsHelper.GetTimeMechanicsAreaFrom(this);
-        InteractableEntity.PlayerInteracted += _onInteraction;
+        InteractableEntity.PlayerInteracted += _onInteractionStarted;
+        InteractableEntity.PlayerStopInteraction += _onInteractionStoped;
         _timeMechanicsArea.ReStartTime += _onTimeRestart;
     }
 
@@ -34,7 +35,7 @@ public partial class InteractableEntityRecorderPlayer : Node
         }
     }
 
-    private void _onInteraction()
+    private void _onInteractionStarted()
     {
         uint t = _timeMechanicsArea.T;
         if (!_timeEventsRecord.ContainsKey(t))
@@ -43,6 +44,18 @@ public partial class InteractableEntityRecorderPlayer : Node
         _timeEventsRecord[t].Add(new TimeEvent {
             Type = TimeEventType.PlayerInteract,
             InteractDataValue = new InteractionData(InteractableEntity, InputInteractableEntity.SignalName.PlayerInteracted)
+        });
+    }
+
+    private void _onInteractionStoped()
+    {
+        uint t = _timeMechanicsArea.T;
+        if (!_timeEventsRecord.ContainsKey(t))
+            _timeEventsRecord.Add(t, new List<TimeEvent>());
+
+        _timeEventsRecord[t].Add(new TimeEvent {
+            Type = TimeEventType.PlayerInteract,
+            InteractDataValue = new InteractionData(InteractableEntity, InputInteractableEntity.SignalName.PlayerStopInteraction)
         });
     }
 

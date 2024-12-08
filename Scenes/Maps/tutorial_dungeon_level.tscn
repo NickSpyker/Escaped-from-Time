@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=3 uid="uid://67caiq5tr41r"]
+[gd_scene load_steps=53 format=3 uid="uid://67caiq5tr41r"]
 
 [ext_resource type="Script" path="res://Scenes/Maps/TutorialDungeonLevel.cs" id="1_4yydg"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="2_wk77w"]
@@ -48,6 +48,9 @@
 [ext_resource type="PackedScene" uid="uid://b4qli1kir5eg1" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bucket.tscn" id="46_3cu0e"]
 [ext_resource type="PackedScene" uid="uid://dk5t15b6y71gp" path="res://Resources/AssetPlacerLibraries/Scenes/collide/box_small_decorated.tscn" id="47_e8hfx"]
 [ext_resource type="PackedScene" uid="uid://b2omn5bb4ci06" path="res://Resources/AssetPlacerLibraries/Scenes/collide/table_round_large.tscn" id="48_mahrk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iaxy2"]
+size = Vector3(64.066, 5, 1)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gwcpt"]
 sky_top_color = Color(0.768602, 0.85197, 1, 1)
@@ -174,6 +177,12 @@ mesh_library = ExtResource("12_c7er4")
 cell_size = Vector3(1, 4, 1)
 cell_center_y = false
 collision_mask = 7
+
+[node name="InvisibleWalls" type="Node3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InvisibleWalls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 6.5, 31.999)
+shape = SubResource("BoxShape3D_iaxy2")
 
 [node name="EnvironmentsAndLights" type="Node3D" parent="."]
 
