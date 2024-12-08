@@ -23,6 +23,7 @@ public partial class PressToInteractArea : InputInteractableEntity
 		{
 			_isActionInProgress = false;
 			if (ShowLabel) Label.SetText("INTERACTION_MESSAGE_LABEL");
+			InteractEmitSignal(InputInteractableEntity.SignalName.PlayerStopInteraction);
 			return;
 		}
 		if (_isActionInProgress || !@event.IsActionPressed("player_interacts")) return;

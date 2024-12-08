@@ -105,3 +105,4 @@ res://Resources/AssetPlacerLibraries/Scenes/lights/candle_triple.tscn
 res://Resources/AssetPlacerLibraries/Scenes/lights/torch.tscn
 res://Resources/AssetPlacerLibraries/Scenes/lights/torch_lit.tscn
 res://Resources/AssetPlacerLibraries/Scenes/lights/torch_mounted.tscn
+res://Objects/InteractableEntities/Inputs/interact_area.tscn

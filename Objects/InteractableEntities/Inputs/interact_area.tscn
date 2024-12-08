@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://0hjlprx8wbxi"]
+[gd_scene load_steps=3 format=3 uid="uid://c8a0t7ma23qn3"]
 
 [ext_resource type="Script" path="res://Objects/InteractableEntities/Inputs/InteractArea.cs" id="1_y0b8n"]
 
@@ -16,3 +16,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CylinderShape3D_cghfn")
 
 [connection signal="body_entered" from="Area3D" to="." method="OnBodyEntered"]
+[connection signal="body_exited" from="Area3D" to="." method="OnBodyExited"]
