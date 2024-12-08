@@ -1,9 +1,59 @@
-[gd_scene load_steps=6 format=3 uid="uid://v0s4yoclgw3p"]
+[gd_scene load_steps=42 format=3 uid="uid://v0s4yoclgw3p"]
 
 [ext_resource type="Script" path="res://Scenes/MainMenu/MainMenu.cs" id="1_l0ytr"]
 [ext_resource type="Theme" uid="uid://nogjyw54m8rl" path="res://Resources/Themes/MainMenuTheme.tres" id="1_p7low"]
 [ext_resource type="FontFile" uid="uid://bpyfuho2ik1di" path="res://Assets/Fonts/Permanent_Marker/PermanentMarker-Regular.ttf" id="3_86eib"]
 [ext_resource type="PackedScene" uid="uid://c2ggbyd7ek7je" path="res://Scenes/SettingsMenu/settings_menu.tscn" id="4_vvggm"]
+[ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="5_wrxxh"]
+[ext_resource type="MeshLibrary" uid="uid://d1worgrn7qv1x" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" id="6_sdyds"]
+[ext_resource type="MeshLibrary" uid="uid://dxpgc8dxnytip" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" id="7_o176c"]
+[ext_resource type="MeshLibrary" uid="uid://0nmvpsp17yt0" path="res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres" id="9_hvgqf"]
+[ext_resource type="MeshLibrary" uid="uid://6bpytbyksvs1" path="res://Resources/GridMaps/MeshLibraries/dungeon_banners.tres" id="14_fdpoq"]
+[ext_resource type="PackedScene" uid="uid://dgqwu0pgilmkg" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle.tscn" id="16_owq1v"]
+[ext_resource type="PackedScene" uid="uid://c80vywn3ralw8" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle_triple.tscn" id="17_c4nhf"]
+[ext_resource type="PackedScene" uid="uid://bc585sslhpq67" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle_lit.tscn" id="19_onh5e"]
+[ext_resource type="PackedScene" uid="uid://cc350kdxa1ddh" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle_thin_lit.tscn" id="20_lxwt3"]
+[ext_resource type="PackedScene" uid="uid://oy07bdjoeubo" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_double_decoratedA.tscn" id="23_h7d1d"]
+[ext_resource type="PackedScene" uid="uid://nfyj8kxwg8ra" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_double_decoratedB.tscn" id="24_g2ami"]
+[ext_resource type="PackedScene" uid="uid://c24ul0xk71uos" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bookcase_single_decoratedA.tscn" id="25_hf3wm"]
+[ext_resource type="PackedScene" uid="uid://3o4fu1e1r2wq" path="res://Resources/AssetPlacerLibraries/Scenes/collide/shelf_small_books.tscn" id="26_awlx0"]
+[ext_resource type="PackedScene" uid="uid://buxmxn4rumo7v" path="res://Resources/AssetPlacerLibraries/Scenes/collide/chair.tscn" id="27_8k5cq"]
+[ext_resource type="PackedScene" uid="uid://b1045b8b4esgl" path="res://Resources/AssetPlacerLibraries/Scenes/collide/box_large.tscn" id="28_5g4w6"]
+[ext_resource type="PackedScene" uid="uid://cuonrq7ip47su" path="res://Resources/AssetPlacerLibraries/Scenes/collide/box_small.tscn" id="29_h134m"]
+[ext_resource type="PackedScene" uid="uid://dp687aaqol6qe" path="res://Resources/AssetPlacerLibraries/Scenes/collide/box_stacked.tscn" id="30_m7sxd"]
+[ext_resource type="PackedScene" uid="uid://c41ysng0gr2uv" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bucket_pickaxes.tscn" id="31_kbnil"]
+[ext_resource type="PackedScene" uid="uid://c0x40euwtcytd" path="res://Resources/AssetPlacerLibraries/Scenes/collide/chest.tscn" id="32_bp5ug"]
+[ext_resource type="PackedScene" uid="uid://bnfyw6wuiqjmo" path="res://Resources/AssetPlacerLibraries/Scenes/collide/table_long_decorated_C.tscn" id="33_g1ge1"]
+[ext_resource type="PackedScene" uid="uid://bwmoecptsgbfw" path="res://Resources/AssetPlacerLibraries/Scenes/collide/table_long_tablecloth_decorated_A.tscn" id="34_8vmn0"]
+[ext_resource type="PackedScene" uid="uid://cx5431plpxwpm" path="res://Resources/AssetPlacerLibraries/Scenes/collide/table_long_decorated_A.tscn" id="35_3edk8"]
+[ext_resource type="PackedScene" uid="uid://bn8uttwcwj5vf" path="res://Objects/PostProcessing/toon_post_processing.tscn" id="35_8rsdt"]
+[ext_resource type="PackedScene" uid="uid://jc6ghr757tqg" path="res://Resources/AssetPlacerLibraries/Scenes/collide/stool.tscn" id="36_u4x55"]
+[ext_resource type="PackedScene" uid="uid://rgnxraaj234c" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bed_B_double.tscn" id="37_e2h8c"]
+[ext_resource type="PackedScene" uid="uid://ygicfkpap566" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bed_decorated.tscn" id="38_jo1mb"]
+[ext_resource type="PackedScene" uid="uid://cv2uweqlv5ytd" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_A_small.tscn" id="39_lde3w"]
+[ext_resource type="PackedScene" uid="uid://bd2onprdnclpm" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bartop_B_small.tscn" id="40_n07ti"]
+[ext_resource type="PackedScene" uid="uid://cumrvi8av11ep" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bar_innercorner.tscn" id="41_bf7cs"]
+[ext_resource type="PackedScene" uid="uid://bwgyu2fptd82x" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bar_straight_A.tscn" id="42_wo5wb"]
+[ext_resource type="PackedScene" uid="uid://b4qli1kir5eg1" path="res://Resources/AssetPlacerLibraries/Scenes/collide/bucket.tscn" id="43_p6d62"]
+[ext_resource type="PackedScene" uid="uid://dk5t15b6y71gp" path="res://Resources/AssetPlacerLibraries/Scenes/collide/box_small_decorated.tscn" id="44_iuiiy"]
+[ext_resource type="PackedScene" uid="uid://b2omn5bb4ci06" path="res://Resources/AssetPlacerLibraries/Scenes/collide/table_round_large.tscn" id="45_ulx61"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tcu2k"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+sky_energy_multiplier = 0.2
+sky_cover_modulate = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_1mjgo"]
+sky_material = SubResource("ProceduralSkyMaterial_tcu2k")
+
+[sub_resource type="Environment" id="Environment_ovdq5"]
+background_mode = 2
+sky = SubResource("Sky_1mjgo")
+tonemap_mode = 2
+glow_enabled = true
 
 [sub_resource type="Theme" id="Theme_8wmrg"]
 Label/colors/font_color = Color(1, 1, 1, 1)
@@ -21,6 +71,233 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_p7low")
 script = ExtResource("1_l0ytr")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="Node3D" type="Node3D" parent="SubViewportContainer/SubViewport"]
+
+[node name="Dungeon" type="Node3D" parent="SubViewportContainer/SubViewport/Node3D"]
+
+[node name="Floors" type="Node3D" parent="SubViewportContainer/SubViewport/Node3D/Dungeon"]
+
+[node name="Floors_XL" type="GridMap" parent="SubViewportContainer/SubViewport/Node3D/Dungeon/Floors"]
+mesh_library = ExtResource("5_wrxxh")
+cell_size = Vector3(8, 4, 8)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(4, 2, 1441793)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Floors_L" type="GridMap" parent="SubViewportContainer/SubViewport/Node3D/Dungeon/Floors"]
+mesh_library = ExtResource("6_sdyds")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(7, 5, 1441797, 8, 3, 1441797, 9, 3, 1441797, 10, 4, 1441797, 10, 5, 1441797, 6, 7, 1441794, 6, 2, 1441794, 11, 2, 1441794, 11, 7, 1441794, 6, 6, 1048584, 6, 5, 1048584, 6, 4, 1048584, 6, 3, 1048584, 7, 2, 8, 8, 2, 8, 9, 2, 8, 10, 2, 8, 11, 3, 1441800, 11, 4, 1441800, 11, 5, 1441800, 11, 6, 1441800, 10, 3, 655366, 7, 4, 655366, 9, 6, 655366, 7, 6, 655365, 8, 6, 655365, 10, 6, 655365, 7, 3, 655365, 10, 7, 655365, 9, 7, 655365, 8, 7, 655365, 7, 7, 655365)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
+[node name="Floors_S" type="GridMap" parent="SubViewportContainer/SubViewport/Node3D/Dungeon/Floors"]
+mesh_library = ExtResource("7_o176c")
+cell_size = Vector3(2, 4, 2)
+cell_center_y = false
+collision_mask = 7
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Walls" type="GridMap" parent="SubViewportContainer/SubViewport/Node3D/Dungeon"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh_library = ExtResource("9_hvgqf")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_mask = 7
+data = {
+"cells": PackedInt32Array(5, 1, 32, 5, 2, 1441813, 5, 4, 1441814, 5, 5, 1441797, 5, 6, 1441802, 5, 7, 655392, 6, 1, 655360, 6, 7, 33, 7, 1, 23, 7, 7, 655389, 8, 1, 25, 9, 1, 26, 9, 7, 655389, 10, 1, 655360, 10, 7, 32, 11, 1, 6, 11, 2, 1048576, 11, 3, 1441822, 11, 4, 1048610, 11, 5, 1441792, 11, 6, 1048576, 11, 7, 1441798, 5, 3, 1441794, 8, 7, 655385)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="Banners" type="GridMap" parent="SubViewportContainer/SubViewport/Node3D/Dungeon"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh_library = ExtResource("14_fdpoq")
+cell_size = Vector3(4, 4, 4)
+cell_center_y = false
+collision_layer = 0
+collision_mask = 0
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="EnvironmentsAndLights" type="Node3D" parent="SubViewportContainer/SubViewport/Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="SubViewportContainer/SubViewport/Node3D/EnvironmentsAndLights"]
+transform = Transform3D(0.965926, 0.0669873, -0.25, 0.258819, -0.25, 0.933013, 0, -0.965926, -0.258819, 0, 0, 0)
+light_color = Color(0.845173, 0.91065, 1, 1)
+light_energy = 0.5
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="SubViewportContainer/SubViewport/Node3D/EnvironmentsAndLights"]
+environment = SubResource("Environment_ovdq5")
+
+[node name="Props" type="Node3D" parent="SubViewportContainer/SubViewport/Node3D"]
+
+[node name="Lights" type="Node3D" parent="SubViewportContainer/SubViewport/Node3D/Props"]
+
+[node name="candle_tscn9" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("16_owq1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9479, 0, 30.6077)
+
+[node name="candle_tscn10" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("16_owq1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.1746, 0, 30.6227)
+
+[node name="candle_tscn11" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("16_owq1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.6958, 0, 17.7473)
+
+[node name="candle_tscn13" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("16_owq1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8714, 0, 9.17462)
+
+[node name="candle_tscn14" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("16_owq1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.22, 0, 9.14343)
+
+[node name="candle_tscn15" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("16_owq1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3832, 0, 18.6628)
+
+[node name="candle_lit_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("19_onh5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.024, 1.01847, 24.0675)
+
+[node name="candle_triple_tscn3" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("17_c4nhf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.2828, 1.05, 12.5304)
+
+[node name="candle_thin_lit_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("20_lxwt3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.6305, 0.0500002, 8.65709)
+
+[node name="candle_triple_tscn4" parent="SubViewportContainer/SubViewport/Node3D/Props/Lights" instance=ExtResource("17_c4nhf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.8552, 1.05, 31.0425)
+
+[node name="bookcase_double_decoratedA_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("23_h7d1d")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.9684, 0.0500002, 23.4991)
+
+[node name="bookcase_double_decoratedB_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("24_g2ami")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.9167, 0.0500002, 27.7103)
+
+[node name="bookcase_single_decoratedA_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("25_hf3wm")]
+transform = Transform3D(-0.798109, 0, -0.602511, 0, 1, 0, 0.602511, 0, -0.798109, 46.2196, 0.0500002, 30.6614)
+
+[node name="shelf_small_books_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("26_awlx0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 44.1641, 2.48677, 31.5)
+
+[node name="shelf_small_books_tscn2" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("26_awlx0")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 42.8543, 1.49199, 31.5)
+
+[node name="chair_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(-0.0706259, 0, -0.997493, 0, 1, 0, 0.997493, 0, -0.0706259, 44.1308, 0.0500002, 30.893)
+
+[node name="box_large_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("28_5g4w6")]
+transform = Transform3D(0.860074, 0, -0.510167, 0, 1, 0, 0.510167, 0, 0.860074, 46.5506, 0.0500002, 20.4207)
+
+[node name="box_small_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("29_h134m")]
+transform = Transform3D(0.856718, 0, 0.515785, 0, 1, 0, -0.515785, 0, 0.856718, 46.8861, 0.0499997, 18.9475)
+
+[node name="box_stacked_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("30_m7sxd")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.3663, 0.0500002, 10.233)
+
+[node name="bucket_pickaxes_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("31_kbnil")]
+transform = Transform3D(0.863395, 0, 0.504528, 0, 1, 0, -0.504528, 0, 0.863395, 43.9803, 0.0500002, 8.92151)
+
+[node name="chest_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("32_bp5ug")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 46.7642, 0.0500002, 12.9432)
+
+[node name="table_long_decorated_C_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("33_g1ge1")]
+transform = Transform3D(0.698727, 0, -0.715387, 0, 1, 0, 0.715387, 0, 0.698727, 42.4514, 0.0500007, 25.2807)
+
+[node name="chair_tscn2" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(-0.748377, 0, 0.663273, 0, 1, 0, -0.663273, 0, -0.748377, 40.5024, 0.0500002, 24.7407)
+
+[node name="chair_tscn3" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(-0.260083, 0, 0.965585, 0, 1, 0, -0.965585, 0, -0.260083, 41.9179, 0.0500002, 23.5725)
+
+[node name="chair_tscn4" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(0.682636, 0, -0.730758, 0, 1, 0, 0.730758, 0, 0.682636, 44.3593, 0.0500007, 27.1476)
+
+[node name="table_long_tablecloth_decorated_A_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("34_8vmn0")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 27.2523, 0.0499997, 10.7305)
+
+[node name="table_long_decorated_A_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("35_3edk8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0971, 0.0500007, 10.751)
+
+[node name="stool_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3315, 0.0500007, 9.25429)
+
+[node name="stool_tscn2" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3075, 0.0500002, 11.2612)
+
+[node name="stool_tscn3" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6743, 0.0500002, 9.14603)
+
+[node name="stool_tscn4" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3804, 0.0500002, 11.4277)
+
+[node name="stool_tscn5" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.8573, 0.0500002, 9.48489)
+
+[node name="stool_tscn6" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7978, 0.0500002, 11.018)
+
+[node name="stool_tscn7" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.8287, 0.0500002, 9.45986)
+
+[node name="stool_tscn8" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("36_u4x55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.7386, 0.0500007, 11.2301)
+
+[node name="bed_B_double_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("37_e2h8c")]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 25.7225, 0.0500002, 20.9395)
+
+[node name="bed_decorated_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("38_jo1mb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.8694, 0.0500002, 9.86212)
+
+[node name="bartop_A_small_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("39_lde3w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.1403, 0.0500002, 9.22703)
+
+[node name="bartop_B_small_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("40_n07ti")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5815, 0.0500002, 9.17631)
+
+[node name="bar_innercorner_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("41_bf7cs")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 25.4751, 0.0500002, 31.0218)
+
+[node name="bar_straight_A_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("42_wo5wb")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 27.4717, 0.0500002, 31.1019)
+
+[node name="bucket_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("43_p6d62")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0721, 0.0500002, 28.6596)
+
+[node name="box_small_decorated_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("44_iuiiy")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 31.0854, 0.0500002, 31.082)
+
+[node name="table_round_large_tscn" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("45_ulx61")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.2924, 0.0500002, 12.4077)
+
+[node name="chair_tscn5" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(-0.698723, 0, 0.715384, 0, 1, 0, -0.715384, 0, -0.698723, 34.8511, 0.0500002, 10.8156)
+
+[node name="chair_tscn6" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(0.977044, 0, 0.21303, 0, 1, 0, -0.21303, 0, 0.977044, 38.7464, 0.0499997, 12.62)
+
+[node name="chair_tscn7" parent="SubViewportContainer/SubViewport/Node3D/Props" instance=ExtResource("27_8k5cq")]
+transform = Transform3D(-0.538035, 0, -0.842922, 0, 1, 0, 0.842922, 0, -0.538035, 35.3707, 0.0500002, 14.1348)
+
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport/Node3D"]
+transform = Transform3D(-0.605433, 0, -0.795896, 0, 1, 0, 0.795896, 0, -0.605433, 36.4218, 1.37739, 9.85759)
+
+[node name="ToonPostProcessing" parent="SubViewportContainer/SubViewport/Node3D/Camera3D" instance=ExtResource("35_8rsdt")]
 
 [node name="MenuTitleAndMainButtons" type="MarginContainer" parent="."]
 layout_mode = 1

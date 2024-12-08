@@ -104,3 +104,8 @@ res://Resources/GridMaps/MeshLibraries/dungeon_props.tres
 res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres
 res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres
 res://Scenes/PauseMenu/PauseMenu.cs
+res://Resources/GridMaps/MeshLibraries/dungeon_fundations_s.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_pillars.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_rocks.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_banners.tres
+res://Scenes/Maps/tutorial_dungeon_level.tscn

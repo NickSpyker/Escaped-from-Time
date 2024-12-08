@@ -60,12 +60,12 @@ sky_cover_modulate = Color(0, 0, 0, 1)
 ground_bottom_color = Color(0, 0, 0, 1)
 ground_horizon_color = Color(0, 0, 0, 1)
 
-[sub_resource type="Sky" id="Sky_1mjgo"]
+[sub_resource type="Sky" id="Sky_up7s6"]
 sky_material = SubResource("ProceduralSkyMaterial_gwcpt")
 
 [sub_resource type="Environment" id="Environment_ge28g"]
 background_mode = 2
-sky = SubResource("Sky_1mjgo")
+sky = SubResource("Sky_up7s6")
 tonemap_mode = 2
 glow_enabled = true
 
