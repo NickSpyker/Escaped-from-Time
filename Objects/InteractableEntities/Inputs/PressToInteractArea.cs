@@ -10,6 +10,8 @@ public partial class PressToInteractArea : InputInteractableEntity
 	private bool _canInteract;
 	private bool _isActionInProgress;
 
+	private uint _count;
+
 	public override void _Ready()
 	{
 		Label.SetVisible(false);
@@ -23,7 +25,9 @@ public partial class PressToInteractArea : InputInteractableEntity
 		{
 			_isActionInProgress = false;
 			if (ShowLabel) Label.SetText("INTERACTION_MESSAGE_LABEL");
-			InteractEmitSignal(InputInteractableEntity.SignalName.PlayerStopInteraction);
+			_count--;
+			if (_count == 0)
+				InteractEmitSignal(InputInteractableEntity.SignalName.PlayerStopInteraction);
 			return;
 		}
 		if (_isActionInProgress || !@event.IsActionPressed("player_interacts")) return;
@@ -31,6 +35,7 @@ public partial class PressToInteractArea : InputInteractableEntity
 		_isActionInProgress = true;
 		if (ShowLabel) Label.SetText("INTERACTION_IN_PROGRESS");
 
+		_count++;
 		InteractEmitSignal(InputInteractableEntity.SignalName.PlayerInteracted);
 	}
 

@@ -7,11 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Add all lights">
-      <change beforePath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-editstate-c936d59fbf321f52e964948e1e70d071.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-editstate-c936d59fbf321f52e964948e1e70d071.cfg" afterDir="false" />
+    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Fix door interactions">
       <change beforePath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-folding-c936d59fbf321f52e964948e1e70d071.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-folding-c936d59fbf321f52e964948e1e70d071.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" afterDir="false" />
@@ -22,18 +19,9 @@
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/InteractableEntities/InputInteractableEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/InteractableEntities/InputInteractableEntity.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/InteractableEntities/Inputs/InteractArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/InteractableEntities/Inputs/InteractArea.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Objects/InteractableEntities/Inputs/PressToInteractArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/InteractableEntities/Inputs/PressToInteractArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_props.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_props.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/DevSandbox/dev_sandbox.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/DevSandbox/dev_sandbox.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/InteractableEntities/Outputs/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/InteractableEntities/Outputs/Door.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,7 +391,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733634028740</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Fix door interactions">
+      <option name="closed" value="true" />
+      <created>1733634456886</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1733634456886</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +420,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add loader and main menu" />
     <MESSAGE value="Add time mechanics for interactable entities" />
     <MESSAGE value="Fix ghost instances collision layer and mask, and fix camera spring arm" />
     <MESSAGE value="Add gravity to player ghost who have ended actions" />
@@ -449,6 +444,7 @@
     <MESSAGE value="Fix inactive back to time player ghost instances" />
     <MESSAGE value="Fix animation" />
     <MESSAGE value="Add all lights" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all lights" />
+    <MESSAGE value="Fix door interactions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix door interactions" />
   </component>
 </project>
