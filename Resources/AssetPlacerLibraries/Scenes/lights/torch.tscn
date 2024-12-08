@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://c5mwqmtwkco6v"]
+[gd_scene load_steps=6 format=4 uid="uid://c5mwqmtwkco6v"]
 
 [ext_resource type="Texture2D" uid="uid://b6vkcxavfjw61" path="res://Assets/DungeonParts/Parts/dungeon_texture.png" id="1_xra3l"]
+[ext_resource type="PackedScene" uid="uid://cdiwvqu0eftj0" path="res://Objects/Lights/flame.tscn" id="2_1pkcd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_56wfi"]
 resource_name = "texture"
@@ -41,8 +42,11 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_v1ncm")
 
-[node name="Torch" type="StaticBody3D"]
+[node name="Torch" type="Node3D"]
 
 [node name="torch" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_nw26v")
 skeleton = NodePath("")
+
+[node name="Flame" parent="torch" instance=ExtResource("2_1pkcd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44507, 0)

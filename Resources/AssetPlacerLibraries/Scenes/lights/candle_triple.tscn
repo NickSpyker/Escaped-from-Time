@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://c80vywn3ralw8"]
+[gd_scene load_steps=6 format=4 uid="uid://c80vywn3ralw8"]
 
 [ext_resource type="Texture2D" uid="uid://b6vkcxavfjw61" path="res://Assets/DungeonParts/Parts/dungeon_texture.png" id="1_24ckp"]
+[ext_resource type="PackedScene" uid="uid://cdiwvqu0eftj0" path="res://Objects/Lights/flame.tscn" id="2_u8rgr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rwgc6"]
 resource_name = "texture"
@@ -41,8 +42,17 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5c1kn")
 
-[node name="CandleTriple" type="StaticBody3D"]
+[node name="CandleTriple" type="Node3D"]
 
 [node name="candle_triple" type="MeshInstance3D" parent="."]
 mesh = SubResource("ArrayMesh_6ux1o")
 skeleton = NodePath("")
+
+[node name="Flame" parent="candle_triple" instance=ExtResource("2_u8rgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0092147, 0.747087, 0)
+
+[node name="Flame2" parent="candle_triple" instance=ExtResource("2_u8rgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.246471, 0.918772, -0.0503597)
+
+[node name="Flame3" parent="candle_triple" instance=ExtResource("2_u8rgr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.208013, 0.679909, 0.132298)

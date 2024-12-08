@@ -95,3 +95,13 @@ res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres
 res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres
 res://Objects/Characters/Adventurers/player_knight.tscn
 res://Objects/Characters/Adventurers/player_knight_ghost.tscn
+res://Objects/Lights/flame.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/candle.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/candle_lit.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/candle_melted.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/candle_thin.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/candle_thin_lit.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/candle_triple.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/torch.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/torch_lit.tscn
+res://Resources/AssetPlacerLibraries/Scenes/lights/torch_mounted.tscn
