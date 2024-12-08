@@ -33,6 +33,7 @@ public partial class CharacterTimeGhostPlayer : Node
         _timeMechanicsArea.ReStartTime += () => {
             Character.GlobalPosition = _initialPosition;
             Character.GlobalRotation = _initialRotation;
+            _characterTimeGhostActionsEnded = false;
         };
     }
 

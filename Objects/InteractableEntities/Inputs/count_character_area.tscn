@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://7tu1jyropl3g"]
+
+[ext_resource type="Script" path="res://Objects/InteractableEntities/Inputs/CountCharacterArea.cs" id="1_tlhs8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dknaf"]
+size = Vector3(3, 2, 3)
+
+[node name="CountCharacterArea" type="Node3D"]
+script = ExtResource("1_tlhs8")
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_mask = 6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_dknaf")
+
+[connection signal="body_entered" from="Area3D" to="." method="OnBodyEntered"]
+[connection signal="body_exited" from="Area3D" to="." method="OnBodyExited"]

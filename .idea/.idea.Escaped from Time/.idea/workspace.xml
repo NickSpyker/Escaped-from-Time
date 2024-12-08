@@ -7,28 +7,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="fix doors">
+    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Fix doors">
       <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-editstate-c936d59fbf321f52e964948e1e70d071.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-editstate-c936d59fbf321f52e964948e1e70d071.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-folding-c936d59fbf321f52e964948e1e70d071.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-folding-c936d59fbf321f52e964948e1e70d071.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/player_knight_ghost.tscn-editstate-4a61cf05caeb4590480c52bb6cc6d360.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/player_knight_ghost.tscn-editstate-4a61cf05caeb4590480c52bb6cc6d360.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/tutorial_dungeon_level.tscn-editstate-d28314456b0ca24738e8252ec1c11576.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/tutorial_dungeon_level.tscn-editstate-d28314456b0ca24738e8252ec1c11576.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/tutorial_dungeon_level.tscn-folding-d28314456b0ca24738e8252ec1c11576.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/tutorial_dungeon_level.tscn-folding-d28314456b0ca24738e8252ec1c11576.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_banners.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_banners.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_fundations_s.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_fundations_s.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_pillars.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_pillars.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_rocks.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_rocks.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/Maps/tutorial_dungeon_level.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/Maps/tutorial_dungeon_level.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/TimeTravelHandler/CharacterTimeGhostPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Components/TimeTravelHandler/CharacterTimeGhostPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Objects/Characters/Adventurers/player_knight_ghost.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Characters/Adventurers/player_knight_ghost.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_props.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_props.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Shaders/outline_object.gdshader" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Shaders/outline_object.gdshader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Shaders/sketchy.gdshader" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Shaders/sketchy.gdshader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/DevSandbox/dev_sandbox.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/DevSandbox/dev_sandbox.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +61,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/16cc92ab834e6a66fd76860bab74ac773106bbea8c544c61209e1342faed/ResourceLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3dc9acf423363fcdab31a9a6d274e54a7b90673b3167bb96dca55efad84d/KinematicCollision3D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a3f6e7387b868cf426d51eddd1816420d11dd139dc9bca244c32f1d22d8b2/GodotObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dad89a1fd82c588f7c050d75a58abb94963ed517c457f1d59a63fbe9293144f/Node3D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fb6e8dd4c7a9a8308ba7b679b8bdc07f55a3aa52153f6a4a36473fd0232e3b6f/CharacterBody3D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -431,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733639551081</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Fix doors">
+      <option name="closed" value="true" />
+      <created>1733640029492</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1733640029492</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +487,6 @@
     <MESSAGE value="Update tutorial gridmap dungeon" />
     <MESSAGE value="Add debug message for lever in tutorial map" />
     <MESSAGE value="Add TimeMechanicsHelper" />
-    <MESSAGE value="Fix doors" />
     <MESSAGE value="Remove .idea .vscode .vs and .godot from .gitignore" />
     <MESSAGE value="Add .idea and .godot" />
     <MESSAGE value="Add toon shader" />
@@ -477,6 +499,7 @@
     <MESSAGE value="Fix doors animation" />
     <MESSAGE value="Add props to tutorial dungeon" />
     <MESSAGE value="fix doors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix doors" />
+    <MESSAGE value="Fix doors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix doors" />
   </component>
 </project>

@@ -34,8 +34,8 @@ float getDepth(vec2 screen_uv, sampler2D depth_texture, mat4 inv_projection_matr
 //	Credit: https://godotshaders.com/shader/depth-modulated-pixel-outline-in-screen-space/
 	float raw_depth = texture(depth_texture, screen_uv)[0];
 	vec3 normalized_device_coordinates = vec3(screen_uv * 2.0 - 1.0, raw_depth);
-    vec4 view_space = inv_projection_matrix * vec4(normalized_device_coordinates, 1.0);	
-	view_space.xyz /= view_space.w;	
+    vec4 view_space = inv_projection_matrix * vec4(normalized_device_coordinates, 1.0);
+	view_space.xyz /= view_space.w;
 	return -view_space.z;
 }
 
@@ -56,7 +56,7 @@ void fragment() {
 	vec4 noise_tex = texture(texture_noise, SCREEN_UV.xy);
 	vec3 noise_offset = vec3(0.0, 0.0, 0.0);
 	noise_offset += (noise_tex.xyz * 2.0 - vec3(1.0)) * 0.005 * noise_offset_multiplier;
-	
+
 //	Add a line based on a sudden change in depth.
 	float depth_diff = 0.0;
 	float neg_depth_diff = 0.5;
@@ -78,7 +78,7 @@ void fragment() {
 //		neg_depth_diff = clamp(smoothstep(0.5, 0.5, neg_depth_diff)*10., 0., 1.);
 //		depth_diff = smoothstep(0.5, 1.0, depth_diff);
 	}
-	
+
 	//	Add a line based on a sudden change in normal direction.
 	float normal_diff = 0.;
 	if(normal_check){
@@ -95,7 +95,7 @@ void fragment() {
 		normal_diff = smoothstep(0.2, 0.8, normal_diff);
 		normal_diff = clamp(normal_diff-neg_depth_diff, 0.0, 1.0);
 	}
-	
+
 	float depth = texture(DEPTH_TEXTURE, SCREEN_UV).r;
 	vec4 screen_tex = texture(SCREEN_TEXTURE, SCREEN_UV);
 	// By default result the tint color. Any other effects are applied later on.
@@ -125,7 +125,7 @@ void fragment() {
 	}
 	// Apply the sketchy lines based on how dark the scene is.
 	vec4 lines_tex = texture(texture_lines, (SCREEN_UV + noise_offset.xy) * lines_texture_scale);
-	
+
 	if(screen_tex.r < 0.01){
 		final += vec3(lines_tex.r * -red_weight);
 	}
@@ -135,10 +135,10 @@ void fragment() {
 	if(screen_tex.r < 0.25){
 		final += vec3(lines_tex.b * -blue_weight);
 	}
-	
+
 	vec4 grain_tex = texture(texture_grain, SCREEN_UV * grain_texture_scale);
 	// Apply the grain texture on top of the final color.
 	final *= clamp(grain_tex.rgb + vec3(1.0 - grain_amount), vec3(0.0), vec3(1.0));
-	
+
 	ALBEDO = final;
 }
