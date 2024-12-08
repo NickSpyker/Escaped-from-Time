@@ -4,6 +4,13 @@ namespace EscapedfromTime.Scenes.MainMenu;
 
 public partial class MainMenu : Control
 {
+	private Control _settings;
+
+	public override void _Ready()
+	{
+		_settings = GetNode<Control>("Settings/SettingsMenu");
+	}
+
 	/* Signal */ public void OnButtonPressedTutorial()
 	{
 		LoadingScreen.LoadingScreen.LoadScene(this, "res://Scenes/Maps/tutorial_dungeon_level.tscn");
@@ -21,6 +28,7 @@ public partial class MainMenu : Control
 
 	/* Signal */ public void OnButtonPressedSettings()
 	{
+		_settings.SetVisible(true);
 	}
 
 	/* Signal */ public void OnButtonPressedExit()

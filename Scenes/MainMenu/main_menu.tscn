@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://v0s4yoclgw3p"]
+[gd_scene load_steps=6 format=3 uid="uid://v0s4yoclgw3p"]
 
 [ext_resource type="Script" path="res://Scenes/MainMenu/MainMenu.cs" id="1_l0ytr"]
 [ext_resource type="Theme" uid="uid://nogjyw54m8rl" path="res://Resources/Themes/MainMenuTheme.tres" id="1_p7low"]
 [ext_resource type="FontFile" uid="uid://bpyfuho2ik1di" path="res://Assets/Fonts/Permanent_Marker/PermanentMarker-Regular.ttf" id="3_86eib"]
+[ext_resource type="PackedScene" uid="uid://c2ggbyd7ek7je" path="res://Scenes/SettingsMenu/settings_menu.tscn" id="4_vvggm"]
 
 [sub_resource type="Theme" id="Theme_8wmrg"]
 Label/colors/font_color = Color(1, 1, 1, 1)
@@ -23,10 +24,9 @@ script = ExtResource("1_l0ytr")
 
 [node name="MenuTitleAndMainButtons" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 9
 anchor_bottom = 1.0
-grow_horizontal = 2
+offset_right = 905.0
 grow_vertical = 2
 theme_override_constants/margin_left = 200
 theme_override_constants/margin_top = 250
@@ -80,6 +80,24 @@ text = "MAIN_MENU_SETTINGS"
 [node name="ExitButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "MAIN_MENU_EXIT"
+
+[node name="Settings" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="SettingsMenu" parent="Settings" instance=ExtResource("4_vvggm")]
+visible = false
+layout_mode = 2
 
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/TutorialButton" to="." method="OnButtonPressedTutorial"]
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="OnButtonPressedPlay"]
