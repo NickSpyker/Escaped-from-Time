@@ -107,7 +107,7 @@ pause={
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://Data/translation.en.translation", "res://Data/translation.fr.translation", "res://Data/translation.ko.translation")
+locale/translations=PackedStringArray("res://Data/translation.en.translation", "res://Data/translation.fr.translation", "res://Data/translation.ko.translation", "res://Data/translation.de.translation", "res://Data/translation.es.translation", "res://Data/translation.it.translation", "res://Data/translation.ja.translation", "res://Data/translation.zh.translation", "res://Data/translation.uk.translation", "res://Data/translation.ru.translation")
 
 [rendering]
 

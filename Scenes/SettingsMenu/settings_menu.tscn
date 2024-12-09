@@ -62,12 +62,26 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_5dp6p")
 [node name="OptionButtonLanguage" type="OptionButton" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer/GridContainer"]
 layout_mode = 2
 selected = 0
-item_count = 3
+item_count = 10
 popup/item_0/text = "English"
 popup/item_1/text = "Français"
 popup/item_1/id = 1
-popup/item_2/text = "한국어"
-popup/item_2/id = 2
+popup/item_2/text = "Español"
+popup/item_2/id = 5
+popup/item_3/text = "Italiano"
+popup/item_3/id = 6
+popup/item_4/text = "Deutsch"
+popup/item_4/id = 7
+popup/item_5/text = "한국어"
+popup/item_5/id = 2
+popup/item_6/text = "日本語です"
+popup/item_6/id = 3
+popup/item_7/text = "華僑華人"
+popup/item_7/id = 4
+popup/item_8/text = "Українська"
+popup/item_8/id = 8
+popup/item_9/text = "Русский"
+popup/item_9/id = 9
 
 [node name="HSeparator" type="HSeparator" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer"]
 layout_mode = 2

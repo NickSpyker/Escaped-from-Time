@@ -7,44 +7,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
+    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Add language settings">
       <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-editstate-2dfcd67214f30425d40634aeb026f8a6.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-editstate-2dfcd67214f30425d40634aeb026f8a6.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-folding-2dfcd67214f30425d40634aeb026f8a6.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-folding-2dfcd67214f30425d40634aeb026f8a6.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/recent_dirs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/recent_dirs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/splash_screen.tscn-editstate-24d959ef8a955c6c2b2432a724036a7e.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/splash_screen.tscn-editstate-24d959ef8a955c6c2b2432a724036a7e.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/scene_groups_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/scene_groups_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/translation.csv.import" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.csv.import" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.en.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.en.translation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.fr.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.fr.translation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.ko.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.ko.translation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_banners.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_banners.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Themes/MainMenuTheme.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Themes/MainMenuTheme.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/MainMenu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/MainMenu/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/MainMenu/main_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/MainMenu/main_menu.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/PauseMenu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/PauseMenu/PauseMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/PauseMenu/pause_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/PauseMenu/pause_menu.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/SettingsMenu/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SettingsMenu/SettingsMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scenes/SettingsMenu/settings_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SettingsMenu/settings_menu.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
@@ -509,7 +493,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733739171601</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Add language settings">
+      <option name="closed" value="true" />
+      <created>1733751827593</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1733751827593</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +522,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Update ????" />
     <MESSAGE value="Add tutorial and main maps" />
     <MESSAGE value="Add AssetPlacer libraries" />
     <MESSAGE value="Update tutorial gridmap dungeon" />
@@ -555,6 +546,7 @@
     <MESSAGE value="Add pause menu for help scene change" />
     <MESSAGE value="Fix crash" />
     <MESSAGE value="Add player sound effects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add player sound effects" />
+    <MESSAGE value="Add language settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add language settings" />
   </component>
 </project>

@@ -6,10 +6,10 @@ uid="uid://dwp13he00rr2j"
 
 [deps]
 
-files=["res://Data/translation.en.translation", "res://Data/translation.fr.translation", "res://Data/translation.ko.translation"]
+files=["res://Data/translation.en.translation", "res://Data/translation.fr.translation", "res://Data/translation.ko.translation", "res://Data/translation.ja.translation", "res://Data/translation.zh.translation", "res://Data/translation.es.translation", "res://Data/translation.it.translation", "res://Data/translation.de.translation", "res://Data/translation.ru.translation", "res://Data/translation.uk.translation"]
 
 source_file="res://Data/translation.csv"
-dest_files=["res://Data/translation.en.translation", "res://Data/translation.fr.translation", "res://Data/translation.ko.translation"]
+dest_files=["res://Data/translation.en.translation", "res://Data/translation.fr.translation", "res://Data/translation.ko.translation", "res://Data/translation.ja.translation", "res://Data/translation.zh.translation", "res://Data/translation.es.translation", "res://Data/translation.it.translation", "res://Data/translation.de.translation", "res://Data/translation.ru.translation", "res://Data/translation.uk.translation"]
 
 [params]
 
