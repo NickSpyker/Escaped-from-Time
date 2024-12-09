@@ -338,17 +338,9 @@ vertical_alignment = 1
 layout_mode = 2
 theme_override_constants/separation = 115
 
-[node name="TutorialButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "MAIN_MENU_TUTORIAL"
-
 [node name="PlayButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "MAIN_MENU_PLAY"
-
-[node name="DevSandboxButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "MAIN_MENU_DEV_SANDBOX"
 
 [node name="SettingsButton" type="Button" parent="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -376,8 +368,6 @@ theme_override_constants/margin_bottom = 100
 visible = false
 layout_mode = 2
 
-[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/TutorialButton" to="." method="OnButtonPressedTutorial"]
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="OnButtonPressedPlay"]
-[connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/DevSandboxButton" to="." method="OnButtonPressedDevSandbox"]
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/SettingsButton" to="." method="OnButtonPressedSettings"]
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/ExitButton" to="." method="OnButtonPressedExit"]

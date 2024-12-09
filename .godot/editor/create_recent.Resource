@@ -1,3 +1,3 @@
+StandardMaterial3D
 Theme
 Shader
-StandardMaterial3D

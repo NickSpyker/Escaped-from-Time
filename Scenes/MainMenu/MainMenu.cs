@@ -11,14 +11,9 @@ public partial class MainMenu : Control
 		_settings = GetNode<Control>("Settings/SettingsMenu");
 	}
 
-	/* Signal */ public void OnButtonPressedTutorial()
-	{
-		LoadingScreen.LoadingScreen.LoadScene(this, "res://Scenes/Maps/tutorial_dungeon_level.tscn");
-	}
-
 	/* Signal */ public void OnButtonPressedPlay()
 	{
-		LoadingScreen.LoadingScreen.LoadScene(this, "res://Scenes/Maps/main_dugeon_level.tscn");
+		LoadingScreen.LoadingScreen.LoadScene(this, "res://Scenes/Maps/dungeon_level.tscn");
 	}
 
 	/* Signal */ public void OnButtonPressedDevSandbox()
