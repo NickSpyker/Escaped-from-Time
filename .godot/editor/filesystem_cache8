@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733737464
+::res://::1733739367
 export_presets.cfg::TextFile::-1::1733734122::0::1::::<><>::
 README.md::TextFile::-1::1733292588::0::1::::<><>::
 ::res://addons/::1733628361
@@ -23,12 +23,12 @@ AssetLibraryData.cs::CSharpScript::-1::1733553721::0::1::::<>GodotObject<>::
 AssetPalette.cs::CSharpScript::-1::1733553721::0::1::::<>Node<>::
 AssetPersistentData.cs::CSharpScript::-1::1733553721::0::1::::<>Resource<>::
 AssetZooGenerator.cs::CSharpScript::-1::1733553721::0::1::::<>Node<>::
-::res://addons/assetplacer/assetPalette/previewGeneration/::1733734357
+::res://addons/assetplacer/assetPalette/previewGeneration/::1733739266
 AssetPreviewGenerator.cs::CSharpScript::-1::1733553721::0::1::::<>Node<>::
 CacheItem.cs::CSharpScript::-1::1733553721::0::1::::<>GodotObject<>::
 LoadData.cs::CSharpScript::-1::1733553721::0::1::::<>GodotObject<>::
 PreviewCamera3D.cs::CSharpScript::-1::1733553721::0::1::::<>Camera3D<>::
-PreviewEnvironment.tres::Environment::5076302576403725622::1733734357::0::1::::<><>::
+PreviewEnvironment.tres::Environment::5076302576403725622::1733739266::0::1::::<><>::
 PreviewRenderingViewport.cs::CSharpScript::-1::1733553721::0::1::::<>SubViewport<>::
 PreviewRenderingViewport.tscn::PackedScene::2165185141761007812::1733553721::0::1::::<><>::res://addons/assetplacer/assetPalette/previewGeneration/PreviewRenderingViewport.cs<>uid://cek87x2wjei0u::::res://addons/assetplacer/assetPalette/previewGeneration/PreviewEnvironment.tres<>res://addons/assetplacer/assetPalette/previewGeneration/PreviewCamera3D.cs
 TextureCache.cs::CSharpScript::-1::1733553721::0::1::::<><>::
@@ -55,7 +55,7 @@ Terrain3DPlacementController.cs::CSharpScript::-1::1733553721::0::1::::<>Node<>:
 PlaneSnapping.cs::CSharpScript::-1::1733553721::0::1::::<>Node<>::
 Snapping.cs::CSharpScript::-1::1733553721::0::1::::<>Node<>::
 SurfaceSnapping.cs::CSharpScript::-1::1733553721::0::1::::<><>::
-::res://addons/assetplacer/ui/::1733734357
+::res://addons/assetplacer/ui/::1733739266
 AboutDialog.cs::CSharpScript::-1::1733553721::0::1::::<>AcceptDialog<>::
 AboutDialog.tscn::PackedScene::537301088043129351::1733553721::0::1::::<><>::res://addons/assetplacer/ui/AboutDialog.cs<>res://addons/assetplacer/ui/TagLabel.cs<>res://addons/assetplacer/ui/LinkButton.cs
 AssetDropPanel.cs::CSharpScript::-1::1733553721::0::1::::<>Control<>::
@@ -76,12 +76,12 @@ LinkButton.cs::CSharpScript::-1::1733553721::0::1::::<>Button<>::
 NodePathSelectionButton.cs::CSharpScript::-1::1733553721::0::1::::<>Button<>::
 NodePathSelectorUi.cs::CSharpScript::-1::1733553721::0::1::::<>Control<>::
 NodePathSelectorUi.tscn::PackedScene::8149688523256864980::1733553721::0::1::::<><>::res://addons/assetplacer/ui/NodePathSelectorUi.cs<>res://addons/assetplacer/ui/NodePathSelectionButton.cs
-NormalButton.tres::Theme::4992212568061334551::1733734357::0::1::::<><>::
+NormalButton.tres::Theme::4992212568061334551::1733739266::0::1::::<><>::
 PlacementUi.cs::CSharpScript::-1::1733553721::0::1::::<>PanelContainer<>::
 RightClickPopup.cs::CSharpScript::-1::1733553721::0::1::::<>PopupMenu<>::
 RightClickPopupSubmenu.cs::CSharpScript::-1::1733553721::0::1::::<>PopupMenu<>::
 SaveAssetLibraryDialog.cs::CSharpScript::-1::1733553721::0::1::::<>FileDialog<>::
-SelectedButton.tres::Theme::4335679243210853236::1733734357::0::1::::<><>::
+SelectedButton.tres::Theme::4335679243210853236::1733739266::0::1::::<><>::
 ShortcutTable.cs::CSharpScript::-1::1733553721::0::1::::<>GridContainer<>::
 SnappingUi.cs::CSharpScript::-1::1733553721::0::1::::<>Control<>::
 TagLabel.cs::CSharpScript::-1::1733553721::0::1::::<>Label<>::
@@ -102,7 +102,7 @@ ContextlessPlugin.cs::CSharpScript::-1::1733553721::0::1::::<>EditorPlugin<>::
 EditorDrawPanel.cs::CSharpScript::-1::1733553721::0::1::::<>Control<>::
 ::res://addons/assetplacer/zoo/::1733553721
 temp_asset_zoo.tscn::PackedScene::5775816689894727450::1733553721::0::1::::<><>::uid://bs1g53duoim36::::res://TestResources/ogre/ogre.fbx<>uid://bps8ku1crq40n::::res://TestResources/TestNodes/LampPost.tscn<>uid://c6pjqxu3c8cpf::::res://TestResources/TestNodes/Cube.tscn
-::res://Assets/::1733737458
+::res://Assets/::1733739310
 ::res://Assets/Adventurers/::1733292799
 contents.png::CompressedTexture2D::1013147961418186048::1733292587::1733292799::1::::<><>::
 License.txt::TextFile::-1::1733292587::0::1::::<><>::
@@ -460,19 +460,19 @@ OFL.txt::TextFile::-1::1733463642::0::1::::<><>::
 ::res://Assets/Fonts/Permanent_Marker/::1733463690
 LICENSE.txt::TextFile::-1::1733463642::0::1::::<><>::
 PermanentMarker-Regular.ttf::FontFile::3489138095731534854::1733463642::1733463690::1::::<><>::
-::res://Assets/Icons/::1733734277
-en.png::CompressedTexture2D::2594369211684662554::1733734121::1733734277::1::::<><>::
-fr.png::CompressedTexture2D::1752394734283145478::1733734121::1733734277::1::::<><>::
+::res://Assets/Icons/::1733739257
+en.png::CompressedTexture2D::2594369211684662554::1733734121::1733739372::1::::<><>::
+fr.png::CompressedTexture2D::1752394734283145478::1733734121::1733739372::1::::<><>::
 icon.svg::CompressedTexture2D::786955593875205816::1733292588::1733292798::1::::<><>::
-ko.png::CompressedTexture2D::274391592730341261::1733734121::1733734277::1::::<><>::
-::res://Assets/Particls/::1733734277
+ko.png::CompressedTexture2D::274391592730341261::1733734121::1733739372::1::::<><>::
+::res://Assets/Particls/::1733739257
 BlueFireGradient.tres::GradientTexture2D::1638739941066150090::1733734121::0::1::::<><>::
 CloudNoise.tres::NoiseTexture2D::8107109246404116102::1733734121::0::1::::<><>::
 FireGradient.tres::GradientTexture2D::-1::1733734121::0::1::::<><>::
-FireMask.png::CompressedTexture2D::3119117674326356897::1733734121::1733734277::1::::<><>::
+FireMask.png::CompressedTexture2D::3119117674326356897::1733734121::1733739372::1::::<><>::
 GreenFireGradient.tres::GradientTexture2D::4748541455255852480::1733734121::0::1::::<><>::
-HoleNoise.png::CompressedTexture2D::374326804540337529::1733734121::1733734277::1::::<><>::
-WispyNoise.png::CompressedTexture2D::7265832248353879136::1733734121::1733734277::1::::<><>::
+HoleNoise.png::CompressedTexture2D::374326804540337529::1733734121::1733739372::1::::<><>::
+WispyNoise.png::CompressedTexture2D::7265832248353879136::1733734121::1733739372::1::::<><>::
 ::res://Assets/Prototypes/::1733463604
 ::res://Assets/Prototypes/Dark/::1733463691
 texture_01.png::CompressedTexture2D::4923928978561852610::1733463604::1733463691::1::::<><>::
@@ -586,82 +586,82 @@ Skeleton_Shield_Small_A.gltf::PackedScene::704593277894788728::1733292687::17332
 Skeleton_Shield_Small_B.gltf::PackedScene::3374815362392640718::1733292687::1733292808::1::::<><>::uid://py3eoprbyxaq::::res://Assets/Skeletons/Equipment/skeleton_texture.png
 Skeleton_Staff.gltf::PackedScene::7827722998320075750::1733292689::1733292807::1::::<><>::uid://py3eoprbyxaq::::res://Assets/Skeletons/Equipment/skeleton_texture.png
 skeleton_texture.png::CompressedTexture2D::1104085698914677660::1733292588::1733292798::1::::<><>::
-::res://Assets/Sounds/::1733737464
-::res://Assets/Sounds/Attacks/::1733734122
-::res://Assets/Sounds/Attacks/Sword Attacks Hits and Blocks/::1733734278
-Sword Attack 1.wav::AudioStreamWAV::456029256656179212::1733734122::1733737466::1::::<><>::
-Sword Attack 2.wav::AudioStreamWAV::7725324261569652154::1733734122::1733737466::1::::<><>::
-Sword Attack 3.wav::AudioStreamWAV::2578718702491756421::1733734122::1733737466::1::::<><>::
-Sword Blocked 1.wav::AudioStreamWAV::5180427217471296234::1733734122::1733737466::1::::<><>::
-Sword Blocked 2.wav::AudioStreamWAV::6605841836490614330::1733734122::1733737466::1::::<><>::
-Sword Blocked 3.wav::AudioStreamWAV::369854076878619312::1733734122::1733737466::1::::<><>::
-Sword Impact Hit 1.wav::AudioStreamWAV::107544744847746175::1733734122::1733737466::1::::<><>::
-Sword Impact Hit 2.wav::AudioStreamWAV::794351554069742760::1733734122::1733737466::1::::<><>::
-Sword Impact Hit 3.wav::AudioStreamWAV::8365957677555271428::1733734122::1733737466::1::::<><>::
-Sword Parry 1.wav::AudioStreamWAV::6601980419050201702::1733734122::1733737466::1::::<><>::
-Sword Parry 2.wav::AudioStreamWAV::9140753813797369232::1733734122::1733737466::1::::<><>::
-Sword Parry 3.wav::AudioStreamWAV::7458257993887358248::1733734122::1733737466::1::::<><>::
-Sword Sheath 1.wav::AudioStreamWAV::389076032954049407::1733734122::1733737466::1::::<><>::
-Sword Sheath 2.wav::AudioStreamWAV::4384754446768461841::1733734122::1733737466::1::::<><>::
-Sword Unsheath 1.wav::AudioStreamWAV::8913051856105618935::1733734122::1733737466::1::::<><>::
-Sword Unsheath 2.wav::AudioStreamWAV::4473900548968820680::1733734122::1733737466::1::::<><>::
-::res://Assets/Sounds/Objects/::1733734122
-::res://Assets/Sounds/Objects/Doors Gates and Chests/::1733734278
-Chest Close 1.wav::AudioStreamWAV::7939575657392921026::1733734122::1733737466::1::::<><>::
-Chest Close 2.wav::AudioStreamWAV::8369182642642644396::1733734122::1733737466::1::::<><>::
-Chest Open 1.wav::AudioStreamWAV::4657632032990403658::1733734122::1733737466::1::::<><>::
-Chest Open 2.wav::AudioStreamWAV::5275540136465809652::1733734122::1733737466::1::::<><>::
-Door Close 1.wav::AudioStreamWAV::4239734535193320936::1733734122::1733737466::1::::<><>::
-Door Close 2.wav::AudioStreamWAV::1503081303459425351::1733734122::1733737466::1::::<><>::
-Door Open 1.wav::AudioStreamWAV::4750036638686787118::1733734122::1733737466::1::::<><>::
-Door Open 2.wav::AudioStreamWAV::4639083546452885319::1733734122::1733737466::1::::<><>::
-Gate Close.wav::AudioStreamWAV::7401580590134769328::1733734122::1733737466::1::::<><>::
-Gate Open.wav::AudioStreamWAV::695396687377297561::1733734122::1733737466::1::::<><>::
-Lock Unlock.wav::AudioStreamWAV::7675707203075761048::1733734122::1733737466::1::::<><>::
-Portcullis Gate.wav::AudioStreamWAV::6185270075578037218::1733734122::1733737466::1::::<><>::
-::res://Assets/Sounds/Objects/Torch/::1733734278
-Light Torch with Starting Loop 1.wav::AudioStreamWAV::5611356553975949983::1733734122::1733737466::1::::<><>::
-Light Torch with Starting Loop 2.wav::AudioStreamWAV::5600710256059411614::1733734122::1733737466::1::::<><>::
-Torch Loop.wav::AudioStreamWAV::3021657786957664904::1733734122::1733737466::1::::<><>::
-::res://Assets/Sounds/Player/::1733734122
-::res://Assets/Sounds/Player/Footsteps/::1733734799
-::res://Assets/Sounds/Player/Footsteps/Dirt/::1733734818
-Dirt Jump.wav::AudioStreamWAV::5350842475954508187::1733734122::1733737466::1::::<><>::
-Dirt Land.wav::AudioStreamWAV::3584622834003482544::1733734122::1733737466::1::::<><>::
-Dirt Run 1.wav::AudioStreamWAV::8159473674574948773::1733734122::1733737466::1::::<><>::
-Dirt Run 2.wav::AudioStreamWAV::4458415435767363316::1733734122::1733737466::1::::<><>::
-Dirt Run 3.wav::AudioStreamWAV::4718727446966387392::1733734122::1733737466::1::::<><>::
-Dirt Run 4.wav::AudioStreamWAV::947432098479750245::1733734122::1733737466::1::::<><>::
-Dirt Run 5.wav::AudioStreamWAV::2406264928139553909::1733734122::1733737466::1::::<><>::
-Dirt Walk 1.wav::AudioStreamWAV::582677239271910795::1733734122::1733737466::1::::<><>::
-Dirt Walk 2.wav::AudioStreamWAV::7326299707311639953::1733734122::1733737466::1::::<><>::
-Dirt Walk 3.wav::AudioStreamWAV::8490917281320639518::1733734122::1733737466::1::::<><>::
-Dirt Walk 4.wav::AudioStreamWAV::7751286692117203760::1733734122::1733737466::1::::<><>::
-Dirt Walk 5.wav::AudioStreamWAV::518462035988701867::1733734122::1733737466::1::::<><>::
-::res://Assets/Sounds/Player/Footsteps/Stone/::1733736081
-Stone Jump.wav::AudioStreamWAV::5691936163498071498::1733734122::1733737466::1::::<><>::
-Stone Land.wav::AudioStreamWAV::620921345798398137::1733734122::1733737466::1::::<><>::
-Stone Run 1.wav::AudioStreamWAV::5921056611858761107::1733734122::1733737466::1::::<><>::
-Stone Run 2.wav::AudioStreamWAV::1960731316815986106::1733734122::1733737466::1::::<><>::
-Stone Run 3.wav::AudioStreamWAV::3615186178584483770::1733734122::1733737466::1::::<><>::
-Stone Run 4.wav::AudioStreamWAV::5285117969805535149::1733734122::1733737466::1::::<><>::
-Stone Run 5.wav::AudioStreamWAV::4528384439609659297::1733734122::1733737466::1::::<><>::
-Stone Walk 1.wav::AudioStreamWAV::210735947248759539::1733734122::1733737466::1::::<><>::
-Stone Walk 2.wav::AudioStreamWAV::5356709891552086438::1733734122::1733737466::1::::<><>::
-Stone Walk 3.wav::AudioStreamWAV::7588742205307775929::1733734122::1733737466::1::::<><>::
-Stone Walk 4.wav::AudioStreamWAV::2318125702111615267::1733734122::1733737466::1::::<><>::
-Stone Walk 5.wav::AudioStreamWAV::7675577107086987249::1733734122::1733737466::1::::<><>::
-::res://Components/::1733735028
-::res://Components/Audio/::1733736937
-SoundEffectHandler.cs::CSharpScript::-1::1733736937::0::1::::SoundEffectHandler<>Node<>::
+::res://Assets/Sounds/::1733739310
+::res://Assets/Sounds/Attacks/::1733739310
+::res://Assets/Sounds/Attacks/Sword Attacks Hits and Blocks/::1733739310
+Sword Attack 1.wav::AudioStreamWAV::456029256656179212::1733739310::1733739372::1::::<><>::
+Sword Attack 2.wav::AudioStreamWAV::7725324261569652154::1733739310::1733739372::1::::<><>::
+Sword Attack 3.wav::AudioStreamWAV::2578718702491756421::1733739310::1733739372::1::::<><>::
+Sword Blocked 1.wav::AudioStreamWAV::5180427217471296234::1733739310::1733739372::1::::<><>::
+Sword Blocked 2.wav::AudioStreamWAV::6605841836490614330::1733739310::1733739372::1::::<><>::
+Sword Blocked 3.wav::AudioStreamWAV::369854076878619312::1733739310::1733739372::1::::<><>::
+Sword Impact Hit 1.wav::AudioStreamWAV::107544744847746175::1733739310::1733739372::1::::<><>::
+Sword Impact Hit 2.wav::AudioStreamWAV::794351554069742760::1733739310::1733739372::1::::<><>::
+Sword Impact Hit 3.wav::AudioStreamWAV::8365957677555271428::1733739310::1733739372::1::::<><>::
+Sword Parry 1.wav::AudioStreamWAV::6601980419050201702::1733739310::1733739372::1::::<><>::
+Sword Parry 2.wav::AudioStreamWAV::9140753813797369232::1733739310::1733739372::1::::<><>::
+Sword Parry 3.wav::AudioStreamWAV::7458257993887358248::1733739310::1733739372::1::::<><>::
+Sword Sheath 1.wav::AudioStreamWAV::389076032954049407::1733739310::1733739372::1::::<><>::
+Sword Sheath 2.wav::AudioStreamWAV::4384754446768461841::1733739310::1733739372::1::::<><>::
+Sword Unsheath 1.wav::AudioStreamWAV::8913051856105618935::1733739310::1733739373::1::::<><>::
+Sword Unsheath 2.wav::AudioStreamWAV::4473900548968820680::1733739310::1733739373::1::::<><>::
+::res://Assets/Sounds/Objects/::1733739310
+::res://Assets/Sounds/Objects/Doors Gates and Chests/::1733739310
+Chest Close 1.wav::AudioStreamWAV::7939575657392921026::1733739310::1733739373::1::::<><>::
+Chest Close 2.wav::AudioStreamWAV::8369182642642644396::1733739310::1733739373::1::::<><>::
+Chest Open 1.wav::AudioStreamWAV::4657632032990403658::1733739310::1733739373::1::::<><>::
+Chest Open 2.wav::AudioStreamWAV::5275540136465809652::1733739310::1733739373::1::::<><>::
+Door Close 1.wav::AudioStreamWAV::4239734535193320936::1733739310::1733739373::1::::<><>::
+Door Close 2.wav::AudioStreamWAV::1503081303459425351::1733739310::1733739373::1::::<><>::
+Door Open 1.wav::AudioStreamWAV::4750036638686787118::1733739310::1733739373::1::::<><>::
+Door Open 2.wav::AudioStreamWAV::4639083546452885319::1733739310::1733739373::1::::<><>::
+Gate Close.wav::AudioStreamWAV::7401580590134769328::1733739310::1733739373::1::::<><>::
+Gate Open.wav::AudioStreamWAV::695396687377297561::1733739310::1733739373::1::::<><>::
+Lock Unlock.wav::AudioStreamWAV::7675707203075761048::1733739310::1733739373::1::::<><>::
+Portcullis Gate.wav::AudioStreamWAV::6185270075578037218::1733739310::1733739373::1::::<><>::
+::res://Assets/Sounds/Objects/Torch/::1733739310
+Light Torch with Starting Loop 1.wav::AudioStreamWAV::5611356553975949983::1733739310::1733739372::1::::<><>::
+Light Torch with Starting Loop 2.wav::AudioStreamWAV::5600710256059411614::1733739310::1733739372::1::::<><>::
+Torch Loop.wav::AudioStreamWAV::3021657786957664904::1733739310::1733739372::1::::<><>::
+::res://Assets/Sounds/Player/::1733739310
+::res://Assets/Sounds/Player/Footsteps/::1733739310
+::res://Assets/Sounds/Player/Footsteps/Dirt/::1733739310
+Dirt Jump.wav::AudioStreamWAV::5350842475954508187::1733739310::1733739372::1::::<><>::
+Dirt Land.wav::AudioStreamWAV::3584622834003482544::1733739310::1733739372::1::::<><>::
+Dirt Run 1.wav::AudioStreamWAV::8159473674574948773::1733739310::1733739372::1::::<><>::
+Dirt Run 2.wav::AudioStreamWAV::4458415435767363316::1733739310::1733739372::1::::<><>::
+Dirt Run 3.wav::AudioStreamWAV::4718727446966387392::1733739310::1733739372::1::::<><>::
+Dirt Run 4.wav::AudioStreamWAV::947432098479750245::1733739310::1733739372::1::::<><>::
+Dirt Run 5.wav::AudioStreamWAV::2406264928139553909::1733739310::1733739372::1::::<><>::
+Dirt Walk 1.wav::AudioStreamWAV::582677239271910795::1733739310::1733739372::1::::<><>::
+Dirt Walk 2.wav::AudioStreamWAV::7326299707311639953::1733739310::1733739372::1::::<><>::
+Dirt Walk 3.wav::AudioStreamWAV::8490917281320639518::1733739310::1733739372::1::::<><>::
+Dirt Walk 4.wav::AudioStreamWAV::7751286692117203760::1733739310::1733739372::1::::<><>::
+Dirt Walk 5.wav::AudioStreamWAV::518462035988701867::1733739310::1733739372::1::::<><>::
+::res://Assets/Sounds/Player/Footsteps/Stone/::1733739311
+Stone Jump.wav::AudioStreamWAV::5691936163498071498::1733739311::1733739372::1::::<><>::
+Stone Land.wav::AudioStreamWAV::620921345798398137::1733739311::1733739372::1::::<><>::
+Stone Run 1.wav::AudioStreamWAV::5921056611858761107::1733739311::1733739372::1::::<><>::
+Stone Run 2.wav::AudioStreamWAV::1960731316815986106::1733739311::1733739372::1::::<><>::
+Stone Run 3.wav::AudioStreamWAV::3615186178584483770::1733739311::1733739372::1::::<><>::
+Stone Run 4.wav::AudioStreamWAV::5285117969805535149::1733739311::1733739372::1::::<><>::
+Stone Run 5.wav::AudioStreamWAV::4528384439609659297::1733739311::1733739372::1::::<><>::
+Stone Walk 1.wav::AudioStreamWAV::210735947248759539::1733739311::1733739372::1::::<><>::
+Stone Walk 2.wav::AudioStreamWAV::5356709891552086438::1733739311::1733739372::1::::<><>::
+Stone Walk 3.wav::AudioStreamWAV::7588742205307775929::1733739311::1733739372::1::::<><>::
+Stone Walk 4.wav::AudioStreamWAV::2318125702111615267::1733739311::1733739372::1::::<><>::
+Stone Walk 5.wav::AudioStreamWAV::7675577107086987249::1733739311::1733739372::1::::<><>::
+::res://Components/::1733739311
+::res://Components/Audio/::1733739311
+SoundEffectHandler.cs::CSharpScript::-1::1733739311::0::1::::<><>::
 ::res://Components/CharacterAnimationsHandler/::1733463642
 CharacterAnimations.cs::CSharpScript::-1::1733463642::0::1::::CharacterAnimations<>Node<>::
 ::res://Components/CharacterBehaviors/::1733463642
 CharacterAttackHandler.cs::CSharpScript::-1::1733463604::0::1::::CharacterAttackHandler<>Node<>::
 CharacterHealthHandler.cs::CSharpScript::-1::1733463642::0::1::::CharacterHealthHandler<>Node<>::
-::res://Components/CharacterInputsController/::1733734121
+::res://Components/CharacterInputsController/::1733739311
 CharacterInteractions.cs::CSharpScript::-1::1733734121::0::1::::CharacterInteractions<>Node<>::
-CharacterMovements.cs::CSharpScript::-1::1733734121::0::1::::CharacterMovements<>Node<>::
+CharacterMovements.cs::CSharpScript::-1::1733739311::0::1::::CharacterMovements<>Node<>::
 CharacterTimeControl.cs::CSharpScript::-1::1733734121::0::1::::CharacterTimeControl<>Node<>::
 ::res://Components/EnemiesFiniteStateMachines/::1733553721
 FsmEnemyWarrior.cs::CSharpScript::-1::1733553721::0::1::::FsmEnemyWarrior<>Node3D<>::
@@ -673,19 +673,19 @@ CharacterTimeGhostRecorder.cs::CSharpScript::-1::1733734121::0::1::::CharacterTi
 InteractableEntityRecorderPlayer.cs::CSharpScript::-1::1733734121::0::1::::InteractableEntityRecorderPlayer<>Node<>::
 TimeEvent.cs::CSharpScript::-1::1733734121::0::1::::<><>::
 TimeMechanicsArea.cs::CSharpScript::-1::1733577833::0::1::::TimeMechanicsArea<>Node3D<>::
-::res://Data/::1733734277
-translation.csv::Translation::8736011296480828827::1733734121::1733734277::1::::<><>::
-translation.en.translation::OptimizedTranslation::8875929262447953520::1733734277::0::1::::<><>::
-translation.fr.translation::OptimizedTranslation::669689184144656895::1733734277::0::1::::<><>::
-translation.ko.translation::OptimizedTranslation::6071244993286770615::1733734277::0::1::::<><>::
+::res://Data/::1733739311
+translation.csv::Translation::8736011296480828827::1733734121::1733739372::1::::<><>::
+translation.en.translation::OptimizedTranslation::8875929262447953520::1733739372::0::1::::<><>::
+translation.fr.translation::OptimizedTranslation::669689184144656895::1733739372::0::1::::<><>::
+translation.ko.translation::OptimizedTranslation::6071244993286770615::1733739372::0::1::::<><>::
 ::res://Docs/::1733292588
 specifications.md::TextFile::-1::1733292588::0::1::::<><>::
 ::res://Helper/::1733734121
 TimeMechanicsHelper.cs::CSharpScript::-1::1733734121::0::1::::<><>::
 ::res://Objects/::1733734121
 ::res://Objects/Characters/::1733463604
-::res://Objects/Characters/Adventurers/::1733737464
-player_knight.tscn::PackedScene::5811571342350104057::1733737464::0::1::::<><>::uid://btoj4eog3ho43::::res://Assets/Adventurers/Characters/Knight_knight_texture.png<>uid://b8ryfoxia3yi8::::res://Objects/GUI/gui.tscn<>uid://chp4g5iimfpwt::::res://Resources/Animations/adventurer_animation_state_machine.tres<>uid://dfaw5jrb3fcja::::res://Scenes/PauseMenu/pause_menu.tscn<>res://Components/CharacterInputsController/CharacterMovements.cs<>res://Components/CharacterAnimationsHandler/CharacterAnimations.cs<>res://Components/PhysicsBehaviors/CanMoveRigidBody.cs<>uid://bu5q2ahicpqr3::::res://Objects/TopDownCamera/topdown_camera.tscn<>res://Components/CharacterBehaviors/CharacterHealthHandler.cs<>res://Components/CharacterInputsController/CharacterInteractions.cs<>res://Components/CharacterBehaviors/CharacterAttackHandler.cs<>res://Components/Audio/SoundEffectHandler.cs<>res://Components/TimeTravelHandler/CharacterTimeGhostRecorder.cs<>res://Components/CharacterInputsController/CharacterTimeControl.cs
+::res://Objects/Characters/Adventurers/::1733739311
+player_knight.tscn::PackedScene::5811571342350104057::1733739311::0::1::::<><>::uid://btoj4eog3ho43::::res://Assets/Adventurers/Characters/Knight_knight_texture.png<>uid://b8ryfoxia3yi8::::res://Objects/GUI/gui.tscn<>uid://chp4g5iimfpwt::::res://Resources/Animations/adventurer_animation_state_machine.tres<>uid://dfaw5jrb3fcja::::res://Scenes/PauseMenu/pause_menu.tscn<>res://Components/CharacterInputsController/CharacterMovements.cs<>uid://b6vwb75wrpf27::::res://Resources/Sounds/WalkAudioStreamPlaylist.tres<>res://Components/CharacterAnimationsHandler/CharacterAnimations.cs<>res://Components/PhysicsBehaviors/CanMoveRigidBody.cs<>uid://bu5q2ahicpqr3::::res://Objects/TopDownCamera/topdown_camera.tscn<>uid://chany21knysa8::::res://Resources/Sounds/RunAudioStreamPlaylist.tres<>res://Components/CharacterBehaviors/CharacterHealthHandler.cs<>res://Components/CharacterInputsController/CharacterInteractions.cs<>res://Components/CharacterBehaviors/CharacterAttackHandler.cs<>res://Components/Audio/SoundEffectHandler.cs<>res://Components/TimeTravelHandler/CharacterTimeGhostRecorder.cs<>res://Components/CharacterInputsController/CharacterTimeControl.cs
 player_knight_ghost.tscn::PackedScene::7445086335919913026::1733734121::0::1::::<><>::uid://btoj4eog3ho43::::res://Assets/Adventurers/Characters/Knight_knight_texture.png<>uid://cx7vyyfy1iqgf::::res://Resources/Materials/ghost.tres<>uid://chp4g5iimfpwt::::res://Resources/Animations/adventurer_animation_state_machine.tres<>res://Components/CharacterAnimationsHandler/CharacterAnimations.cs<>res://Components/PhysicsBehaviors/CanMoveRigidBody.cs<>res://Components/CharacterBehaviors/CharacterHealthHandler.cs<>res://Components/CharacterBehaviors/CharacterAttackHandler.cs<>res://Components/TimeTravelHandler/CharacterTimeGhostPlayer.cs
 ::res://Objects/Characters/Skeletons/::1733553721
 enemy_warrior.tscn::PackedScene::3757429598724844669::1733553721::0::1::::<><>::uid://b1qvsjcgnn62h::::res://Assets/Skeletons/Characters/Skeleton_Warrior_skeleton_texture.png<>uid://py3eoprbyxaq::::res://Assets/Skeletons/Equipment/skeleton_texture.png<>uid://bvx2pn5w5yhi6::::res://Resources/Animations/skeleton_animation_state_machine.tres<>res://Components/EnemiesFiniteStateMachines/FsmEnemyWarrior.cs<>res://Components/CharacterAnimationsHandler/CharacterAnimations.cs<>res://Components/CharacterBehaviors/CharacterHealthHandler.cs<>res://Components/CharacterBehaviors/CharacterAttackHandler.cs
@@ -717,7 +717,7 @@ TimeMovableRigidBody.cs::CSharpScript::-1::1733734121::0::1::::TimeMovableRigidB
 ::res://Objects/TopDownCamera/::1733734121
 TopDownCamera.cs::CSharpScript::-1::1733463642::0::1::::<>Node3D<>::
 topdown_camera.tscn::PackedScene::3853148588575633270::1733734121::0::1::::<><>::res://Objects/TopDownCamera/TopDownCamera.cs<>uid://bn8uttwcwj5vf::::res://Objects/PostProcessing/toon_post_processing.tscn
-::res://Resources/::1733734122
+::res://Resources/::1733739311
 ::res://Resources/Animations/::1733734554
 adventurer_animation_state_machine.tres::AnimationNodeStateMachine::5296902035155655971::1733734357::0::1::::<><>::
 skeleton_animation_state_machine.tres::AnimationNodeStateMachine::3909533964336729387::1733734554::0::1::::<><>::
@@ -834,19 +834,19 @@ torch.tscn::PackedScene::6904644216763755675::1733734121::0::1::::<><>::uid://b6
 torch_lit.tscn::PackedScene::2589687184985260311::1733734121::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png<>uid://cdiwvqu0eftj0::::res://Objects/Lights/flame.tscn
 torch_mounted.tscn::PackedScene::1451956969283767426::1733734121::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png<>uid://cdiwvqu0eftj0::::res://Objects/Lights/flame.tscn
 ::res://Resources/GridMaps/::1733463604
-::res://Resources/GridMaps/MeshLibraries/::1733734555
+::res://Resources/GridMaps/MeshLibraries/::1733739311
 dungeon_banners.tres::MeshLibrary::2178873145071281218::1733734121::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
-dungeon_ceiling.tres::MeshLibrary::5805042460282642632::1733734555::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
-dungeon_floors_l.tres::MeshLibrary::9030469034688427199::1733734554::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png<>res://addons/assetplacer/gizmos/GridDistanceFade.gdshader
-dungeon_floors_s.tres::MeshLibrary::8804940733577673883::1733734554::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
-dungeon_floors_xl.tres::MeshLibrary::1367178695085305948::1733734554::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
+dungeon_ceiling.tres::MeshLibrary::5805042460282642632::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
+dungeon_floors_l.tres::MeshLibrary::9030469034688427199::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png<>res://addons/assetplacer/gizmos/GridDistanceFade.gdshader
+dungeon_floors_s.tres::MeshLibrary::8804940733577673883::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
+dungeon_floors_xl.tres::MeshLibrary::1367178695085305948::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
 dungeon_fundations_s.tres::MeshLibrary::7968250863741672665::1733734121::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
 dungeon_pillars.tres::MeshLibrary::6080950373831895142::1733734121::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
-dungeon_props.tres::MeshLibrary::1496892351646106996::1733734555::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
+dungeon_props.tres::MeshLibrary::1496892351646106996::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
 dungeon_rocks.tres::MeshLibrary::377050865230365497::1733734122::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
-dungeon_scaffold_pillars.tres::MeshLibrary::8204015597460669580::1733734554::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
-dungeon_stairs.tres::MeshLibrary::3947730487277886050::1733734555::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png<>res://addons/assetplacer/gizmos/GridDistanceFade.gdshader
-dungeon_walls.tres::MeshLibrary::1782324923713080959::1733734554::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
+dungeon_scaffold_pillars.tres::MeshLibrary::8204015597460669580::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
+dungeon_stairs.tres::MeshLibrary::3947730487277886050::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png<>res://addons/assetplacer/gizmos/GridDistanceFade.gdshader
+dungeon_walls.tres::MeshLibrary::1782324923713080959::1733739311::0::1::::<><>::uid://b6vkcxavfjw61::::res://Assets/DungeonParts/Parts/dungeon_texture.png
 ::res://Resources/GridMaps/Scenes/::1733734122
 dungeon_banners.tscn::PackedScene::2728833558730191520::1733463604::0::1::::<><>::uid://bwij145hfb76d::::res://Assets/DungeonParts/Parts/banner_blue.gltf<>uid://cgg7o2rsy03gw::::res://Assets/DungeonParts/Parts/banner_brown.gltf<>uid://bbtato2mxuago::::res://Assets/DungeonParts/Parts/banner_green.gltf<>uid://dc1oxrty20u6s::::res://Assets/DungeonParts/Parts/banner_patternA_blue.gltf<>uid://berq7lyqx3gvn::::res://Assets/DungeonParts/Parts/banner_patternA_brown.gltf<>uid://bk5mxoibt00hd::::res://Assets/DungeonParts/Parts/banner_patternA_green.gltf<>uid://3n0oai6mytes::::res://Assets/DungeonParts/Parts/banner_patternA_red.gltf<>uid://dtt74ldwxb724::::res://Assets/DungeonParts/Parts/banner_patternA_white.gltf<>uid://dxn8626bf13ql::::res://Assets/DungeonParts/Parts/banner_patternA_yellow.gltf<>uid://787bi3pereen::::res://Assets/DungeonParts/Parts/banner_patternB_blue.gltf<>uid://c7k8k70stieju::::res://Assets/DungeonParts/Parts/banner_patternB_brown.gltf<>uid://bkvm6ljefdd8n::::res://Assets/DungeonParts/Parts/banner_patternB_green.gltf<>uid://dycl7jr6fomn::::res://Assets/DungeonParts/Parts/banner_patternB_red.gltf<>uid://da43pkn5w5anr::::res://Assets/DungeonParts/Parts/banner_patternB_white.gltf<>uid://gnlr2pn1qy66::::res://Assets/DungeonParts/Parts/banner_patternB_yellow.gltf<>uid://d0ldxnactdvs1::::res://Assets/DungeonParts/Parts/banner_patternC_blue.gltf<>uid://dklbtw3h7obq6::::res://Assets/DungeonParts/Parts/banner_patternC_brown.gltf<>uid://bihbtutaxdvwy::::res://Assets/DungeonParts/Parts/banner_patternC_green.gltf<>uid://f8y3otimkkt0::::res://Assets/DungeonParts/Parts/banner_patternC_red.gltf<>uid://p3tw633pkuur::::res://Assets/DungeonParts/Parts/banner_patternC_white.gltf<>uid://bjonmkyflqh2w::::res://Assets/DungeonParts/Parts/banner_patternC_yellow.gltf<>uid://cxlnjvqrmo17n::::res://Assets/DungeonParts/Parts/banner_red.gltf<>uid://bwlpaiy0ctlxh::::res://Assets/DungeonParts/Parts/banner_shield_blue.gltf<>uid://dryqgjotl1u2g::::res://Assets/DungeonParts/Parts/banner_shield_brown.gltf<>uid://bjwyvpfseq3qp::::res://Assets/DungeonParts/Parts/banner_shield_green.gltf<>uid://d1yup5sdgtmj4::::res://Assets/DungeonParts/Parts/banner_shield_red.gltf<>uid://2h645s3p00fg::::res://Assets/DungeonParts/Parts/banner_shield_white.gltf<>uid://d4a1sqkd3lv76::::res://Assets/DungeonParts/Parts/banner_shield_yellow.gltf<>uid://b2ufqpx7x0ep8::::res://Assets/DungeonParts/Parts/banner_thin_blue.gltf<>uid://ckwp3yk8wkwx0::::res://Assets/DungeonParts/Parts/banner_thin_brown.gltf<>uid://bgukruuxeemfw::::res://Assets/DungeonParts/Parts/banner_thin_green.gltf<>uid://bfl3770ij1mrg::::res://Assets/DungeonParts/Parts/banner_thin_red.gltf<>uid://bmndqfb0t5ng4::::res://Assets/DungeonParts/Parts/banner_thin_white.gltf<>uid://c4104e72amwon::::res://Assets/DungeonParts/Parts/banner_thin_yellow.gltf<>uid://cr2k4mmq8hwii::::res://Assets/DungeonParts/Parts/banner_triple_blue.gltf<>uid://dtn74eg6h7gf1::::res://Assets/DungeonParts/Parts/banner_triple_brown.gltf<>uid://sxj4o3a67sxx::::res://Assets/DungeonParts/Parts/banner_triple_green.gltf<>uid://y24ee1wcbnnm::::res://Assets/DungeonParts/Parts/banner_triple_red.gltf<>uid://ddgivt6a7wmck::::res://Assets/DungeonParts/Parts/banner_triple_white.gltf<>uid://bklks0mvd6smn::::res://Assets/DungeonParts/Parts/banner_triple_yellow.gltf<>uid://bf10e0u2ueqqc::::res://Assets/DungeonParts/Parts/banner_white.gltf<>uid://bh2xprqhkg85b::::res://Assets/DungeonParts/Parts/banner_yellow.gltf
 dungeon_ceiling.tscn::PackedScene::3206445851722347790::1733463604::0::1::::<><>::uid://xhppibd77k86::::res://Assets/DungeonParts/Parts/ceiling_tile.gltf
@@ -863,23 +863,25 @@ dungeon_walls.tscn::PackedScene::852595220994565868::1733553721::0::1::::<><>::u
 ::res://Resources/Materials/::1733734122
 ghost.tres::StandardMaterial3D::6454564044502626609::1733734122::0::1::::<><>::
 invisible.tres::StandardMaterial3D::9105434364844443791::1733734122::0::1::::<><>::
-::res://Resources/Shaders/::1733737464
-fire.gdshader::Shader::-1::1733737464::0::1::::<><>::
-mobius.gdshader::Shader::-1::1733737464::0::1::::<><>::
-outline_object.gdshader::Shader::-1::1733737464::0::1::::<><>::
-panoramic_sky.gdshader::Shader::-1::1733737464::0::1::::<><>::
-sketchy.gdshader::Shader::-1::1733737464::0::1::::<><>::
-toon.gdshader::Shader::-1::1733737464::0::1::::<><>::
-::res://Resources/Sounds/::1733737464
+::res://Resources/Shaders/::1733739300
+fire.gdshader::Shader::-1::1733739300::0::1::::<><>::
+mobius.gdshader::Shader::-1::1733739300::0::1::::<><>::
+outline_object.gdshader::Shader::-1::1733739300::0::1::::<><>::
+panoramic_sky.gdshader::Shader::-1::1733739300::0::1::::<><>::
+sketchy.gdshader::Shader::-1::1733739300::0::1::::<><>::
+toon.gdshader::Shader::-1::1733739300::0::1::::<><>::
+::res://Resources/Sounds/::1733739311
+RunAudioStreamPlaylist.tres::AudioStreamPlaylist::5264996911580169785::1733739311::0::1::::<><>::uid://cqmg64sou57qd::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 1.wav<>uid://2617t24s8uog::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 2.wav<>uid://brrht86wy3mi1::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 3.wav<>uid://chkfedv21ptx2::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 4.wav<>uid://b5rt3hu3ywckv::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 5.wav
+WalkAudioStreamPlaylist.tres::AudioStreamPlaylist::4606966057056357778::1733739311::0::1::::<><>::uid://dac14sp60ylf::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 1.wav<>uid://cik3h2b72yn3k::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 2.wav<>uid://dgebqfs24bm30::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 3.wav<>uid://8a6grr4500m6::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 4.wav<>uid://dhmdvsmtp4vc8::::res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 5.wav
 ::res://Resources/Themes/::1733734357
 GUI.tres::Theme::5860996428522815383::1733463642::0::1::::<><>::
 LoadingScreenTheme.tres::Theme::1967501131086533006::1733463642::0::1::::<><>::uid://bpyfuho2ik1di::::res://Assets/Fonts/Permanent_Marker/PermanentMarker-Regular.ttf
 MainMenuTheme.tres::Theme::941737925901428161::1733719191::0::1::::<><>::uid://bpjejrbncj6pl::::res://Assets/Fonts/Delius/Delius-Regular.ttf
 PauseMenuTheme.tres::Theme::9113256587953393269::1733734357::0::1::::<><>::
 ::res://Scenes/::1733734122
-::res://Scenes/DevSandbox/::1733736865
+::res://Scenes/DevSandbox/::1733739063
 DevSandbox.cs::CSharpScript::-1::1733292588::0::1::::<>Node3D<>::
-dev_sandbox.tscn::PackedScene::4442218940437538013::1733736865::0::1::::<><>::res://Components/TimeTravelHandler/TimeMechanicsArea.cs<>uid://djnlppmno0ddi::::res://Assets/Prototypes/Dark/texture_09.png<>uid://e5ubkkbi6qbr::::res://Assets/Prototypes/Orange/texture_09.png<>uid://co2fy37mqdnbl::::res://Objects/Characters/Adventurers/player_knight.tscn<>res://Objects/InteractableEntities/Inputs/press_to_interact_area.tscn<>uid://tqjh61amryqu::::res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres<>uid://0nmvpsp17yt0::::res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres<>uid://btsek05v74ekr::::res://Objects/Characters/Skeletons/enemy_warrior.tscn<>uid://d1worgrn7qv1x::::res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres<>res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs<>uid://dxpgc8dxnytip::::res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres<>uid://c8a0t7ma23qn3::::res://Objects/InteractableEntities/Inputs/interact_area.tscn<>uid://ldxxvslal17e::::res://Objects/InteractableEntities/Outputs/pillar_elevator.tscn<>uid://do5c65vx8au5q::::res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres<>uid://vldulw42c6p1::::res://Resources/GridMaps/MeshLibraries/dungeon_props.tres<>uid://7tu1jyropl3g::::res://Objects/InteractableEntities/Inputs/count_character_area.tscn<>uid://bwiksrjk7ipsc::::res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres<>uid://coyag3tyfw8pg::::res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres<>uid://517vmv81wx7l::::res://Objects/InteractableEntities/Outputs/movable_box.tscn<>uid://c58b07p7g700t::::res://Objects/InteractableEntities/Outputs/door_scaffold.tscn<>uid://bi5s6td3vpcfl::::res://Objects/InteractableEntities/Outputs/door.tscn
+dev_sandbox.tscn::PackedScene::4442218940437538013::1733739063::0::1::::<><>::res://Components/TimeTravelHandler/TimeMechanicsArea.cs<>uid://djnlppmno0ddi::::res://Assets/Prototypes/Dark/texture_09.png<>uid://e5ubkkbi6qbr::::res://Assets/Prototypes/Orange/texture_09.png<>uid://co2fy37mqdnbl::::res://Objects/Characters/Adventurers/player_knight.tscn<>res://Objects/InteractableEntities/Inputs/press_to_interact_area.tscn<>uid://tqjh61amryqu::::res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres<>uid://0nmvpsp17yt0::::res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres<>uid://btsek05v74ekr::::res://Objects/Characters/Skeletons/enemy_warrior.tscn<>uid://d1worgrn7qv1x::::res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres<>res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs<>uid://dxpgc8dxnytip::::res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres<>uid://c8a0t7ma23qn3::::res://Objects/InteractableEntities/Inputs/interact_area.tscn<>uid://ldxxvslal17e::::res://Objects/InteractableEntities/Outputs/pillar_elevator.tscn<>uid://do5c65vx8au5q::::res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres<>uid://vldulw42c6p1::::res://Resources/GridMaps/MeshLibraries/dungeon_props.tres<>uid://7tu1jyropl3g::::res://Objects/InteractableEntities/Inputs/count_character_area.tscn<>uid://bwiksrjk7ipsc::::res://Resources/GridMaps/MeshLibraries/dungeon_stairs.tres<>uid://coyag3tyfw8pg::::res://Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres<>uid://517vmv81wx7l::::res://Objects/InteractableEntities/Outputs/movable_box.tscn<>uid://c58b07p7g700t::::res://Objects/InteractableEntities/Outputs/door_scaffold.tscn<>uid://bi5s6td3vpcfl::::res://Objects/InteractableEntities/Outputs/door.tscn
 ::res://Scenes/LoadingScreen/::1733463642
 LoadingScreen.cs::CSharpScript::-1::1733463642::0::1::::<>Control<>::
 loading_screen.tscn::PackedScene::9200548885155180204::1733463642::0::1::::<><>::res://Scenes/LoadingScreen/LoadingScreen.cs<>uid://3bcprlpbueug::::res://Resources/Themes/LoadingScreenTheme.tres
@@ -895,9 +897,9 @@ pause_menu.tscn::PackedScene::7511596115982352514::1733734122::0::1::::<><>::uid
 ::res://Scenes/SettingsMenu/::1733734122
 SettingsMenu.cs::CSharpScript::-1::1733734122::0::1::::<>Control<>::
 settings_menu.tscn::PackedScene::6680693766542464774::1733734122::0::1::::<><>::res://Scenes/SettingsMenu/SettingsMenu.cs
-::res://Scenes/SplashScreen/::1733628128
+::res://Scenes/SplashScreen/::1733739266
 SplashScreen.cs::CSharpScript::-1::1733628128::0::1::::<>Control<>::
-splash_screen.tscn::PackedScene::1150438417235104575::1733576026::0::1::::<><>::res://Scenes/SplashScreen/SplashScreen.cs
+splash_screen.tscn::PackedScene::1150438417235104575::1733739266::0::1::::<><>::res://Scenes/SplashScreen/SplashScreen.cs
 ::res://Scenes/WinMenu/::1733734122
 WinMenu.cs::CSharpScript::-1::1733734122::0::1::::<>SubViewportContainer<>::
 win_menu.tscn::PackedScene::2016532321848449690::1733734122::0::1::::<><>::res://Scenes/WinMenu/WinMenu.cs<>uid://d23safipfi22d::::res://Resources/Themes/PauseMenuTheme.tres

@@ -8,308 +8,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Resource" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Resource" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-editstate-c936d59fbf321f52e964948e1e70d071.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/dev_sandbox.tscn-editstate-c936d59fbf321f52e964948e1e70d071.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/player_knight.tscn-editstate-f1d2480048a91c8fcca0e85343067a22.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/player_knight.tscn-editstate-f1d2480048a91c8fcca0e85343067a22.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/player_knight.tscn-folding-f1d2480048a91c8fcca0e85343067a22.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/player_knight.tscn-folding-f1d2480048a91c8fcca0e85343067a22.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/recent_dirs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/recent_dirs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.runtimeconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Escaped from Time.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Escaped from Time.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/scene_groups_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/scene_groups_cache.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Components/CharacterInputsController/CharacterMovements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Components/CharacterInputsController/CharacterMovements.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.en.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.en.translation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.fr.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.fr.translation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.ko.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.ko.translation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Objects/Characters/Adventurers/player_knight.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Objects/Characters/Adventurers/player_knight.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_ceiling.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_props.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_props.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_stairs.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Attack 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Attack 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Attack 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Attack 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Attack 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Attack 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Blocked 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Blocked 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Blocked 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Blocked 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Blocked 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Blocked 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Impact Hit 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Parry 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Parry 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Parry 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Parry 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Parry 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Parry 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Sheath 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Sheath 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Sheath 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Sheath 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Unsheath 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Unsheath 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Unsheath 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Attacks/Sword Attacks Hits and Blocks/Sword Unsheath 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Close 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Close 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Close 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Close 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Open 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Open 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Open 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Chest Open 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Close 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Close 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Close 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Close 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Open 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Open 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Open 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Door Open 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Gate Close.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Gate Close.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Gate Open.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Gate Open.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Lock Unlock.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Lock Unlock.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Portcullis Gate.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Doors Gates and Chests/Portcullis Gate.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Torch/Light Torch with Starting Loop 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Torch/Light Torch with Starting Loop 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Torch/Light Torch with Starting Loop 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Torch/Light Torch with Starting Loop 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Torch/Torch Loop.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Objects/Torch/Torch Loop.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Chain Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Dirt/Dirt Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Chain Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Stone/Stone Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Chain Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Water/Water Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Chain Walk 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Jump.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Jump.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Land.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Land.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Run 5.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 1.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 2.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 3.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 4.wav.import" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/Sounds/Player/Footsteps/Wood/Wood Walk 5.wav.import" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="guillaume" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -330,10 +51,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a3f6e7387b868cf426d51eddd1816420d11dd139dc9bca244c32f1d22d8b2/GodotObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/dad89a1fd82c588f7c050d75a58abb94963ed517c457f1d59a63fbe9293144f/Node3D.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fb6e8dd4c7a9a8308ba7b679b8bdc07f55a3aa52153f6a4a36473fd0232e3b6f/CharacterBody3D.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/Components/TimeTravelHandler/CharacterTimeGhostPlayer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/Objects/InteractableEntities/Inputs/PressToInteractArea.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Spijkerman/Repositories/Escaped-from-Time/Components/CharacterInputsController/CharacterMovements.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -356,7 +76,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "guillaume",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -764,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733663960669</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Add player sound effects">
+      <option name="closed" value="true" />
+      <created>1733739171601</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1733739171601</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +513,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add interaction inputs and outputs" />
     <MESSAGE value="Update ????" />
     <MESSAGE value="Add tutorial and main maps" />
     <MESSAGE value="Add AssetPlacer libraries" />
@@ -810,6 +537,7 @@
     <MESSAGE value="Fix pillar area" />
     <MESSAGE value="Add pause menu for help scene change" />
     <MESSAGE value="Fix crash" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix crash" />
+    <MESSAGE value="Add player sound effects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add player sound effects" />
   </component>
 </project>
