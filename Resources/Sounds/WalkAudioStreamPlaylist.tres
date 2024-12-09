@@ -1,0 +1,16 @@
+[gd_resource type="AudioStreamPlaylist" load_steps=6 format=3 uid="uid://b6vwb75wrpf27"]
+
+[ext_resource type="AudioStream" uid="uid://dac14sp60ylf" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 1.wav" id="1_ylaig"]
+[ext_resource type="AudioStream" uid="uid://cik3h2b72yn3k" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 2.wav" id="2_qrx65"]
+[ext_resource type="AudioStream" uid="uid://dgebqfs24bm30" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 3.wav" id="3_cm1tu"]
+[ext_resource type="AudioStream" uid="uid://8a6grr4500m6" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 4.wav" id="4_j02gd"]
+[ext_resource type="AudioStream" uid="uid://dhmdvsmtp4vc8" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Walk 5.wav" id="5_4sdgk"]
+
+[resource]
+shuffle = true
+stream_count = 5
+stream_0 = ExtResource("1_ylaig")
+stream_1 = ExtResource("2_qrx65")
+stream_2 = ExtResource("3_cm1tu")
+stream_3 = ExtResource("4_j02gd")
+stream_4 = ExtResource("5_4sdgk")

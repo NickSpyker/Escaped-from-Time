@@ -1,3 +1,6 @@
+AudioStream
+AudioStreamPlaylist
+AudioStreamInteractive
 StandardMaterial3D
 Theme
 Shader

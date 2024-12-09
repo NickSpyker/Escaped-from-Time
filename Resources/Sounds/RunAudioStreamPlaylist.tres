@@ -1,0 +1,16 @@
+[gd_resource type="AudioStreamPlaylist" load_steps=6 format=3 uid="uid://chany21knysa8"]
+
+[ext_resource type="AudioStream" uid="uid://cqmg64sou57qd" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 1.wav" id="1_ltlxc"]
+[ext_resource type="AudioStream" uid="uid://2617t24s8uog" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 2.wav" id="2_wppag"]
+[ext_resource type="AudioStream" uid="uid://brrht86wy3mi1" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 3.wav" id="3_ll3fd"]
+[ext_resource type="AudioStream" uid="uid://chkfedv21ptx2" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 4.wav" id="4_otnv2"]
+[ext_resource type="AudioStream" uid="uid://b5rt3hu3ywckv" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Run 5.wav" id="5_57j0x"]
+
+[resource]
+shuffle = true
+stream_count = 5
+stream_0 = ExtResource("1_ltlxc")
+stream_1 = ExtResource("2_wppag")
+stream_2 = ExtResource("3_ll3fd")
+stream_3 = ExtResource("4_otnv2")
+stream_4 = ExtResource("5_57j0x")
