@@ -7,34 +7,45 @@ namespace EscapedfromTime.Components.CharacterBehaviors;
 [GlobalClass]
 public partial class CharacterAttackHandler : Node
 {
-    [ExportCategory("Component Properties")]
-    [Export] public Node3D BodyToIgnore;
-    [Export] public float AttackDamage = 10f;
+	[ExportCategory("Component Properties")]
+	[Export] public Node3D BodyToIgnore;
+	[Export] public float AttackDamage = 10f;
+	[Export] public Timer Timer;
 
-    private Dictionary<Rid, CharacterHealthHandler> _bodiesCloseToAttack = new();
+	private bool _canAttack = true;
 
-    /* Signal */ public void AttackAreaBodyEntered(Node3D bodyNode)
-    {
-        if (bodyNode == BodyToIgnore || bodyNode is not CharacterBody3D body) return;
+	private Dictionary<Rid, CharacterHealthHandler> _bodiesCloseToAttack = new();
 
-        Rid rid = body.GetRid();
-        if (_bodiesCloseToAttack.ContainsKey(rid)) return;
+	/* Signal */ public void AttackAreaBodyEntered(Node3D bodyNode)
+	{
+		if (bodyNode == BodyToIgnore || bodyNode is not CharacterBody3D body) return;
 
-        CharacterHealthHandler healthHandlerComponent = body.GetChildren().OfType<CharacterHealthHandler>().FirstOrDefault();
-        if (healthHandlerComponent != null)
-            _bodiesCloseToAttack.Add(rid, healthHandlerComponent);
-    }
+		Rid rid = body.GetRid();
+		if (_bodiesCloseToAttack.ContainsKey(rid)) return;
 
-    /* Signal */ public void AttackAreaBodyExited(Node3D bodyNode)
-    {
-        if (bodyNode == BodyToIgnore || bodyNode is not CharacterBody3D body) return;
+		CharacterHealthHandler healthHandlerComponent = body.GetChildren().OfType<CharacterHealthHandler>().FirstOrDefault();
+		if (healthHandlerComponent != null)
+			_bodiesCloseToAttack.Add(rid, healthHandlerComponent);
+	}
 
-        _bodiesCloseToAttack.Remove(body.GetRid());
-    }
+	/* Signal */ public void AttackAreaBodyExited(Node3D bodyNode)
+	{
+		if (bodyNode == BodyToIgnore || bodyNode is not CharacterBody3D body) return;
 
-    public void Attack()
-    {
-        foreach (CharacterHealthHandler bodyHealth in _bodiesCloseToAttack.Values)
-            bodyHealth.ReceiveAttack(AttackDamage);
-    }
+		_bodiesCloseToAttack.Remove(body.GetRid());
+	}
+
+	/* Signal */ public void OnAttackTimerTimeout()
+	{
+		_canAttack = true;
+	}
+
+	public void Attack()
+	{
+		if (!_canAttack) return;
+		Timer?.Start(0);
+		if (Timer != null) _canAttack = false;
+		foreach (CharacterHealthHandler bodyHealth in _bodiesCloseToAttack.Values)
+			bodyHealth.ReceiveAttack(AttackDamage);
+	}
 }

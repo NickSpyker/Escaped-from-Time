@@ -1,4 +1,7 @@
-[gd_resource type="AnimationNodeStateMachine" load_steps=24 format=3 uid="uid://bvx2pn5w5yhi6"]
+[gd_resource type="AnimationNodeStateMachine" load_steps=32 format=3 uid="uid://bvx2pn5w5yhi6"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_p6jyf"]
+animation = &"1H_Melee_Attack_Slice_Horizontal"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_p6jeh"]
 animation = &"Death_C_Skeletons"
@@ -75,7 +78,36 @@ xfade_time = 0.3
 switch_mode = 2
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5s3av"]
+xfade_time = 0.3
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ocpon"]
+xfade_time = 0.3
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_t2lip"]
+xfade_time = 0.3
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3yyem"]
+xfade_time = 0.3
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ysdgd"]
+xfade_time = 0.3
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2bblh"]
+xfade_time = 0.3
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2lnbr"]
+xfade_time = 0.3
+
 [resource]
+states/attack/node = SubResource("AnimationNodeAnimation_p6jyf")
+states/attack/position = Vector2(519, -157)
 states/death/node = SubResource("AnimationNodeAnimation_p6jeh")
 states/death/position = Vector2(825, 44)
 states/idle/node = SubResource("AnimationNodeAnimation_b02f5")
@@ -85,12 +117,12 @@ states/resurrect/position = Vector2(825, 160)
 states/run/node = SubResource("AnimationNodeAnimation_j76o2")
 states/run/position = Vector2(671, -56)
 states/searching/node = SubResource("AnimationNodeAnimation_sk1db")
-states/searching/position = Vector2(404, 199)
+states/searching/position = Vector2(104, -185)
 states/spawn/node = SubResource("AnimationNodeAnimation_4cnnt")
 states/spawn/position = Vector2(350, 100)
 states/taunt/node = SubResource("AnimationNodeAnimation_dhcrf")
-states/taunt/position = Vector2(628, 199)
+states/taunt/position = Vector2(817, -237)
 states/walk/node = SubResource("AnimationNodeAnimation_vvqhb")
-states/walk/position = Vector2(369, -56)
-transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_vsm5f"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_eymma"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_01a24"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_k3u13"), "walk", "run", SubResource("AnimationNodeStateMachineTransition_gp6vb"), "run", "walk", SubResource("AnimationNodeStateMachineTransition_1yj4f"), "spawn", "idle", SubResource("AnimationNodeStateMachineTransition_0kxhp"), "Start", "spawn", SubResource("AnimationNodeStateMachineTransition_kkxeg"), "idle", "death", SubResource("AnimationNodeStateMachineTransition_2c07u"), "death", "resurrect", SubResource("AnimationNodeStateMachineTransition_n5n8e"), "resurrect", "idle", SubResource("AnimationNodeStateMachineTransition_asqm6"), "idle", "searching", SubResource("AnimationNodeStateMachineTransition_3ide2"), "searching", "idle", SubResource("AnimationNodeStateMachineTransition_f72pb"), "searching", "taunt", SubResource("AnimationNodeStateMachineTransition_gdthq"), "taunt", "searching", SubResource("AnimationNodeStateMachineTransition_60q6e")]
-graph_offset = Vector2(-22, -109)
+states/walk/position = Vector2(430, -65)
+transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_vsm5f"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_eymma"), "idle", "run", SubResource("AnimationNodeStateMachineTransition_01a24"), "run", "idle", SubResource("AnimationNodeStateMachineTransition_k3u13"), "walk", "run", SubResource("AnimationNodeStateMachineTransition_gp6vb"), "run", "walk", SubResource("AnimationNodeStateMachineTransition_1yj4f"), "spawn", "idle", SubResource("AnimationNodeStateMachineTransition_0kxhp"), "Start", "spawn", SubResource("AnimationNodeStateMachineTransition_kkxeg"), "idle", "death", SubResource("AnimationNodeStateMachineTransition_2c07u"), "death", "resurrect", SubResource("AnimationNodeStateMachineTransition_n5n8e"), "resurrect", "idle", SubResource("AnimationNodeStateMachineTransition_asqm6"), "idle", "searching", SubResource("AnimationNodeStateMachineTransition_3ide2"), "searching", "idle", SubResource("AnimationNodeStateMachineTransition_f72pb"), "searching", "taunt", SubResource("AnimationNodeStateMachineTransition_gdthq"), "taunt", "searching", SubResource("AnimationNodeStateMachineTransition_60q6e"), "idle", "attack", SubResource("AnimationNodeStateMachineTransition_5s3av"), "walk", "attack", SubResource("AnimationNodeStateMachineTransition_ocpon"), "run", "attack", SubResource("AnimationNodeStateMachineTransition_t2lip"), "attack", "walk", SubResource("AnimationNodeStateMachineTransition_3yyem"), "attack", "run", SubResource("AnimationNodeStateMachineTransition_ysdgd"), "attack", "idle", SubResource("AnimationNodeStateMachineTransition_2bblh"), "taunt", "run", SubResource("AnimationNodeStateMachineTransition_2lnbr")]
+graph_offset = Vector2(-65, -334)

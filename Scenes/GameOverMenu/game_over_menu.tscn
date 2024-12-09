@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg7gx44r2j2xq"]
+
+[ext_resource type="Theme" uid="uid://d23safipfi22d" path="res://Resources/Themes/PauseMenuTheme.tres" id="1_esj38"]
+[ext_resource type="Script" path="res://Scenes/GameOverMenu/GameOverMenu.cs" id="1_kn1vc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hu28x"]
+
+[node name="GameOverMenu" type="SubViewportContainer"]
+script = ExtResource("1_kn1vc")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewport"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_esj38")
+theme_override_constants/margin_left = 600
+theme_override_constants/margin_right = 600
+
+[node name="PanelContainer" type="PanelContainer" parent="SubViewport/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="CenterContainer" parent="SubViewport/MarginContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewport/MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "GameOver"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 200
+theme_override_styles/separator = SubResource("StyleBoxEmpty_hu28x")
+
+[node name="BackToMainMenuButton" type="Button" parent="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "PAUSE_MENU_BACK_TO_MAIN_MENU"
+
+[node name="ExitToDesktopButton" type="Button" parent="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "MAIN_MENU_EXIT"
+
+[connection signal="pressed" from="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/BackToMainMenuButton" to="." method="OnExitToMainMenu"]
+[connection signal="pressed" from="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/ExitToDesktopButton" to="." method="OnExitToDesktop"]
