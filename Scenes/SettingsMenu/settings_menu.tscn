@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://c2ggbyd7ek7je"]
+[gd_scene load_steps=5 format=3 uid="uid://c2ggbyd7ek7je"]
 
+[ext_resource type="Theme" uid="uid://nogjyw54m8rl" path="res://Resources/Themes/MainMenuTheme.tres" id="1_1p2pc"]
 [ext_resource type="Script" path="res://Scenes/SettingsMenu/SettingsMenu.cs" id="1_r4clp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5dp6p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o4uwk"]
 
 [node name="SettingsMenu" type="Control"]
 layout_mode = 3
@@ -11,12 +16,67 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme = ExtResource("1_1p2pc")
 script = ExtResource("1_r4clp")
 
-[node name="TabContainer" type="TabContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="TabContainer" type="TabContainer" parent="MarginContainer"]
+layout_mode = 2
+current_tab = 0
+
+[node name="SETTINGS_TAB_GENERAL" type="MarginContainer" parent="MarginContainer/TabContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+metadata/_tab_index = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="LabelLanguage" type="Label" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "SETTINGS_LABEL_LANGUAGE"
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+theme_override_styles/separator = SubResource("StyleBoxEmpty_5dp6p")
+
+[node name="OptionButtonLanguage" type="OptionButton" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer/GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 3
+popup/item_0/text = "English"
+popup/item_1/text = "Français"
+popup/item_1/id = 1
+popup/item_2/text = "한국어"
+popup/item_2/id = 2
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+theme_override_styles/separator = SubResource("StyleBoxEmpty_o4uwk")
+
+[node name="CloseButton" type="Button" parent="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer"]
+layout_mode = 2
+text = "SETTINGS_CLOSE"
+
+[connection signal="item_selected" from="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer/GridContainer/OptionButtonLanguage" to="." method="OnLanguageChanged"]
+[connection signal="pressed" from="MarginContainer/TabContainer/SETTINGS_TAB_GENERAL/VBoxContainer/CloseButton" to="." method="OnSettingsClose"]

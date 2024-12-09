@@ -8,7 +8,7 @@ public partial class MainMenu : Control
 
 	public override void _Ready()
 	{
-		_settings = GetNode<Control>("Settings/SettingsMenu");
+		_settings = GetNode<Control>("SettingsMenu");
 	}
 
 	/* Signal */ public void OnButtonPressedPlay()

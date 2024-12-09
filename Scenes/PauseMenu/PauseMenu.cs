@@ -4,9 +4,15 @@ namespace EscapedfromTime.Scenes.PauseMenu;
 
 public partial class PauseMenu : SubViewportContainer
 {
+	private Control _settingsMenu;
+
 	private bool _paused;
 
-	public override void _Ready() => ProcessMode = ProcessModeEnum.Always;
+	public override void _Ready()
+	{
+		ProcessMode = ProcessModeEnum.Always;
+		_settingsMenu = GetNode<Control>("SubViewport/SettingsMenu");
+	}
 
 	public override void _UnhandledInput(InputEvent @event)
 	{
@@ -23,7 +29,7 @@ public partial class PauseMenu : SubViewportContainer
 
 	/* Signal */ public void OnSettings()
 	{
-		
+		_settingsMenu.SetVisible(true);
 	}
 
 	/* Signal */ public void OnExitToMainMenu()

@@ -8,10 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.godot/editor/create_recent.Node" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/create_recent.Node" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-editstate-2dfcd67214f30425d40634aeb026f8a6.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-editstate-2dfcd67214f30425d40634aeb026f8a6.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-folding-2dfcd67214f30425d40634aeb026f8a6.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/main_menu.tscn-folding-2dfcd67214f30425d40634aeb026f8a6.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/recent_dirs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/recent_dirs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/splash_screen.tscn-editstate-24d959ef8a955c6c2b2432a724036a7e.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/splash_screen.tscn-editstate-24d959ef8a955c6c2b2432a724036a7e.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" afterDir="false" />
@@ -23,14 +29,25 @@
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/scene_groups_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/scene_groups_cache.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/translation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.en.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.en.translation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.fr.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.fr.translation" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/translation.ko.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.ko.translation" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_banners.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_banners.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/GridMaps/MeshLibraries/dungeon_walls.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resources/Themes/MainMenuTheme.tres" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/Themes/MainMenuTheme.tres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/MainMenu/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/MainMenu/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/MainMenu/main_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/MainMenu/main_menu.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/PauseMenu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/PauseMenu/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/PauseMenu/pause_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/PauseMenu/pause_menu.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/SettingsMenu/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SettingsMenu/SettingsMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenes/SettingsMenu/settings_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SettingsMenu/settings_menu.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,21 +89,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Executable.Player">
     <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory" show_console_on_std_err="false" show_console_on_std_out="false" port="6006">
       <option name="address" value="127.0.0.1" />

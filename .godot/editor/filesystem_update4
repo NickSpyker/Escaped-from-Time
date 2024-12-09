@@ -1,7 +1,7 @@
 res://Data/translation.en.translation
 res://Data/translation.fr.translation
 res://Data/translation.ko.translation
-res://Scenes/SplashScreen/splash_screen.tscn
+res://Scenes/SettingsMenu/settings_menu.tscn
 res://addons/assetplacer/assetPalette/previewGeneration/PreviewEnvironment.tres
 res://addons/assetplacer/ui/NormalButton.tres
 res://addons/assetplacer/ui/SelectedButton.tres
@@ -11,6 +11,14 @@ res://Resources/Shaders/sketchy.gdshader
 res://Resources/Shaders/panoramic_sky.gdshader
 res://Resources/Shaders/outline_object.gdshader
 res://Resources/Shaders/fire.gdshader
+res://Scenes/MainMenu/main_menu.tscn
+res://Resources/Themes/MainMenuTheme.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_floors_l.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_floors_s.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_walls.tres
+res://Resources/GridMaps/MeshLibraries/dungeon_banners.tres
+res://Resources/Themes/PauseMenuTheme.tres
 res://addons/assetplacer/gizmos/PlacementPlane.cs
 res://addons/assetplacer/placementController/AssetPlacementController.cs
 res://addons/assetplacer/ui/TagLabel.cs
@@ -26,15 +34,15 @@ res://addons/assetplacer/SceneData.cs
 res://Objects/InteractableEntities/Outputs/PillarElevator.cs
 res://Components/CharacterInputsController/CharacterTimeControl.cs
 res://addons/assetplacer/InputManager.cs
+res://Scenes/SplashScreen/SplashScreen.cs
 res://Scenes/SettingsMenu/SettingsMenu.cs
 res://Scenes/PauseMenu/PauseMenu.cs
-res://Scenes/Maps/DungeonLevel.cs
-res://Scenes/LoadingScreen/LoadingScreen.cs
+res://Scenes/MainMenu/MainMenu.cs
 res://addons/assetplacer/ui/NodePathSelectorUi.cs
 res://addons/assetplacer/ui/NodePathSelectionButton.cs
 res://addons/assetplacer/ui/AssetPlacerUi.cs
 res://Components/TimeTravelHandler/TimeMechanicsArea.cs
-res://Objects/TopDownCamera/TopDownCamera.cs
+res://Scenes/DevSandbox/DevSandbox.cs
 res://addons/assetplacer/assetPalette/previewGeneration/AssetPreviewGenerator.cs
 res://Components/TimeTravelHandler/CharacterTimeGhostRecorder.cs
 res://Components/CharacterInputsController/CharacterMovements.cs
@@ -47,7 +55,7 @@ res://Components/TimeTravelHandler/InteractableEntityRecorderPlayer.cs
 res://Components/TimeTravelHandler/CharacterTimeGhostPlayer.cs
 res://Components/CharacterBehaviors/CharacterAttackHandler.cs
 res://Objects/GUI/Gui.cs
-res://Scenes/DevSandbox/DevSandbox.cs
+res://Scenes/LoadingScreen/LoadingScreen.cs
 res://addons/assetplacer/ui/AssetPlacerButton.cs
 res://addons/assetplacer/ui/RightClickPopupSubmenu.cs
 res://Objects/TimePhysicsObjects/TimeMovableRigidBody.cs
@@ -60,7 +68,7 @@ res://addons/assetplacer/ui/SaveAssetLibraryDialog.cs
 res://addons/assetplacer/assetPalette/AssetZooGenerator.cs
 res://addons/assetplacer/ui/SnappingUi.cs
 res://addons/assetplacer/snapping/PlaneSnapping.cs
-res://Scenes/SplashScreen/SplashScreen.cs
+res://Scenes/WinMenu/WinMenu.cs
 res://addons/assetplacer/assetPalette/AssetLibraryData.cs
 res://addons/assetplacer/TooltipPanel.cs
 res://addons/assetplacer/placementController/DummyPlacementController.cs
@@ -76,7 +84,7 @@ res://addons/assetplacer/assetPalette/previewGeneration/PreviewCamera3D.cs
 res://addons/assetplacer/AssetPlacerPluginData.cs
 res://addons/assetplacer/placementController/PlanePlacementController.cs
 res://Components/CharacterInputsController/CharacterInteractions.cs
-res://Scenes/MainMenu/MainMenu.cs
+res://Scenes/Maps/DungeonLevel.cs
 res://addons/assetplacer/utils/contextlessPlugin/EditorDrawPanel.cs
 res://addons/assetplacer/ui/DynamicPreviewController.cs
 res://Objects/InteractableEntities/Outputs/Door.cs
@@ -89,4 +97,5 @@ res://addons/assetplacer/NodePathSelector.cs
 res://addons/assetplacer/ui/HelpDialog.cs
 res://addons/assetplacer/gizmos/LineVertices.cs
 res://Components/CharacterBehaviors/CharacterHealthHandler.cs
-res://Scenes/WinMenu/WinMenu.cs
+res://Objects/TopDownCamera/TopDownCamera.cs
+res://Scenes/PauseMenu/pause_menu.tscn

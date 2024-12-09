@@ -350,23 +350,16 @@ text = "MAIN_MENU_SETTINGS"
 layout_mode = 2
 text = "MAIN_MENU_EXIT"
 
-[node name="Settings" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 11
-anchor_left = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -200.0
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_constants/margin_left = 100
-theme_override_constants/margin_top = 100
-theme_override_constants/margin_right = 100
-theme_override_constants/margin_bottom = 100
-
-[node name="SettingsMenu" parent="Settings" instance=ExtResource("4_vvggm")]
+[node name="SettingsMenu" parent="." instance=ExtResource("4_vvggm")]
 visible = false
-layout_mode = 2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.33
+anchor_top = 0.4
+anchor_right = 0.66
+anchor_bottom = 0.6
+offset_left = 116.4
+offset_right = 116.4
 
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="OnButtonPressedPlay"]
 [connection signal="pressed" from="MenuTitleAndMainButtons/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/SettingsButton" to="." method="OnButtonPressedSettings"]

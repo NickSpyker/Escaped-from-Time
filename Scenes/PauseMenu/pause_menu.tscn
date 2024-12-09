@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfaw5jrb3fcja"]
+[gd_scene load_steps=5 format=3 uid="uid://dfaw5jrb3fcja"]
 
 [ext_resource type="Theme" uid="uid://d23safipfi22d" path="res://Resources/Themes/PauseMenuTheme.tres" id="1_okrw4"]
 [ext_resource type="Script" path="res://Scenes/PauseMenu/PauseMenu.cs" id="2_lanl7"]
+[ext_resource type="PackedScene" uid="uid://c2ggbyd7ek7je" path="res://Scenes/SettingsMenu/settings_menu.tscn" id="3_y24tb"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6cbjx"]
 
@@ -66,6 +67,20 @@ text = "PAUSE_MENU_BACK_TO_MAIN_MENU"
 [node name="ExitToDesktopButton" type="Button" parent="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "MAIN_MENU_EXIT"
+
+[node name="SettingsMenu" parent="SubViewport" instance=ExtResource("3_y24tb")]
+visible = false
+anchors_preset = -1
+anchor_left = 0.33
+anchor_top = 0.4
+anchor_right = 0.66
+anchor_bottom = 0.6
+offset_left = -6.10352e-05
+offset_top = -82.0
+offset_right = -0.00012207
+offset_bottom = -82.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [connection signal="pressed" from="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/ResumeButton" to="." method="OnResume"]
 [connection signal="pressed" from="SubViewport/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/SettingsButton" to="." method="OnSettings"]
