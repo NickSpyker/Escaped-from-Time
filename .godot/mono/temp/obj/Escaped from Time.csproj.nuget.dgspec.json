@@ -13,6 +13,7 @@
         "packagesPath": "C:\\Users\\Spijkerman\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Spijkerman\\Repositories\\Escaped-from-Time\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "C:\\Users\\Spijkerman\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],

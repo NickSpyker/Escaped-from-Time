@@ -1,18 +1,9 @@
-res://Data/translation.en.translation
-res://Data/translation.fr.translation
-res://Data/translation.ko.translation
-res://Scenes/SettingsMenu/SettingsMenu.cs
-res://addons/assetplacer/assetPalette/previewGeneration/PreviewEnvironment.tres
-res://addons/assetplacer/ui/NormalButton.tres
-res://addons/assetplacer/ui/SelectedButton.tres
 res://Resources/Shaders/mobius.gdshader
 res://Resources/Shaders/toon.gdshader
 res://Resources/Shaders/sketchy.gdshader
 res://Resources/Shaders/panoramic_sky.gdshader
 res://Resources/Shaders/outline_object.gdshader
 res://Resources/Shaders/fire.gdshader
-res://Scenes/SettingsMenu/settings_menu.tscn
-res://Resources/Themes/MainMenuTheme.tres
 res://addons/assetplacer/gizmos/PlacementPlane.cs
 res://addons/assetplacer/placementController/AssetPlacementController.cs
 res://addons/assetplacer/ui/TagLabel.cs
@@ -29,6 +20,7 @@ res://Objects/InteractableEntities/Outputs/PillarElevator.cs
 res://Components/CharacterInputsController/CharacterTimeControl.cs
 res://addons/assetplacer/InputManager.cs
 res://Scenes/SplashScreen/SplashScreen.cs
+res://Scenes/SettingsMenu/SettingsMenu.cs
 res://Scenes/PauseMenu/PauseMenu.cs
 res://Scenes/MainMenu/MainMenu.cs
 res://addons/assetplacer/ui/NodePathSelectorUi.cs
@@ -91,8 +83,3 @@ res://addons/assetplacer/ui/HelpDialog.cs
 res://addons/assetplacer/gizmos/LineVertices.cs
 res://Components/CharacterBehaviors/CharacterHealthHandler.cs
 res://Objects/TopDownCamera/TopDownCamera.cs
-res://Data/translation.ja.translation
-res://Data/translation.zh.translation
-res://Data/translation.es.translation
-res://Data/translation.it.translation
-res://Data/translation.de.translation

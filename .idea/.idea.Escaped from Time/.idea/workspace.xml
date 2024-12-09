@@ -7,12 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="Add language settings">
+    <list default="true" id="fa0044a1-d5c4-49c0-8a0c-5d8af454018c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/editor_layout.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_update4" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_update4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/script_editor_cache.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/imported/translation.csv-300535a9a76ea311fdbb3d6d62342021.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/recent_dirs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/recent_dirs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/bin/Debug/Escaped from Time.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.AssemblyInfo.cs" afterDir="false" />
@@ -22,16 +22,15 @@
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/Escaped from Time.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/ref/Escaped from Time.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Debug/refint/Escaped from Time.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Escaped from Time.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Escaped from Time.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/Escaped from Time.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/Escaped from Time.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/mono/temp/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escaped from Time/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/translation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/translation.csv.import" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.csv.import" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/translation.en.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.en.translation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/translation.fr.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.fr.translation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/translation.ko.translation" beforeDir="false" afterPath="$PROJECT_DIR$/Data/translation.ko.translation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/SettingsMenu/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SettingsMenu/SettingsMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scenes/SettingsMenu/settings_menu.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/Scenes/SettingsMenu/settings_menu.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +147,7 @@
       <workItem from="1733569206235" duration="10018000" />
       <workItem from="1733658931964" duration="4840000" />
       <workItem from="1733713235066" duration="2984000" />
+      <workItem from="1733753163979" duration="129000" />
     </task>
     <task id="LOCAL-00001" summary="Fix player animation">
       <option name="closed" value="true" />
@@ -501,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733751827593</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Add some languages">
+      <option name="closed" value="true" />
+      <created>1733752606031</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1733752606031</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Add tutorial and main maps" />
     <MESSAGE value="Add AssetPlacer libraries" />
     <MESSAGE value="Update tutorial gridmap dungeon" />
     <MESSAGE value="Add debug message for lever in tutorial map" />
@@ -547,6 +554,7 @@
     <MESSAGE value="Fix crash" />
     <MESSAGE value="Add player sound effects" />
     <MESSAGE value="Add language settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add language settings" />
+    <MESSAGE value="Add some languages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add some languages" />
   </component>
 </project>

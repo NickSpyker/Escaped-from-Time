@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Escaped from Time")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66d2bd6e9767c19a9034edaacc7e89653870ee78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bce3f198fd7087b0b0e7debe86ba2df60c10b47b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Escaped from Time")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Escaped from Time")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
