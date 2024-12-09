@@ -1,6 +1,6 @@
-using EscapedfromTime.Components.Audio;
 using EscapedfromTime.Components.CharacterAnimationsHandler;
 using EscapedfromTime.Components.TimeTravelHandler;
+using EscapedfromTime.Objects.SoundEffect;
 using EscapedfromTime.Objects.TopDownCamera;
 using Godot;
 
@@ -14,7 +14,7 @@ public partial class CharacterMovements : Node
 	[Export] public CharacterAnimations CharacterAnimations = null!;
 	[Export] public TopDownCamera SpringArm = null!;
 	[Export] public CharacterTimeGhostRecorder TimeGhostRecorder = null!;
-	[Export] public SoundEffectHandler SoundEffectHandler = null!;
+	[Export] public PlayerSoundEffects PlayerSoundEffects = null!;
 
 	[Export] public float JumpingMovementSpeed = 3.0f;
 	[Export] public float JumpingAndRunningMovementSpeed = 7.0f;
@@ -75,7 +75,6 @@ public partial class CharacterMovements : Node
 			if (_isPlayerJumping)
 			{
 				_isPlayerJumping = false;
-				SoundEffectHandler.PlayerLand();
 			}
 
 			HandleGroundedMovement();
@@ -92,6 +91,7 @@ public partial class CharacterMovements : Node
 			HandleAirborneMovement(delta);
 		}
 
+		if (_velocity == Vector3.Zero) PlayerSoundEffects.PlayIdling();
 		Character.Velocity = _velocity;
 		TimeGhostRecorder.RecordMoveAndSlide(_velocity);
 		Character.MoveAndSlide();
@@ -122,9 +122,9 @@ public partial class CharacterMovements : Node
 				if (_currentAnimation != CharacterAnimation.Run)
 				{
 					CharacterAnimations.Play(CharacterAnimation.Run);
+					PlayerSoundEffects.PlayRunning();
 					TimeGhostRecorder.RecordAnimation(CharacterAnimation.Run);
 					_currentAnimation = CharacterAnimation.Run;
-					SoundEffectHandler.PlayerRun();
 				}
 				break;
 			case <= 0.5f and > 0.0f:
@@ -134,9 +134,9 @@ public partial class CharacterMovements : Node
 				if (_currentAnimation != CharacterAnimation.Walk)
 				{
 					CharacterAnimations.Play(CharacterAnimation.Walk);
+					PlayerSoundEffects.PlayWalking();
 					TimeGhostRecorder.RecordAnimation(CharacterAnimation.Walk);
 					_currentAnimation = CharacterAnimation.Walk;
-					SoundEffectHandler.PlayerWalk();
 				}
 				break;
 			default:
@@ -146,9 +146,9 @@ public partial class CharacterMovements : Node
 				if (_currentAnimation != CharacterAnimation.Idle)
 				{
 					CharacterAnimations.Play(CharacterAnimation.Idle);
+					PlayerSoundEffects.PlayIdling();
 					TimeGhostRecorder.RecordAnimation(CharacterAnimation.Idle);
 					_currentAnimation = CharacterAnimation.Idle;
-					SoundEffectHandler.PlayerIdle();
 				}
 				break;
 		}
@@ -184,9 +184,9 @@ public partial class CharacterMovements : Node
 		if (_currentAnimation != CharacterAnimation.Jump)
 		{
 			CharacterAnimations.Play(CharacterAnimation.Jump);
+			PlayerSoundEffects.PlayJumping();
 			TimeGhostRecorder.RecordAnimation(CharacterAnimation.Jump);
 			_currentAnimation = CharacterAnimation.Jump;
-			SoundEffectHandler.PlayerJump();
 		}
 
 		Vector3 forward = SpringArm.GlobalTransform.Basis.Z;

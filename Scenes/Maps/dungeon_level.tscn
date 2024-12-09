@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://67caiq5tr41r"]
+[gd_scene load_steps=94 format=3 uid="uid://67caiq5tr41r"]
 
 [ext_resource type="Script" path="res://Scenes/Maps/DungeonLevel.cs" id="1_4yydg"]
 [ext_resource type="MeshLibrary" uid="uid://tqjh61amryqu" path="res://Resources/GridMaps/MeshLibraries/dungeon_floors_xl.tres" id="2_wk77w"]
@@ -19,6 +19,7 @@
 [ext_resource type="MeshLibrary" uid="uid://6bpytbyksvs1" path="res://Resources/GridMaps/MeshLibraries/dungeon_banners.tres" id="11_d3ubx"]
 [ext_resource type="MeshLibrary" uid="uid://do5c65vx8au5q" path="res://Resources/GridMaps/MeshLibraries/dungeon_scaffold_pillars.tres" id="12_c7er4"]
 [ext_resource type="PackedScene" uid="uid://ldxxvslal17e" path="res://Objects/InteractableEntities/Outputs/pillar_elevator.tscn" id="17_vdppu"]
+[ext_resource type="PackedScene" uid="uid://c3dh0547wtg3g" path="res://Models/lever.tscn" id="18_8lnaq"]
 [ext_resource type="PackedScene" uid="uid://7tu1jyropl3g" path="res://Objects/InteractableEntities/Inputs/count_character_area.tscn" id="18_l74ok"]
 [ext_resource type="PackedScene" uid="uid://dgqwu0pgilmkg" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle.tscn" id="19_lxnci"]
 [ext_resource type="PackedScene" uid="uid://c80vywn3ralw8" path="res://Resources/AssetPlacerLibraries/Scenes/lights/candle_triple.tscn" id="20_k5oaf"]
@@ -371,11 +372,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29, 0, 27)
 script = ExtResource("7_1esuq")
 InteractableEntity = NodePath("..")
 
-[node name="DevLabel" type="Label3D" parent="TimeMechanics/TimeInputs/press_to_interact_area_tscn"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-billboard = 1
-text = "Lever here"
-font_size = 50
+[node name="Lever" parent="TimeMechanics/TimeInputs/press_to_interact_area_tscn" instance=ExtResource("18_8lnaq")]
 
 [node name="TimeOutputs" type="Node3D" parent="TimeMechanics"]
 
@@ -1016,6 +1013,8 @@ transform = Transform3D(0.953453, 0, 0.301537, 0, 1, 0, -0.301537, 0, 0.953453, 
 visible = false
 
 [connection signal="body_entered" from="Dungeon/WinRoom/Area3D" to="." method="OnPlayerWin"]
+[connection signal="PlayerInteracted" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeInputs/press_to_interact_area_tscn/Lever" method="SetOn"]
 [connection signal="PlayerInteracted" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeOutputs/door_scaffold_tscn" method="OpenDoor"]
+[connection signal="PlayerStopInteraction" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeInputs/press_to_interact_area_tscn/Lever" method="SetOff"]
 [connection signal="PlayerStopInteraction" from="TimeMechanics/TimeInputs/press_to_interact_area_tscn" to="TimeMechanics/TimeOutputs/door_scaffold_tscn" method="CloseDoor"]
 [connection signal="NumberOfPlayersChange" from="TimeMechanics/TimeOutputs/PillarElevator/CountCharacterArea" to="TimeMechanics/TimeOutputs/PillarElevator" method="SetHeight"]

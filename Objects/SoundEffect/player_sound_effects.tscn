@@ -1,0 +1,129 @@
+[gd_scene load_steps=12 format=3 uid="uid://ca6ncwpiiy5pl"]
+
+[ext_resource type="AudioStream" uid="uid://b6vwb75wrpf27" path="res://Resources/Sounds/WalkAudioStreamPlaylist.tres" id="1_48dhb"]
+[ext_resource type="Script" path="res://Objects/SoundEffect/PlayerSoundEffects.cs" id="1_0854g"]
+[ext_resource type="AudioStream" uid="uid://chany21knysa8" path="res://Resources/Sounds/RunAudioStreamPlaylist.tres" id="3_gkq2r"]
+[ext_resource type="AudioStream" uid="uid://cndhmex7a51fi" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Jump.wav" id="4_h76m7"]
+[ext_resource type="AudioStream" uid="uid://i31qple53wof" path="res://Assets/Sounds/Player/Footsteps/Stone/Stone Land.wav" id="5_wuulw"]
+
+[sub_resource type="Animation" id="Animation_g40hj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Walking:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Running:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_xrtdn"]
+resource_name = "landing"
+length = 0.6667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Landing:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_sej5i"]
+resource_name = "running"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Running:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.133333, 0.266667, 0.5, 0.533333, 0.666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_o1o1q"]
+resource_name = "walking"
+length = 1.0667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Walking:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.1, 0.133333, 0.266667, 0.633333, 0.666667, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, false, false, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_a6uyw"]
+resource_name = "jumping"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jumping:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b2svf"]
+_data = {
+"RESET": SubResource("Animation_g40hj"),
+"jumping": SubResource("Animation_a6uyw"),
+"landing": SubResource("Animation_xrtdn"),
+"running": SubResource("Animation_sej5i"),
+"walking": SubResource("Animation_o1o1q")
+}
+
+[node name="PlayerSoundEffects" type="Node3D"]
+script = ExtResource("1_0854g")
+
+[node name="Walking" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_48dhb")
+
+[node name="Running" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gkq2r")
+
+[node name="Jumping" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_h76m7")
+
+[node name="Landing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_wuulw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b2svf")
+}

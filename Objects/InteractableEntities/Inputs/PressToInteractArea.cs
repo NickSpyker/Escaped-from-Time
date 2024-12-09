@@ -47,7 +47,12 @@ public partial class PressToInteractArea : InputInteractableEntity
 	{
 		if (!body.IsInGroup("player")) return;
 		Label.SetVisible(false);
-		_isActionInProgress = false;
+		if (_isActionInProgress)
+		{
+			_isActionInProgress = false;
+			if (ShowLabel) Label.SetText("INTERACTION_MESSAGE_LABEL");
+			InteractEmitSignal(InputInteractableEntity.SignalName.PlayerStopInteraction);
+		}
 		_canInteract = false;
 		if (ShowLabel) Label.SetText("INTERACTION_MESSAGE_LABEL");
 	}
