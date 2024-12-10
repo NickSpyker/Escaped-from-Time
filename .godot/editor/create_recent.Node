@@ -1,3 +1,4 @@
+Camera3D
 SubViewportContainer
 Timer
 AudioStreamPlayer
@@ -12,4 +13,3 @@ CSGCombiner3D
 CSGCylinder3D
 CSGBox3D
 HSeparator
-VBoxContainer
