@@ -6,7 +6,7 @@
     Download
 </h2>
 
-<a href="https://nickspyker.itch.io/escaped-from-time" align="center">
+<a href="https://github.com/NickSpyker/Escaped-from-Time/releases/download/release/Escaped.from.Time.zip" align="center">
     Escaped from Time - Windows
 </a>
 
