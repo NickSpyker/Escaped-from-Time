@@ -2,6 +2,12 @@
     Escaped from Time
 </h1>
 
+<h3 align="center">Watch game demo on Youtube</h3>
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=YB1rz9RoqD4" target="_blank" align="center">
+    <img src="http://img.youtube.com/vi/YB1rz9RoqD4/mqdefault.jpg" alt="Watch the video" border="10" align="center"/>
+</a>
+
 <h2 align="center">
     Download
 </h2>
