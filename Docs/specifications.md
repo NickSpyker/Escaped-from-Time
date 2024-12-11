@@ -22,7 +22,7 @@
     </tr>
     <tr>
         <th>Perspective</th>
-        <td>3D, Third person, Top-down</td>
+        <td>3D, Third person</td>
     </tr>
     <tr>
         <th>Game Engine</th>
@@ -30,18 +30,16 @@
     </tr>
     <tr>
         <th>Coding Language</th>
-        <td>GDScript, C#</td>
+        <td>C#</td>
     </tr>
     <tr>
         <th>Story</th>
         <td>
-            The player incarnates a hero and goes on an adventure in search of treasures in dungeons.
+            The player incarnates a hero and goes on an adventure in dungeons.
             <br>
             Escaped from Time 's dungeons offer a real challenge, with enemies and puzzles based on temporal mechanics.
             <br>
             The player must go back in time and manipulate it to solve certain enigmas.
-            <br>
-            They win the game if they reach the treasure alive and before the time runs out.
         </td>
     </tr>
 <table>
