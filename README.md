@@ -10,8 +10,6 @@
     Escaped from Time - Windows
 </a>
 
-<hr>
-
 <h3 align="center">
     Documentations
 </h3>
@@ -28,7 +26,7 @@
     Development dependencies
 </h3>
 
-<details open>
+<details>
     <summary>
         Godot Engine - .NET 4.3
     </summary>
@@ -50,7 +48,3 @@
         </li>
     </ul>
 </details>
-
-<h4 align="center">
-    Contributors
-</h4>
