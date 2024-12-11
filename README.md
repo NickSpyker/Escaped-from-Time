@@ -10,9 +10,9 @@
     Escaped from Time - Windows
 </a>
 
-<h3 align="center">
+<h2 align="center">
     Documentations
-</h3>
+</h2>
 
 <ul>
     <li>
@@ -22,9 +22,9 @@
     </li>
 </ul>
 
-<h3 align="center">
+<h2 align="center">
     Development dependencies
-</h3>
+</h2>
 
 <details>
     <summary>
